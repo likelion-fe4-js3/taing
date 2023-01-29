@@ -1,6 +1,6 @@
 ---
 name: Feature complete
-about: feature 개발 완료시 작성
+about: feature 개발 완료
 title: "[FEATURE]"
 labels: feature
 assignees: ''
