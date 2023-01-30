@@ -1,0 +1,116 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+:root {
+  /* color 변수 */
+  --black: #000000;
+  --white: #ffffff;
+  --gray-100: #e1e1e1;
+  --gray-200: #c4c4c4;
+  --gray-300: #a6a6a6;
+  --gray-400: #898989;
+  --gray-500: #6b6b6b;
+  --gray-600: #565656;
+  --gray-700: #404040;
+  --gray-800: #2b2b2b;
+  --gray-900: #151515;
+  --brand-red-1: #ff153c;
+  --brand-red-2: #e93945;
+  --brand-dark-bg-1: #191919;
+  --brand-dark-bg-2: #212121;
+}
+
+/* 텍스트 스타일 */
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.--text-heading-m {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 1rem; /* 16px */
+}
+.--text-heading-l {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 1.375rem; /* 22px */
+}
+.--text-heading-xl {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 1.75rem; /* 28px */
+}
+.--text-heading-xxl {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 2.375rem; /* 38px */
+}
+.--text-heading-xxxl {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 3.125rem; /* 50px */
+}
+
+.--text-label-s {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 0.75rem; /* 12px */
+}
+.--text-label-m {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 1rem; /* 16px */
+}
+.--text-label-l {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 1.375rem; /* 22px */
+}
+.--text-label-xl {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 1.75rem; /* 28px */
+}
+.--text-label-xxl {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 2.375rem; /* 38px */
+}
+
+.--text-paragraph-s {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 0.75rem; /* 12px */
+}
+.--text-paragraph-m {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 1rem; /* 16px */
+}
+.--text-paragraph-l {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 1.375rem; /* 22px */
+}
+.--text-paragraph-xl {
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 1.75rem; /* 28px */
+}
