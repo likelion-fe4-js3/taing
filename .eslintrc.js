@@ -32,8 +32,6 @@ module.exports = {
     "no-param-reassign": ["error"],
     // 파라미터는 3개를 초과해서 사용하지 않는다
     "max-params": ["error", 3],
-    // 파라미터의 앞뒤에는 공백문자가 있어야 한다
-    "space-in-parens": ["error", "always"],
     // 중괄호(블록) 내부의 앞뒤에 공백이 하나씩 있어야 한다
     "block-spacing": ["error"],
     // 중첩 if문을 허용하지 않는다
@@ -60,5 +58,7 @@ module.exports = {
     ],
     // 문자열 연결에는 템플릿 문자열을 사용해야 한다
     "prefer-template": ["error"],
+    // LFCR 설정을 맞춰준다
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
   },
 };
