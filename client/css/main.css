@@ -1,0 +1,52 @@
+@import url(./common/reset.css);
+@import url(./common/normalize.css);
+@import url(./common/theme.css);
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* 공통 swiper */
+.swiper {
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.swiper h2 {
+  margin-bottom: 4px;
+}
+
+.swiper .swiper-wrapper {
+  height: 133px;
+}
+
+.swiper .swiper-slide {
+  width: 92px;
+}
+.swiper .swiper-slide a {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* 메인 컨텐츠 */
+/* 티빙에서 꼭 봐야하는 콘텐츠 */
+.recommend-taing.swiper .swiper-wrapper {
+  height: 133px;
+}
+
+.recommend-taing.swiper .swiper-slide {
+  width: 92px;
+}
+
+/* quick-vod */
+.quick-vod.swiper .swiper-wrapper {
+  height: 80px;
+}
+
+.quick-vod.swiper .swiper-slide {
+  width: 143px;
+}

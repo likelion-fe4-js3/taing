@@ -24,8 +24,6 @@ module.exports = {
     "no-unused-vars": ["warn"],
     // 변수, 함수명 등은 20자 이하로 지어야 한다
     "id-length": ["error", { max: 20 }],
-    // 함수 정의시 함수이름 뒤에 공백이 없어야 한다
-    "space-before-function-paren": ["error", "never"],
     // 객체의 프로퍼티 이름은 필요할 때만 따옴표로 감싸야 한다
     "quote-props": ["error", "as-needed"],
     // 파라미터는 읽기 전용이다(매개변수를 수정할 수 없다)
