@@ -1,3 +1,87 @@
 @import url(./common/normalize.css);
 @import url(./common/reset.css);
 @import url(./common/theme.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+}
+
+
+Main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+  box-sizing: border-box;
+  padding: 28px 0px 0px;
+  flex-shrink: 0;
+}
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: 1;
+  width: 319px;
+  box-sizing: border-box;
+}
+
+.login-content-wrap {
+  width: 319px;
+  height: 173px;
+  margin: 15.5px;
+}
+
+.login-title {
+  margin-left: 102.5px;
+  /* color: var(--white); */
+  size: 15px;
+}
+
+.input-form{
+  padding: 15.5px;
+}
+
+.user-id {
+
+}
+
+.x-icon {
+  position: fixed
+}
+
+
+
+/* #loginTitle {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  align-self: stretch;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+#HeaderTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+  box-sizing: border-box;
+  flex-shrink: 0;
+} */
+
+

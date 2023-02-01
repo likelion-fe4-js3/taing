@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>타빙</title>
+    <title>타잉</title>
     <link rel="stylesheet" href="../css/loginPage.css" />
     <script></script>
   </head>
@@ -15,27 +15,29 @@
       <main class="login">
         <div class="content-wrap">
           <section class="login-content-wrap">
-            <h2 id="loginTitle">TAING ID 로그인</h1>
-            <form name="input-form">
+            <h2 class="login-title">TAING ID 로그인</h1>
+            <form class="input-form">
               <div class="user-id">
-                <label for="userId"></label>
-                <input class="input-origin"
+                <label for="userId">
+                  <input class="input-origin"
                   type="text"
                   id="id"
                   name="userId"
                   placeholder="아이디"
                 />
-                <button id="x-icon"></button>
+                </label>
+                <button type="button" class="x-icon"></button>
               </div>
               <div class="user-pw">
-                <label for="userPw"></label>
-                <input
+                <label for="userPw">
+                  <input
                   type="text"
                   id="userPw"
                   name="pw"
                   placeholder="비밀번호"
                 />
-                <button id="e-icon"></button>
+                </label>
+                <button type="button" class="e-icon"></button>
               </div>
             </form>
             <ul class="checkbox-wrap">
