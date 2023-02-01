@@ -8,21 +8,21 @@
   box-sizing: border-box;
 }
 
-
 /* 링크 스타일 */
 a {
   text-decoration: none;
 }
 
-
 Main {
+  background-color: aqua;
+  /* background-color: var(--brand-dark-bg-1); */
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   align-self: stretch;
   box-sizing: border-box;
-  padding: 28px 0px 0px;
+  padding: 1.75rem 0rem 0rem;
   flex-shrink: 0;
 }
 
@@ -31,36 +31,89 @@ Main {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  flex: 1;
-  width: 319px;
+  /* flex: 1; */
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
 .login-content-wrap {
-  width: 319px;
-  height: 173px;
-  margin: 15.5px;
+  width: 19.938rem;
+  height: 22.75rem;
+  margin: 0.969rem;
 }
 
 .login-title {
-  margin-left: 102.5px;
-  /* color: var(--white); */
-  size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.input-form{
-  padding: 15.5px;
+.login-title {
+  margin: 0 0 1.75rem 0;
+  /* margin-left: 102.5px; */
+  /* color: var(--white); */
+  /* size: 15px; */
+}
+
+.id-pw-form {
+  padding: 0 0.969rem 0 0;
+}
+
+.id-pw-form input {
+  background-color: var(--gray-700);
+  border: none;
+  width: 18rem;
+  height: 2.875rem;
+  border-radius: 0.25rem;
+}
+
+.id-pw-form button {
 }
 
 .user-id {
+  position: relative;
+}
 
+.form-user-id {
+  position: absolute;
 }
 
 .x-icon {
-  position: fixed
+  display: inline-block;
+  background-image: ;
+  background-repeat: no-repeat;
 }
 
+/* 비번폼 */
+.user-pw {
+  margin: 1.938rem 0 0 0;
+  position: relative;
+}
 
+.form-user-pw {
+  position: absolute;
+}
+
+.login-button {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 18rem;
+  height: 2.625rem;
+  background-color: var(--brand-red-2);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: var(--text-size-s);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.checkbox-wrap {
+}
 
 /* #loginTitle {
   background-color: black;
@@ -83,5 +136,3 @@ Main {
   box-sizing: border-box;
   flex-shrink: 0;
 } */
-
-

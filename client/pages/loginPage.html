@@ -14,32 +14,41 @@
   <body>
     <main class="login">
       <div class="content-wrap">
-        <section>
-          <h2></h2>
-          <form class="input-form">
-            <div class="user-id">
-              <label for="userId">
-                <input
-                  class="input-origin"
-                  type="text"
-                  id="id"
-                  name="userId"
-                  placeholder="아이디"
-                />
-              </label>
-              <button type="button" class="x-icon"></button>
-            </div>
-            <div class="user-pw">
-              <label for="userPw">
-                <input
-                  type="text"
-                  id="userPw"
-                  name="pw"
-                  placeholder="비밀번호"
-                />
-              </label>
-              <button type="button" class="e-icon"></button>
-            </div>
+        <section class="login-content-wrap">
+          <h2 class="login-title">TAING ID 로그인</h2>
+          <form class="id-pw-form">
+            <fieldset>
+              <div class="user-id">
+                <label for="userId">
+                  <input
+                    class="form-user-id"
+                    type="text"
+                    id="userId"
+                    name="Id"
+                    placeholder="아이디"
+                  />
+                  <button
+                    type="button"
+                    class="x-icon"
+                  ></button>
+                </label>
+              </div>
+              <div class="user-pw">
+                <label for="userPw">
+                  <input
+                    class="form-user-pw"
+                    type="text"
+                    id="userPw"
+                    name="pw"
+                    placeholder="비밀번호"
+                  />
+                  <button
+                    type="button"
+                    class="e-icon"
+                  ></button>
+                </label>
+              </div>
+            </fieldset>
           </form>
           <ul class="checkbox-wrap">
             <li class="btn-check">
@@ -52,10 +61,9 @@
             </li>
             자동 로그인
           </ul>
-          <button
-            type="submit"
-            class="login-button"
-          ></button>
+          <button type="submit" class="login-button">
+            로그인하기
+          </button>
           <ul class="find-btn-wrap">
             <li>
               <a href="" class="find-id">아이디 찾기</a>
