@@ -1,0 +1,102 @@
+@import url(../css/common/normalize.css);
+@import url(../css/common/reset.css);
+@import url(../css/common/theme.css);
+
+/* --------------------------------- 모든 디바이스 -------------------------------- */
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.main {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--text-size-m);
+}
+
+.main a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile {
+  font: var(--text-heading);
+  font-size: var(--text-size-m);
+  color: var(--white);
+  text-align: center;
+  margin-top: 44px;
+  padding-top: 28px;
+}
+
+.profile-content {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+  margin-top: 16px;
+}
+
+.profile-image {
+  width: 252px;
+  height: 314px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 32px auto;
+}
+
+.profile-image li {
+  width: 114px;
+}
+
+.profile-image button {
+  display: block;
+  height: 114px;
+  border: none;
+  border-radius: 7px;
+  padding: 0px;
+  position: relative;
+}
+
+.profile-image img {
+  filter: brightness(60%);
+}
+
+.lock-icon {
+  background: url("../assets/profilePage/icon_lock.svg")
+    no-repeat;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  transform: scale(83%, 83%);
+}
+
+.profile-image span {
+  color: var(--gray-300);
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  display: block;
+  margin-top: 12px;
+}
+
+.profile-edit-button:hover {
+  color: var(--gray-100);
+  border-color: var(--gray-100);
+}
+
+.profile-edit-button {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-300);
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid var(--gray-600);
+  border-radius: 4px;
+  width: 135px;
+  height: 42px;
+}
