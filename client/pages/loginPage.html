@@ -7,75 +7,78 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>타빙</title>
+
+    <title>타잉</title>
+
     <link rel="stylesheet" href="../css/loginPage.css" />
     <script></script>
   </head>
   <body>
-      <main class="login">
-        <div class="content-wrap">
-          <section class="login-content-wrap">
-            <h2 class="login-title">TAING ID 로그인</h1>
-            <form name="input-form">
+
+    <main class="login">
+      <div class="content-wrap">
+        <section class="login-content-wrap">
+          <h2 class="login-title">TAING ID 로그인</h2>
+          <form class="id-pw-form">
+            <fieldset>
               <div class="user-id">
-                <label for="userId"></label>
-                <input class="input-origin"
-                  type="text"
-                  id="id"
-                  name="userId"
-                  placeholder="아이디"
-                />
-                <!-- <button id="x-icon"></button> -->
+                <label for="userId">
+                  <input
+                    class="form-user-id"
+                    type="text"
+                    id="userId"
+                    name="Id"
+                    placeholder="아이디"
+                  />
+                  <button
+                    type="button"
+                    class="x-icon"
+                  ></button>
+                </label>
               </div>
               <div class="user-pw">
-                <label for="userPw"></label>
-                <input
-                  type="text"
-                  id="userPw"
-                  name="pw"
-                  placeholder="비밀번호"
-                />
-                <!-- <button id="x-icon"></button> -->
+                <label for="userPw">
+                  <input
+                    class="form-user-pw"
+                    type="text"
+                    id="userPw"
+                    name="pw"
+                    placeholder="비밀번호"
+                  />
+                  <button
+                    type="button"
+                    class="e-icon"
+                  ></button>
+                </label>
               </div>
-            </form>
-            <ul class="checkbox-wrap">
-              <li class="btn-check">
-                <input type="checkbox" id="checkboxLoginOuto" class="check-login-outo" />
-              </li>
-              자동로그인
-            </ul>
-            <button type="submit" class="login-button"></button>
-            <ul class="find-btn-wrap">
-              <li>
-                <a href="" class="find-id">아이디 찾기</a>
-                <a href="" class="find-pw">비밀번호 찾기</a>
-              </li>
-            </ul>
-            <p>
-              아직 계정이 없으신가요?
-              <a href="" class="btn-join">회원가입</a>
-            </p>
-          </section>
-        </div>
-      </main>
+            </fieldset>
+          </form>
+          <ul class="checkbox-wrap">
+            <li class="btn-check">
+              <label for=""></label>
+              <input
+                type="checkbox"
+                id="checkboxLoginAuto"
+                class="check-login-auto"
+              />
+            </li>
+            자동 로그인
+          </ul>
+          <button type="submit" class="login-button">
+            로그인하기
+          </button>
+          <ul class="find-btn-wrap">
+            <li>
+              <a href="" class="find-id">아이디 찾기</a>
+              <a href="" class="find-pw">비밀번호 찾기</a>
+            </li>
+          </ul>
+          <p>
+            아직 계정이 없으신가요?
+            <a href="" class="btn-join">회원가입</a>
+          </p>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
-<!-- <div>
-          <h1>
-            <a href=""
-              ><img src="" alt="TAING ID 로그인"
-            /></a>
-          </h1>
-        </div>
-        <form>
-          <div>
-            <input
-              type="text"
-              id="input-login-box"
-              name=""
-              placeholder="아이디"
-            />
-          </div>
-        </form> -->
-
-        
