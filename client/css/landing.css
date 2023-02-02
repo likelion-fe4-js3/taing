@@ -164,6 +164,7 @@ footer::before {
   .login-button {
     width: 11.75rem;
     height: 2.125rem;
+    margin-top: 1rem;
   }
 
   .login-button span {
@@ -243,9 +244,24 @@ footer::before {
     margin-bottom: 1.625rem;
   }
 
+  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
+    content: url(../assets/landing/tablet_mobile_image/lovecatcher.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="findingtreasure"] {
+    content: url(../assets/landing/tablet_mobile_image/findingtreasure.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="alcholholiccitygirl2"] {
+    content: url(../assets/landing/tablet_mobile_image/alcholholiccitygirl2.png);
+  }
+  .movie-thumbnail-slide-wrapper img[src*="island"] {
+    content: url(../assets/landing/tablet_mobile_image/island.png);
+  }
+
   .rolling-banner-thumnail {
     gap: 0.75rem;
-    margin-bottom: 0.3125rem;
+    margin-bottom: 0.725rem;
   }
 
   .rolling-banner-thumnail img {
@@ -388,13 +404,12 @@ footer::before {
   }
 
   .scroll-section-1 .message-wrapper {
-    margin-top: 3rem;
     margin-bottom: 2rem;
   }
 
   .movie-thumbnail-slide-wrapper {
     gap: 0.75rem;
-    padding-left: 1.25rem;
+    padding-left: 7rem;
   }
 
   /* 스크롤 섹션 1 끝 */
@@ -425,9 +440,24 @@ footer::before {
     margin-bottom: 2rem;
   }
 
+  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
+    content: url(../assets/landing/tablet_mobile_image/lovecatcher.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="findingtreasure"] {
+    content: url(../assets/landing/tablet_mobile_image/findingtreasure.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="alcholholiccitygirl2"] {
+    content: url(../assets/landing/tablet_mobile_image/alcholholiccitygirl2.png);
+  }
+  .movie-thumbnail-slide-wrapper img[src*="island"] {
+    content: url(../assets/landing/tablet_mobile_image/island.png);
+  }
+
   .rolling-banner-thumnail {
     gap: 0.75rem;
-    margin-bottom: 0.3125rem;
+    margin-bottom: 0.725rem;
   }
 
   .rolling-banner-thumnail img {
@@ -457,10 +487,6 @@ footer::before {
     margin-bottom: 0.875rem;
   }
 
-  .scroll-section-3 .login-button {
-    margin-top: 1.125rem;
-  }
-
   /* 스크롤 섹션 3 끝 */
 
   /* footer 시작 */
@@ -474,7 +500,6 @@ footer::before {
   }
 
   .guide-list li {
-    margin-bottom: 0.25rem;
     display: inline;
     margin-right: 1.25rem;
   }
@@ -503,7 +528,7 @@ footer::before {
 
   .footer-info-list span:not(:first-of-type)::before,
   .footer-info-list a:not(:first-of-type)::before {
-    height: 9px;
+    height: 0.625px;
     margin: 0 4px 0 2px;
   }
 
@@ -531,11 +556,237 @@ footer::before {
 
 /* 테블릿 끝 */
 
-/* 
-@media (min-width: 768px) and (max-width: 1919px) {
+/* 데스크탑 시작 */
+
+@media (min-width: 1200px) {
+  /* 데스크탑 공통 시작 */
+
+  .login-button {
+    width: 31.625rem;
+    height: 5rem;
+    margin-top: 2.25rem;
+  }
+
+  .login-button span {
+    font: var(--text-label);
+    font-size: var(--text-size-xl);
+    line-height: 5rem;
+    margin-left: 6.75rem;
+  }
+
+  .login-button::before {
+    background-size: 4rem;
+    background-position-x: 0.5rem;
+  }
+
+  /* 데스크탑 공통 끝 */
+
+  /* 스크롤 섹션 0 시작 */
+
+  .scroll-section-0 {
+    background-size: 100%;
+    max-height: 40rem;
+  }
+
+  .scroll-section-0 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xxxl);
+  }
+
+  .scroll-section-0 .message-subtitle {
+    font: var(--text-label);
+    font-size: var(--text-size-xl);
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 스크롤 섹션 0 끝 */
+
+  /* 스크롤 섹션 1 시작 */
+
+  .scroll-section-1 {
+    margin-top: 10rem;
+  }
+
+  .scroll-section-1 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xxxl);
+  }
+
+  .scroll-section-1 .message-subtitle {
+    font: var(--text-label);
+    font-size: var(--text-size-xl);
+    margin-top: 1.25rem;
+  }
+
+  .scroll-section-1 .message-subtitle p:last-child {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-l);
+    margin-top: 0.5rem;
+  }
+
+  .movie-thumbnail-slide-wrapper {
+    gap: 1.5rem;
+    margin: 3.25rem 0 1.375rem;
+    padding-left: 31.625rem;
+  }
+
+  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
+    content: url(../assets/landing/desktop_image/lovecatcher@x2.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="findingtreasure"] {
+    content: url(../assets/landing/desktop_image/findingtreasure@x2.png);
+  }
+  .movie-thumbnail-slide-wrapper
+    img[src*="alcholholiccitygirl2"] {
+    content: url(../assets/landing/desktop_image/alcholholiccitygirl2@x2.png);
+  }
+  .movie-thumbnail-slide-wrapper img[src*="island"] {
+    content: url(../assets/landing/desktop_image/island@x2.png);
+  }
+
+  /* 스크롤 섹션 1 끝 */
+
+  /* 스크롤 섹션 2 시작 */
+  .scroll-section-2 {
+    margin-top: 10rem;
+  }
+
+  .scroll-section-2 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xxxl);
+  }
+
+  .scroll-section-2 .message-subtitle {
+    font: var(--text-label);
+    font-size: var(--text-size-xl);
+  }
+
+  .scroll-section-2 .message-subtitle p:last-child {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-l);
+  }
+
+  .rolling-banner-wrapper {
+    margin: 4.375rem 0;
+  }
+
+  .rolling-banner-thumnail {
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .rolling-banner-thumnail img {
+    border-radius: 0.25rem;
+  }
+
+  .rolling-banner-thumnail img[src*="slide-umbrella"] {
+    content: url(../assets/landing/desktop_image/slide-umbrella@x2.png);
+  }
+  .rolling-banner-thumnail img[src*="slide-manager"] {
+    content: url(../assets/landing/desktop_image/slide-manager@x2.png);
+  }
+  .rolling-banner-thumnail img[src*="slide-letmein"] {
+    content: url(../assets/landing/desktop_image/slide-letmein@x2.png);
+  }
+  .rolling-banner-thumnail img[src*="slide-youquiz"] {
+    content: url(../assets/landing/desktop_image/slide-youquiz@x2.png);
+  }
+  .rolling-banner-thumnail img[src*="slide-foodchronicle"] {
+    content: url(../assets/landing/desktop_image/slide-foodchronicle@x2.png);
+  }
+
+  /* 스크롤 섹션 2 끝 */
+
+  /* 스크롤 섹션 3 시작 */
+
+  .scroll-section-3 {
+    padding: 18.125rem 0;
+  }
+
+  .scroll-section-3 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xxxl);
+  }
+
+  .scroll-section-3 .message-wrapper img {
+    width: 17.5rem;
+    height: 6.875rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .scroll-section-3 .message-wrapper .message-title {
+    margin-bottom: 2.25rem;
+  }
+
+  .scroll-section-3 .login-button {
+    margin-top: 1.125rem;
+  }
+
+  /* 스크롤 섹션 3 끝 */
+
+  /* footer 시작 */
+
+  footer {
+    padding: 8.75rem 4.25rem 10.625rem;
+  }
+
+  .guide-list {
+    margin-top: 1.75rem;
+  }
+
+  .guide-list li {
+    display: inline;
+    margin-right: 2.25rem;
+    font-size: var(--text-size-l);
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 1.5rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font-size: var(--text-size-l);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 1rem;
+    margin: 0 8px 0 6px;
+  }
+
+  .sns-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 1.25rem;
+  }
+
+  .sns-wrapper img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+    font-size: var(--text-size-l);
+  }
+
+  /* footer 끝 */
 }
-
-@media (min-width: 1920px) {
-} 
-
-*/
+/* 데스크탑 끝 */
