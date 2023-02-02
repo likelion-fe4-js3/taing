@@ -2,75 +2,213 @@
 @import url(./common/reset.css);
 @import url(./common/theme.css);
 
+/* 공통 스타일 시작 */
+
 body {
   background-color: black;
 }
 
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* 스크롤 섹션 0 시작 */
+
+.scroll-section-0 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 20%
+    ),
+    url("../assets/landing/tablet_mobile_image/backgorund.png");
+  background-repeat: no-repeat;
+  height: 107vw;
+  max-height: 25rem;
+}
+
+.message-title {
+  color: var(--white);
+}
+
+.message-subtitle {
+  color: var(--gray-400);
+}
+
+.message-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-button {
+  display: block;
+  position: relative;
+  margin: 1rem auto 0 auto;
+  color: var(--white);
+  background-color: var(--brand-red-1);
+  border: 0px;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.login-button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../assets/landing/taing-symbol.svg)
+    no-repeat;
+}
+
+/* 스크롤 섹션 0 끝 */
+
+/* 스크롤 섹션 1 시작 */
+
+.movie-thumbnail-slide-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.movie-thumbnail-slide img {
+  border-radius: 0.25rem;
+}
+
+/* 스크롤 섹션 1 끝 */
+
+/* 스크롤 섹션 2 시작 */
+
+.rolling-banner-thumnail {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+/* 스크롤 섹션 2 끝 */
+
+/* 스크롤 섹션 3 시작 */
+
+/* 스크롤 섹션 3 끝 */
+
+/* footer 시작 */
+footer::before {
+  content: "";
+  display: block;
+  background-color: var(--gray-800);
+  width: 100%;
+  height: 1px;
+}
+
+.guide-list a {
+  color: var(--gray-200);
+  text-decoration: none;
+}
+
+.guide-list a:hover {
+  color: var(--gray-100);
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.guide-list li {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+}
+
+.footer-info-list li {
+  color: var(--gray-500);
+}
+
+.footer-info-list span:not(:first-of-type)::before,
+.footer-info-list a:not(:first-of-type)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  background-color: var(--gray-800);
+}
+
+.sns-wrapper a {
+  text-decoration: none;
+}
+
+.sns-wrapper img:hover {
+  filter: brightness(180%);
+  transition: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.copyright {
+  color: var(--gray-500);
+  font: var(--text-paragraph);
+}
+
+/* footer 끝 */
+
+/* 공통 스타일 끝 */
+
 /* 모바일  */
 @media (min-width: 320px) and (max-width: 767px) {
-  /* 스크롤 섹션 0 시작 */
-  .scroll-section-0 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0) 20%
-      ),
-      url("../assets/landing/tablet_mobile_image/backgorund.png");
-    background-repeat: no-repeat;
-    background-size: 150%;
-    height: 107vw;
-    max-height: 25rem;
-  }
-
-  .message-wrapper {
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .message-title {
-    color: var(--white);
-  }
-
-  .message-subtitle {
-    color: var(--gray-400);
-  }
+  /* 모바일 공통 시작 */
 
   .login-button {
-    display: block;
-    position: relative;
-    margin: 1rem auto 0 auto;
-    color: var(--white);
-    background-color: var(--brand-red-1);
-    border: 0px;
-    border-radius: 0.25rem;
     width: 11.75rem;
     height: 2.125rem;
-    text-decoration: none;
   }
 
   .login-button span {
+    font: var(--text-label);
+    font-size: var(--text-size-s);
     line-height: 2.125rem;
     margin-left: 2.375rem;
   }
 
   .login-button::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url(../assets/landing/taing-symbol.svg)
-      no-repeat;
     background-size: 1.625rem;
     background-position-x: 0.5rem;
+  }
+
+  /* 모바일 공통 끝 */
+
+  /* 스크롤 섹션 0 시작 */
+
+  .scroll-section-0 {
+    background-size: 150%;
+  }
+
+  .scroll-section-0 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-m);
+  }
+
+  .scroll-section-0 .message-subtitle {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
   }
 
   /* 스크롤 섹션 0 끝 */
 
   /* 스크롤 섹션 1 시작 */
+
+  .scroll-section-1 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-l);
+  }
+
+  .scroll-section-1 .message-subtitle {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
 
   .scroll-section-1 .message-wrapper {
     margin-top: 3rem;
@@ -78,20 +216,27 @@ body {
   }
 
   .movie-thumbnail-slide-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
     gap: 0.75rem;
-    overflow: hidden;
     padding-left: 1.25rem;
-  }
-
-  .movie-thumbnail-slide img {
-    border-radius: 0.25rem;
   }
 
   /* 스크롤 섹션 1 끝 */
 
   /* 스크롤 섹션 2 시작 */
+
+  .scroll-section-2 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-l);
+  }
+
+  .scroll-section-2 .message-subtitle {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  .scroll-section-2 .message-subtitle p:last-child {
+    display: none;
+  }
 
   .scroll-section-2 .message-wrapper {
     margin-top: 3rem;
@@ -99,10 +244,7 @@ body {
   }
 
   .rolling-banner-thumnail {
-    display: flex;
-    flex-flow: row nowrap;
     gap: 0.75rem;
-    overflow: hidden;
     margin-bottom: 0.3125rem;
   }
 
@@ -115,7 +257,12 @@ body {
   /* 스크롤 섹션 3 시작 */
 
   .scroll-section-3 {
-    padding: 6.25rem 0;
+    padding: 3.25rem 0;
+  }
+
+  .scroll-section-3 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-m);
   }
 
   .scroll-section-3 .message-wrapper img {
@@ -140,16 +287,8 @@ body {
     padding: 3.25rem 1rem 5.125rem 1rem;
   }
 
-  .guide-list a {
-    color: var(--gray-200);
-    text-decoration: none;
-  }
-
-  .guide-list a:hover {
-    color: var(--gray-100);
-    transition: color;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
+  .guide-list {
+    margin-top: 0.5rem;
   }
 
   .guide-list li {
@@ -159,31 +298,244 @@ body {
     margin-bottom: 0;
   }
 
+  .footer-info-list {
+    display: none;
+  }
+
   .sns-wrapper {
     margin-top: 1rem;
   }
+
   .sns-wrapper a {
-    text-decoration: none;
     margin-right: 0.5rem;
   }
 
-  .sns-wrapper img:hover {
-    filter: brightness(180%);
-    transition: filter;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
-  }
-
   .copyright {
-    color: var(--gray-500);
     margin-top: 1rem;
+    font-size: var(--text-size-s);
   }
 
   /* footer 끝 */
 }
 
+/* 모바일 끝 */
+
+/* 테블릿 시작 */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* 태블릿 공통 시작 */
+
+  .login-button {
+    width: 17.6875rem;
+    height: 3rem;
+    margin-top: 0.875rem;
+  }
+
+  .login-button span {
+    font: var(--text-label);
+    font-size: var(--text-size-m);
+    line-height: 3rem;
+    margin-left: 3.75rem;
+  }
+
+  .login-button::before {
+    background-size: 2.25rem;
+    background-position-x: 0.5rem;
+  }
+
+  /* 태블릿 공통 끝 */
+
+  /* 스크롤 섹션 0 시작 */
+
+  .scroll-section-0 {
+    background-size: 100%;
+  }
+
+  .scroll-section-0 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-l);
+  }
+
+  .scroll-section-0 .message-subtitle {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+    margin-top: 0.5rem;
+    margin-bottom: 0.875rem;
+  }
+
+  /* 스크롤 섹션 0 끝 */
+
+  /* 스크롤 섹션 1 시작 */
+
+  .scroll-section-1 {
+    margin-top: 2.5rem;
+  }
+
+  .scroll-section-1 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xl);
+  }
+
+  .scroll-section-1 .message-subtitle {
+    font: var(--text-label);
+    font-size: var(--text-size-m);
+  }
+
+  .scroll-section-1 .message-subtitle p:last-child {
+    font: var(--text-label);
+    font-size: var(--text-size-s);
+    margin-top: 0.25rem;
+  }
+
+  .scroll-section-1 .message-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .movie-thumbnail-slide-wrapper {
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+  }
+
+  /* 스크롤 섹션 1 끝 */
+
+  /* 스크롤 섹션 2 시작 */
+
+  .scroll-section-2 {
+    margin-top: 5rem;
+  }
+
+  .scroll-section-2 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xl);
+  }
+
+  .scroll-section-2 .message-subtitle {
+    font: var(--text-label);
+    font-size: var(--text-size-m);
+  }
+
+  .scroll-section-2 .message-subtitle p:last-child {
+    font: var(--text-label);
+    font-size: var(--text-size-s);
+  }
+
+  .scroll-section-2 .message-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .rolling-banner-thumnail {
+    gap: 0.75rem;
+    margin-bottom: 0.3125rem;
+  }
+
+  .rolling-banner-thumnail img {
+    border-radius: 0.25rem;
+  }
+
+  /* 스크롤 섹션 2 끝 */
+
+  /* 스크롤 섹션 3 시작 */
+
+  .scroll-section-3 {
+    padding: 6.25rem 0;
+  }
+
+  .scroll-section-3 .message-title {
+    font: var(--text-heading);
+    font-size: var(--text-size-xl);
+  }
+
+  .scroll-section-3 .message-wrapper img {
+    width: 8.4375rem;
+    height: 3.25rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .scroll-section-3 .message-wrapper .message-title {
+    margin-bottom: 0.875rem;
+  }
+
+  .scroll-section-3 .login-button {
+    margin-top: 1.125rem;
+  }
+
+  /* 스크롤 섹션 3 끝 */
+
+  /* footer 시작 */
+
+  footer {
+    padding: 4.375rem 2.5rem 6.25rem;
+  }
+
+  .guide-list {
+    margin-top: 1rem;
+  }
+
+  .guide-list li {
+    margin-bottom: 0.25rem;
+    display: inline;
+    margin-right: 1.25rem;
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 0.75rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 9px;
+    margin: 0 4px 0 2px;
+  }
+
+  .sns-wrapper {
+    margin-top: 0.75rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 0.5rem;
+  }
+
+  .sns-wrapper img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .copyright {
+    margin-top: 0.75rem;
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  /* footer 끝 */
+}
+
+/* 테블릿 끝 */
+
+/* 
 @media (min-width: 768px) and (max-width: 1919px) {
 }
 
 @media (min-width: 1920px) {
-}
+} 
+
+*/
