@@ -7,51 +7,65 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="stylesheet" href="../css/profilePage.css" />
     <title>프로필선택</title>
   </head>
   <body>
     <main class="main">
       <h2 class="profile">
         프로필 선택
-        <p class="profile-content">
+        <p class="profile-content --text-label">
           시청할 프로필을 선택해주세요.
         </p>
       </h2>
-      <section class="profile-image">
-        <a href="#">
-          <img
-            src="../assets/profilePage/image/profile001.png"
-            alt="슬비쌤의 프로필 사진"
-          />
-          <i class="lock-icon"></i>
-          <p>슬비쌤</p>
-        </a>
-        <a href="#">
-          <img
-            src="../assets/profilePage/image/profile002.png"
-            alt="범쌤의 프로필 사진"
-          />
-          <i class="lock-icon"></i>
-          <p>범쌤</p>
-        </a>
-        <a href="#">
-          <img
-            src="../assets/profilePage/image/profile003.png"
-            alt="야무쌤의 프로필 사진"
-          />
-          <i class="lock-icon"></i>
-          <p>야무쌤</p>
-        </a>
-        <a href="#">
-          <img
-            src="../assets/profilePage/image/profile004.png"
-            alt="이듬의 프로필 사진"
-          />
-          <i class="lock-icon"></i>
-          <p>이듬</p>
-        </a>
-      </section>
-      <button class="profile-edit-button">
+
+      <ul class="profile-image --text-paragraph">
+        <li>
+          <button
+            type="button"
+            aria-labelledby="profile-button-id"
+          >
+            <img
+              src="../assets/profilePage/image/profile001.png"
+              alt="슬비쌤의 프로필 사진"
+            />
+            <i class="lock-icon"></i>
+          </button>
+          <span class="--text-paragraph"> 슬비쌤 </span>
+        </li>
+        <li>
+          <button type="button">
+            <img
+              src="../assets/profilePage/image/profile002.png"
+              alt="범쌤의 프로필 사진"
+            />
+            <i class="lock-icon"></i>
+          </button>
+          <span class="--text-paragraph"> 범쌤 </span>
+        </li>
+        <li>
+          <button type="button">
+            <img
+              src="../assets/profilePage/image/profile003.png"
+              alt="야무쌤의 프로필 사진"
+            />
+            <i class="lock-icon"></i>
+          </button>
+          <span class="--text-paragraph"> 야무쌤 </span>
+        </li>
+        <li>
+          <button type="button">
+            <img
+              src="../assets/profilePage/image/profile004.png"
+              alt="이듬의 프로필 사진"
+            />
+            <i class="lock-icon"></i>
+          </button>
+          <span class="--text-paragraph"> 이듬 </span>
+        </li>
+      </ul>
+
+      <button class="profile-edit-button --text-label">
         프로필 편집
       </button>
     </main>
