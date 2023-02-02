@@ -2,9 +2,21 @@
 @import url(./common/normalize.css);
 @import url(./common/theme.css);
 
+/* common */
+
 body {
   background-color: var(--black);
   color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style-type: none;
 }
 
 /* 공통 swiper */
@@ -15,38 +27,172 @@ body {
 
 .swiper h2 {
   margin-bottom: 4px;
+  font: var(--text-heading);
+  font-size: var(--text-size-m);
 }
 
 .swiper .swiper-wrapper {
-  height: 133px;
+  /* height: 133px; */
 }
 
-.swiper .swiper-slide {
-  width: 92px;
-}
 .swiper .swiper-slide a {
   display: block;
   height: 100%;
-  border-radius: 4px;
-  object-fit: cover;
+  border-radius: 6px;
   overflow: hidden;
 }
 
-/* 메인 컨텐츠 */
-/* 티빙에서 꼭 봐야하는 콘텐츠 */
-.recommend-taing.swiper .swiper-wrapper {
-  height: 133px;
+.swiper .swiper-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
-.recommend-taing.swiper .swiper-slide {
+/* 공통 뱃지 */
+.swiper-slide.badge {
+  position: relative;
+}
+
+.swiper-slide.badge::before {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+/* 메인 컨텐츠 */
+/* 타잉에서 꼭 봐야하는 콘텐츠 */
+.recommend-taing .swiper-slide {
   width: 92px;
 }
 
-/* quick-vod */
-.quick-vod.swiper .swiper-wrapper {
-  height: 80px;
+/* quick VOD */
+.quick-vod .swiper-slide {
+  width: 145px;
 }
 
-.quick-vod.swiper .swiper-slide {
-  width: 143px;
+.quick-vod .swiper-slide h3 {
+  margin-top: 4px;
+  font: var(--text-heading);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+}
+
+.quick-vod .swiper-slide p {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-300);
+}
+
+.swiper-slide.badge-quick-vod::before {
+  content: "Quick VOD";
+  background-color: var(--badge-pink);
+}
+
+/* 실시간 인기 프로그램 */
+.realtime-popular .swiper-slide {
+  width: 92px;
+}
+
+.realtime-popular .swiper-slide a {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.realtime-popular .swiper-slide .item-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.realtime-popular .swiper-slide .rank-number {
+  font: var(--text-heading);
+  font-size: var(--text-size-xxl);
+  line-height: var(--text-size-xxl);
+  font-style: italic;
+}
+
+.realtime-popular .swiper-slide p {
+  position: relative;
+  padding-right: 8px;
+  margin-top: 20px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  line-height: var(--text-size-s);
+  color: var(--gray-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.realtime-popular .swiper-slide p::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  bottom: var(--text-size-s);
+  right: 0;
+  background-color: var(--brand-red-1);
+  border-radius: 50%;
+}
+
+/* 인기 LIVE 채널 */
+.live-popular .swiper-slide {
+  width: 145px;
+}
+
+.live-popular .swiper-slide .item-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.live-popular .item-info .rank-number {
+  font: var(--text-heading);
+  font-size: var(--text-size-xxl);
+  font-style: italic;
+  color: var(--white);
+}
+
+.live-popular .item-info .program-info {
+  overflow: hidden;
+}
+
+.live-popular .item-info h3 {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+  line-height: var(--text-size-s);
+}
+
+.live-popular .item-info h3 span {
+  display: block;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-popular .item-info p {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  line-height: var(--text-size-s);
+  color: var(--gray-300);
+}
+
+/* 오직 타잉에만 있어요 */
+.only-taing.swiper .swiper-slide {
+  width: 139px;
 }
