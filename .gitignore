@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node,visualstudiocode,webstorm,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node,visualstudiocode,webstorm,windows
 
-.github/
-
 ### macOS ###
 # General
 .DS_Store
