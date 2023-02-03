@@ -1,0 +1,228 @@
+@import url(../css/common/normalize.css);
+@import url(../css/common/reset.css);
+@import url(../css/common/theme.css);
+
+/* --------------------------------- 모든 디바이스 -------------------------------- */
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  background-color: var(--black);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile {
+  font: var(--text-heading);
+  color: var(--white);
+  text-align: center;
+}
+
+.profile-content {
+  font: var(--text-label);
+  color: var(--gray-200);
+  margin-top: 16px;
+}
+
+.profile-image {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 32px 0;
+  padding: 0 30px;
+  gap: 4px;
+}
+
+.profile-image button {
+  display: block;
+  border: none;
+  border-radius: 20px;
+  padding: 0px;
+  position: relative;
+}
+
+.profile-image img {
+  filter: brightness(60%);
+  width: 100%;
+}
+
+.lock-icon {
+  background: url("../assets/profilePage/icon_lock.svg")
+    no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.profile-image span {
+  color: var(--gray-300);
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  display: block;
+  margin-top: 12px;
+}
+
+.profile-edit-button:hover {
+  color: var(--gray-100);
+  border-color: var(--gray-100);
+}
+
+.profile-edit-button {
+  font: var(--text-label);
+  color: var(--gray-300);
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid var(--gray-600);
+  border-radius: 4px;
+}
+
+/* -------------------------------- 모바일 디바이스 -------------------------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+  .main {
+    font-size: var(--text-size-m);
+    height: fit-content;
+    padding-top: 44px;
+  }
+
+  .profile {
+    font-size: var(--text-size-m);
+    padding-top: 28px;
+  }
+
+  .profile-content {
+    font-size: var(--text-size-s);
+    margin-top: 16px;
+  }
+
+  .profile-image {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    align-content: space-between;
+    margin: 32px auto;
+  }
+
+  .profile-image button {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .lock-icon {
+    background: url("../assets/profilePage/icon_lock.svg")
+      no-repeat;
+    top: 9vw;
+    left: 9vw;
+    transform: scale(83%, 83%);
+  }
+
+  .profile-edit-button {
+    font-size: var(--text-size-s);
+    width: 42%;
+    height: 42px;
+  }
+}
+
+/* -------------------------------- 태블릿 디바이스 -------------------------------- */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main {
+    height: fit-content;
+    padding-top: 74px;
+  }
+
+  .profile {
+    font-size: var(--text-size-xl);
+  }
+
+  .profile-content {
+    font-size: var(--text-size-m);
+    margin-top: 8px;
+  }
+
+  .profile-image {
+    height: fit-content;
+    flex-flow: row nowrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 28px 0 44px 0;
+  }
+
+  .profile-image img {
+    content: url(../assets/profilePage/image/profile001@2x.png);
+  }
+
+  .lock-icon {
+    top: 30%;
+    left: 30%;
+    transform: scale(83%, 83%);
+  }
+
+  .profile-image button {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .profile-edit-button {
+    font-size: var(--text-size-s);
+    width: 20%;
+    height: 50px;
+  }
+}
+
+/* -------------------------------- 데스크탑 디바이스 ------------------------------- */
+@media (min-width: 1200px) {
+  .main {
+    height: 888px;
+    padding-top: 130px;
+  }
+
+  .profile {
+    font-size: var(--text-size-xxxl);
+  }
+
+  .profile-content {
+    font-size: var(--text-size-xl);
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 52px;
+    justify-content: center;
+    margin: auto;
+    padding: 44px 0 66px 0;
+  }
+
+  .profile-image img {
+    content: url(../assets/profilePage/image/profile001@3x.png);
+  }
+
+  .profile-image button {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .lock-icon {
+    top: 38%;
+    left: 38%;
+    transform: scale(120%, 120%);
+  }
+
+  .profile-image span {
+    font-size: var(--text-size-xl);
+    margin-top: 16px;
+  }
+
+  .profile-edit-button {
+    font-size: var(--text-size-xl);
+    width: 272px;
+    height: 86px;
+  }
+}
