@@ -28,11 +28,7 @@ ul {
 .swiper h2 {
   margin-bottom: 4px;
   font: var(--text-heading);
-  font-size: var(--text-size-m);
-}
-
-.swiper .swiper-wrapper {
-  /* height: 133px; */
+  font-size: var(--text-size-s);
 }
 
 .swiper .swiper-slide a {
@@ -70,6 +66,17 @@ ul {
   width: 92px;
 }
 
+.recommend-taing .swiper-slide .item-info {
+  display: none;
+  margin-top: 8px;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* quick VOD */
 .quick-vod .swiper-slide {
   width: 145px;
@@ -77,13 +84,13 @@ ul {
 
 .quick-vod .swiper-slide h3 {
   margin-top: 4px;
-  font: var(--text-heading);
+  font: var(--text-label);
   font-size: var(--text-size-s);
   color: var(--gray-200);
 }
 
 .quick-vod .swiper-slide p {
-  font: var(--text-label);
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
   color: var(--gray-300);
 }
@@ -195,4 +202,150 @@ ul {
 /* 오직 타잉에만 있어요 */
 .only-taing.swiper .swiper-slide {
   width: 139px;
+}
+
+/* 반응형 디자인 */
+/* Tablet, Desktop 공통*/
+@media (min-width: 768px) {
+  .recommend-taing .swiper-slide .item-info {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* 공통 swiper */
+  .swiper {
+    padding: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  .swiper h2 {
+    margin-bottom: 8px;
+    font: var(--text-heading);
+    font-size: var(--text-size-m);
+  }
+
+  /* 공통 뱃지 */
+  .swiper-slide.badge::before {
+    top: 6px;
+    left: 6px;
+    padding: 4px 8px;
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+    border-radius: 6px;
+  }
+
+  /* 타잉에서 꼭 봐야하는 콘텐츠 */
+  .recommend-taing .swiper-slide {
+    width: 130px;
+  }
+
+  /* quick VOD */
+  .quick-vod .swiper-slide {
+    width: 224px;
+  }
+
+  /* 실시간 인기 프로그램 */
+  .realtime-popular .swiper-slide {
+    width: 130px;
+  }
+
+  .realtime-popular .swiper-slide .rank-number {
+    font-size: var(--text-size-xxl);
+    line-height: var(--text-size-xxl);
+  }
+
+  .realtime-popular .swiper-slide p {
+    padding-right: 12px;
+    margin-top: 20px;
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+  }
+
+  .realtime-popular .swiper-slide p::after {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  /* 공통 swiper */
+  .swiper {
+    padding: 0 70px;
+    margin-bottom: 40px;
+  }
+
+  .swiper h2 {
+    margin-bottom: 12px;
+    font: var(--text-heading);
+    font-size: var(--text-size-xl);
+  }
+
+  /* 공통 뱃지 */
+  .swiper-slide.badge::before {
+    top: 8px;
+    left: 8px;
+    padding: 8px 10px;
+    font-size: var(--text-size-m);
+    line-height: var(--text-size-m);
+    border-radius: 8px;
+  }
+
+  /* 타잉에서 꼭 봐야하는 콘텐츠 */
+  .recommend-taing .swiper-slide {
+    width: 240px;
+  }
+
+  .recommend-taing .swiper-slide .item-info {
+    font-size: var(--text-size-l);
+  }
+
+  /* quick VOD */
+  .quick-vod .swiper-slide {
+    width: 345px;
+  }
+
+  .quick-vod .swiper-slide h3 {
+    margin-top: 10px;
+    font-size: var(--text-size-l);
+  }
+
+  .quick-vod .swiper-slide p {
+    margin-top: 4px;
+    font-size: var(--text-size-l);
+  }
+
+  /* 실시간 인기 프로그램 */
+  .realtime-popular .swiper-slide {
+    width: 240px;
+  }
+
+  .realtime-popular .swiper-slide a {
+    padding-bottom: 48px;
+  }
+
+  .realtime-popular .swiper-slide .item-info {
+    gap: 20px;
+  }
+
+  .realtime-popular .swiper-slide .rank-number {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .realtime-popular .swiper-slide p {
+    padding-right: 16px;
+    margin-top: 42px;
+    font-size: var(--text-size-l);
+    line-height: var(--text-size-l);
+    font-weight: 400;
+  }
+
+  .realtime-popular .swiper-slide p::after {
+    width: 8px;
+    height: 8px;
+    bottom: var(--text-size-l);
+  }
 }
