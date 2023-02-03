@@ -187,7 +187,6 @@ Main {
 .find-btn-wrap {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   padding: 20px 0px 0px;
@@ -209,12 +208,17 @@ Main {
 
 /* 아직 계정이 없으신가요 */
 .accountYet {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-start;
-  align-self: stretch;
-  box-sizing: border-box;
-  flex-shrink: 0;
-} */
+  padding: 20px 0px 0px;
+  width: 288px;
+  line-height: 19.2px;
+  color: var(--gray-500);
+  text-align: center;
+  font-size: var(--text-size-s);
+}
+
+.btn-join {
+  font-weight: 400;
+  font-size: var(--text-size-s);
+  line-height: 19.2px;
+  color: var(--gray-300);
+}
