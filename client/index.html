@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta
+      name="description"
+      content="티빙의 랜딩페이지입니다. 티빙 오리지널 콘텐츠, 방송, 영화, 해외시리즈까지! 재미를 플레이해보세요."
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -55,30 +59,56 @@
         </div>
       </div>
       <div class="movie-thumbnail-slide-wrapper">
-        <div class="movie-thumbnail-slide">
+        <picture class="movie-thumbnail-slide">
+          <source
+            srcset="
+              ./assets/landing/desktop_image/lovecatcher@2x.png
+            "
+            media="(min-width: 1200px)"
+          />
           <img
             src="./assets/landing/tablet_mobile_image/lovecatcher.png"
             alt="러브캐쳐 영상 섬네일"
           />
-        </div>
-        <div class="movie-thumbnail-slide">
+        </picture>
+
+        <picture class="movie-thumbnail-slide">
+          <source
+            srcset="
+              ./assets/landing/desktop_image/findingtreasure@2x.png
+            "
+            media="(min-width: 1200px)"
+          />
           <img
             src="./assets/landing/tablet_mobile_image/findingtreasure.png"
             alt="보물찾기 영상 섬네일"
           />
-        </div>
-        <div class="movie-thumbnail-slide">
+        </picture>
+
+        <picture class="movie-thumbnail-slide">
+          <source
+            srcset="
+              ./assets/landing/desktop_image/foodchronicle@2x.png
+            "
+            media="(min-width: 1200px)"
+          />
           <img
             src="./assets/landing/tablet_mobile_image/alcholholiccitygirl2.png"
             alt="술꾼도시여자들2 영상 섬네일"
           />
-        </div>
-        <div class="movie-thumbnail-slide">
+        </picture>
+        <picture class="movie-thumbnail-slide">
+          <source
+            srcset="
+              ./assets/landing/desktop_image/bodyprice@2x.png
+            "
+            media="(min-width: 1200px)"
+          />
           <img
             src="./assets/landing/tablet_mobile_image/island.png"
             alt="아일랜드 영상 섬네일"
           />
-        </div>
+        </picture>
       </div>
     </section>
 
@@ -96,33 +126,82 @@
 
       <div class="rolling-banner-wrapper">
         <div class="rolling-banner-thumnail upper">
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-umbrella.png"
-            alt="슈룹 영상 섬네일"
-          />
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-manager.png"
-            alt="연예인 매니저로 살아남기 영상 섬네일"
-          />
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-letmein.png"
-            alt="렛미인 영상 섬네일"
-          />
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-umbrella@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-umbrella.png"
+              alt="슈룹 영상 섬네일"
+            />
+          </picture>
+
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-manager@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-manager.png"
+              alt="연예인 매니저로 살아남기 영상 섬네일"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-letmein@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-letmein.png"
+              alt="렛미인 영상 섬네일"
+            />
+          </picture>
         </div>
 
         <div class="rolling-banner-thumnail lower">
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-youquiz.png"
-            alt="유퀴즈 영상 섬네일"
-          />
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-foodchronicle.png"
-            alt="푸드 크로니클 영상 섬네일"
-          />
-          <img
-            src="./assets/landing/tablet_mobile_image/slide-umbrella.png"
-            alt="슈룹 영상 섬네일"
-          />
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-youquiz@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-youquiz.png"
+              alt="유퀴즈 영상 섬네일"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-foodchronicle@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-foodchronicle.png"
+              alt="푸드 크로니클 영상 섬네일"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./assets/landing/desktop_image/slide-umbrella@2x.png
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./assets/landing/tablet_mobile_image/slide-umbrella.png"
+              alt="슈룹 영상 섬네일"
+            />
+          </picture>
         </div>
       </div>
     </section>

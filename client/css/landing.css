@@ -93,6 +93,10 @@ body {
   overflow: hidden;
 }
 
+.rolling-banner-thumnail img {
+  border-radius: 0.25rem;
+}
+
 /* 스크롤 섹션 2 끝 */
 
 /* 스크롤 섹션 3 시작 */
@@ -244,28 +248,9 @@ footer::before {
     margin-bottom: 1.625rem;
   }
 
-  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
-    content: url(../assets/landing/tablet_mobile_image/lovecatcher.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="findingtreasure"] {
-    content: url(../assets/landing/tablet_mobile_image/findingtreasure.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="alcholholiccitygirl2"] {
-    content: url(../assets/landing/tablet_mobile_image/alcholholiccitygirl2.png);
-  }
-  .movie-thumbnail-slide-wrapper img[src*="island"] {
-    content: url(../assets/landing/tablet_mobile_image/island.png);
-  }
-
   .rolling-banner-thumnail {
     gap: 0.75rem;
     margin-bottom: 0.725rem;
-  }
-
-  .rolling-banner-thumnail img {
-    border-radius: 0.25rem;
   }
 
   /* 스크롤 섹션 2 끝 */
@@ -440,28 +425,9 @@ footer::before {
     margin-bottom: 2rem;
   }
 
-  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
-    content: url(../assets/landing/tablet_mobile_image/lovecatcher.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="findingtreasure"] {
-    content: url(../assets/landing/tablet_mobile_image/findingtreasure.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="alcholholiccitygirl2"] {
-    content: url(../assets/landing/tablet_mobile_image/alcholholiccitygirl2.png);
-  }
-  .movie-thumbnail-slide-wrapper img[src*="island"] {
-    content: url(../assets/landing/tablet_mobile_image/island.png);
-  }
-
   .rolling-banner-thumnail {
     gap: 0.75rem;
     margin-bottom: 0.725rem;
-  }
-
-  .rolling-banner-thumnail img {
-    border-radius: 0.25rem;
   }
 
   /* 스크롤 섹션 2 끝 */
@@ -631,21 +597,6 @@ footer::before {
     padding-left: 31.625rem;
   }
 
-  .movie-thumbnail-slide-wrapper img[src*="lovecatcher"] {
-    content: url(../assets/landing/desktop_image/lovecatcher@x2.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="findingtreasure"] {
-    content: url(../assets/landing/desktop_image/findingtreasure@x2.png);
-  }
-  .movie-thumbnail-slide-wrapper
-    img[src*="alcholholiccitygirl2"] {
-    content: url(../assets/landing/desktop_image/alcholholiccitygirl2@x2.png);
-  }
-  .movie-thumbnail-slide-wrapper img[src*="island"] {
-    content: url(../assets/landing/desktop_image/island@x2.png);
-  }
-
   /* 스크롤 섹션 1 끝 */
 
   /* 스크롤 섹션 2 시작 */
@@ -675,26 +626,6 @@ footer::before {
   .rolling-banner-thumnail {
     gap: 1.25rem;
     margin-bottom: 1rem;
-  }
-
-  .rolling-banner-thumnail img {
-    border-radius: 0.25rem;
-  }
-
-  .rolling-banner-thumnail img[src*="slide-umbrella"] {
-    content: url(../assets/landing/desktop_image/slide-umbrella@x2.png);
-  }
-  .rolling-banner-thumnail img[src*="slide-manager"] {
-    content: url(../assets/landing/desktop_image/slide-manager@x2.png);
-  }
-  .rolling-banner-thumnail img[src*="slide-letmein"] {
-    content: url(../assets/landing/desktop_image/slide-letmein@x2.png);
-  }
-  .rolling-banner-thumnail img[src*="slide-youquiz"] {
-    content: url(../assets/landing/desktop_image/slide-youquiz@x2.png);
-  }
-  .rolling-banner-thumnail img[src*="slide-foodchronicle"] {
-    content: url(../assets/landing/desktop_image/slide-foodchronicle@x2.png);
   }
 
   /* 스크롤 섹션 2 끝 */
