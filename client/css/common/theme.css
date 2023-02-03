@@ -17,100 +17,29 @@
   --brand-red-2: #e93945;
   --brand-dark-bg-1: #191919;
   --brand-dark-bg-2: #212121;
+  --badge-pink: #c73e4e;
+  --badge-green: #32b032;
+
+  /* 텍스트 스타일 */
+  --text-heading: 700 1rem/1.4 "Pretendard Variable";
+  --text-label: 600 1rem/1.5 "Pretendard Variable";
+  --text-paragraph: 400 1rem/1.6 "Pretendard Variable";
+
+  /* 폰트 사이즈 */
+  --text-size-s: 0.75rem; /* 12px */
+  --text-size-m: 1rem; /* 16px */
+  --text-size-l: 1.375rem; /* 22px */
+  --text-size-xl: 1.75rem; /* 28px */
+  --text-size-xxl: 2.375rem; /* 38px */
+  --text-size-xxxl: 3.125rem; /* 50px */
 }
 
 /* 텍스트 스타일 */
 
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+  font-family: "Pretendard Variable", Pretendard,
+    -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-.--text-heading-m {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 140%;
-  font-size: 1rem; /* 16px */
-}
-.--text-heading-l {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 140%;
-  font-size: 1.375rem; /* 22px */
-}
-.--text-heading-xl {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 140%;
-  font-size: 1.75rem; /* 28px */
-}
-.--text-heading-xxl {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 140%;
-  font-size: 2.375rem; /* 38px */
-}
-.--text-heading-xxxl {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 140%;
-  font-size: 3.125rem; /* 50px */
-}
-
-.--text-label-s {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 150%;
-  font-size: 0.75rem; /* 12px */
-}
-.--text-label-m {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 150%;
-  font-size: 1rem; /* 16px */
-}
-.--text-label-l {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 150%;
-  font-size: 1.375rem; /* 22px */
-}
-.--text-label-xl {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 150%;
-  font-size: 1.75rem; /* 28px */
-}
-.--text-label-xxl {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 150%;
-  font-size: 2.375rem; /* 38px */
-}
-
-.--text-paragraph-s {
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 160%;
-  font-size: 0.75rem; /* 12px */
-}
-.--text-paragraph-m {
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 160%;
-  font-size: 1rem; /* 16px */
-}
-.--text-paragraph-l {
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 160%;
-  font-size: 1.375rem; /* 22px */
-}
-.--text-paragraph-xl {
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 160%;
-  font-size: 1.75rem; /* 28px */
 }
