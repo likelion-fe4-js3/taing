@@ -28,10 +28,14 @@
                     placeholder="아이디"
                   />
                   <button
+                    id="idClose"
                     type="button"
                     class="x-icon"
                   ></button>
                 </label>
+                <!-- <div class="hint-place">
+                  <p>Hint Place</p>
+                </div> -->
               </div>
               <div class="user-pw">
                 <label for="userPw">
@@ -43,6 +47,7 @@
                     placeholder="비밀번호"
                   />
                   <button
+                    id="pwClose"
                     type="button"
                     class="e-icon"
                   ></button>
@@ -50,27 +55,31 @@
               </div>
             </fieldset>
           </form>
-          <ul class="checkbox-wrap">
-            <li class="btn-check">
-              <label for=""></label>
-              <input
-                type="checkbox"
-                id="checkboxLoginAuto"
-                class="check-login-auto"
-              />
-            </li>
-            자동 로그인
-          </ul>
+          <div class="btn-check">
+            <input
+              type="checkbox"
+              id="checkboxLoginAuto"
+              class="checkbox"
+            />
+            <label for="checkboxLoginAuto">&nbsp;</label>
+            <label for="checkboxLoginAuto">
+              자동로그인
+            </label>
+          </div>
           <button type="submit" class="login-button">
             로그인하기
           </button>
           <ul class="find-btn-wrap">
             <li>
-              <a href="" class="find-id">아이디 찾기</a>
-              <a href="" class="find-pw">비밀번호 찾기</a>
+              <a href="/">아이디 찾기</a>
+            </li>
+            <li>
+              <span class="divider" aria-hidden="true"
+                >ㅣ</span
+              ><a href="/"> 비밀번호 찾기 </a>
             </li>
           </ul>
-          <p>
+          <p class="accountYet">
             아직 계정이 없으신가요?
             <a href="" class="btn-join">회원가입</a>
           </p>

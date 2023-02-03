@@ -14,15 +14,14 @@ a {
 }
 
 Main {
-  background-color: aqua;
-  /* background-color: var(--brand-dark-bg-1); */
+  background-color: var(--black);
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   align-self: stretch;
   box-sizing: border-box;
-  padding: 1.75rem 0rem 0rem;
+  padding: 28px 0px 0px;
   flex-shrink: 0;
 }
 
@@ -31,68 +30,140 @@ Main {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  /* flex: 1; */
-  width: 100%;
-  height: 100%;
+  width: 319px;
+  height: 336px;
   box-sizing: border-box;
 }
 
 .login-content-wrap {
-  width: 19.938rem;
-  height: 22.75rem;
-  margin: 0.969rem;
+  width: 319px;
+  height: 173px;
+  margin: 0 15.5px 0 15.5px;
 }
 
 .login-title {
   text-align: center;
   font-weight: bold;
-  font-size: 1rem;
-}
-
-.login-title {
-  margin: 0 0 1.75rem 0;
-  /* margin-left: 102.5px; */
-  /* color: var(--white); */
-  /* size: 15px; */
+  font-size: var(--text-size-m);
+  padding: 0px;
+  color: var(--white);
 }
 
 .id-pw-form {
-  padding: 0 0.969rem 0 0;
+  padding: 28px 0 0 0;
 }
 
 .id-pw-form input {
+  font-family: var(--text-size-s);
+  font-weight: 400;
   background-color: var(--gray-700);
   border: none;
-  width: 18rem;
-  height: 2.875rem;
-  border-radius: 0.25rem;
-}
-
-.id-pw-form button {
+  border-radius: 4px;
+  padding: 0px 0px 0px 16px;
+  width: 288px;
+  height: 46px;
 }
 
 .user-id {
-  position: relative;
+  margin-bottom: 8px;
 }
 
-.form-user-id {
-  position: absolute;
+.user-id label {
+  position: relative;
 }
 
 .x-icon {
-  display: inline-block;
-  background-image: ;
-  background-repeat: no-repeat;
+  /* border-color: aliceblue; */
+  position: absolute;
+  top: 50%;
+  transform: translate(-20px, -50%);
+  height: 20px;
+  width: 20px;
+  right: 0;
+  background: url("../assets/login/idIcon@1x.svg");
+  /* background-position: center; */
+  border: 0;
 }
 
+/* .hint-place p {
+  display: inline;
+  font-size: var(--text-size-s);
+  font-weight: 400;
+  color: var(--gray-500);
+  margin: 4px 0px 8px 0px;
+} */
+
 /* 비번폼 */
-.user-pw {
-  margin: 1.938rem 0 0 0;
+.user-pw label {
   position: relative;
 }
 
-.form-user-pw {
+.e-icon {
+  border-color: aliceblue;
   position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(-20px, -50%);
+  width: 20px;
+  height: 20px;
+  right: 0;
+  background: url(../assets/login/pwIcon@1x.svg);
+  background-position: center;
+  border: 0;
+}
+
+.checkbox-wrap {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.btn-checkbox-wrap {
+  margin: 8px 0 16px 0;
+}
+
+.check-login-auto {
+  /* background: url(../assets/login/checkGrayFilled.svg); */
+  /* border : 0; */
+}
+
+.btn-check {
+  width: 100px;
+  /* height: 50px; */
+  margin: 8px 0 16px 0;
+  display: flex;
+  /* flex-flow: row nowrap; */
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.btn-check .checkbox {
+  display: none;
+}
+
+.btn-check .checkbox + label {
+  display: inline-block;
+  background: url("../assets/login/checkGrayFilled.svg") 0 0
+    no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 9px;
+}
+
+.btn-check .checkbox:checked + label {
+  background: url("../assets/login/checkRedFilled.svg") 0 0
+    no-repeat;
+  background-size: cover;
+}
+
+.btn-check label {
+  /* font-family: var(--text-paragraph); */
+  color: var(--gray-500);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .login-button {
@@ -101,9 +172,9 @@ Main {
   padding: 0px;
   width: 18rem;
   height: 2.625rem;
-  background-color: var(--brand-red-2);
+  background-color: var(--brand-red-1);
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 4px;
   font-size: var(--text-size-s);
   font-family: "Pretendard";
   font-style: normal;
@@ -112,27 +183,46 @@ Main {
   color: var(--white);
 }
 
-.checkbox-wrap {
-}
-
-/* #loginTitle {
-  background-color: black;
+/* 아이디비번찾기 */
+.find-btn-wrap {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-  align-self: stretch;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-
-#HeaderTitle {
-  display: flex;
-  justify-content: center;
   flex-direction: row;
-  align-items: flex-start;
-  align-self: stretch;
-  box-sizing: border-box;
-  flex-shrink: 0;
-} */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 0px;
+  gap: 8px;
+  width: 288px;
+  height: 39px;
+}
+
+.find-btn-wrap li {
+  font-weight: 400;
+  font-size: var(--text-size-s);
+  line-height: 19.2px;
+  color: var(--gray-300);
+}
+
+.find-btn-wrap a {
+  color: var(--gray-300);
+}
+
+/* 아직 계정이 없으신가요 */
+.accountYet {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; */
+  padding: 20px 0px 0px;
+  width: 288px;
+  line-height: 19.2px;
+  color: var(--gray-500);
+  text-align: center;
+  font-size: var(--text-size-s);
+}
+
+.btn-join {
+  font-weight: 400;
+  font-size: var(--text-size-s);
+  line-height: 19.2px;
+  color: var(--gray-300);
+}
