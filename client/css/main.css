@@ -1,0 +1,351 @@
+@import url(./common/reset.css);
+@import url(./common/normalize.css);
+@import url(./common/theme.css);
+
+/* common */
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* 공통 swiper */
+.swiper {
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.swiper h2 {
+  margin-bottom: 4px;
+  font: var(--text-heading);
+  font-size: var(--text-size-s);
+}
+
+.swiper .swiper-slide a {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.swiper .swiper-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* 공통 뱃지 */
+.swiper-slide.badge {
+  position: relative;
+}
+
+.swiper-slide.badge::before {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+/* 메인 컨텐츠 */
+/* 타잉에서 꼭 봐야하는 콘텐츠 */
+.recommend-taing .swiper-slide {
+  width: 92px;
+}
+
+.recommend-taing .swiper-slide .item-info {
+  display: none;
+  margin-top: 8px;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* quick VOD */
+.quick-vod .swiper-slide {
+  width: 145px;
+}
+
+.quick-vod .swiper-slide h3 {
+  margin-top: 4px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+}
+
+.quick-vod .swiper-slide p {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-300);
+}
+
+.swiper-slide.badge-quick-vod::before {
+  content: "Quick VOD";
+  background-color: var(--badge-pink);
+}
+
+/* 실시간 인기 프로그램 */
+.realtime-popular .swiper-slide {
+  width: 92px;
+}
+
+.realtime-popular .swiper-slide a {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.realtime-popular .swiper-slide .item-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.realtime-popular .swiper-slide .rank-number {
+  font: var(--text-heading);
+  font-size: var(--text-size-xxl);
+  line-height: var(--text-size-xxl);
+  font-style: italic;
+}
+
+.realtime-popular .swiper-slide p {
+  position: relative;
+  padding-right: 8px;
+  margin-top: 20px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  line-height: var(--text-size-s);
+  color: var(--gray-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.realtime-popular .swiper-slide p::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  bottom: var(--text-size-s);
+  right: 0;
+  background-color: var(--brand-red-1);
+  border-radius: 50%;
+}
+
+/* 인기 LIVE 채널 */
+.live-popular .swiper-slide {
+  width: 145px;
+}
+
+.live-popular .swiper-slide .item-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.live-popular .item-info .rank-number {
+  font: var(--text-heading);
+  font-size: var(--text-size-xxl);
+  font-style: italic;
+  color: var(--white);
+}
+
+.live-popular .item-info .program-info {
+  overflow: hidden;
+}
+
+.live-popular .item-info h3 {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+  line-height: var(--text-size-s);
+}
+
+.live-popular .item-info h3 span {
+  display: block;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-popular .item-info p {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  line-height: var(--text-size-s);
+  color: var(--gray-300);
+}
+
+/* 오직 타잉에만 있어요 */
+.only-taing.swiper .swiper-slide {
+  width: 139px;
+}
+
+/* 반응형 디자인 */
+/* Tablet, Desktop 공통*/
+@media (min-width: 768px) {
+  .recommend-taing .swiper-slide .item-info {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* 공통 swiper */
+  .swiper {
+    padding: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  .swiper h2 {
+    margin-bottom: 8px;
+    font: var(--text-heading);
+    font-size: var(--text-size-m);
+  }
+
+  /* 공통 뱃지 */
+  .swiper-slide.badge::before {
+    top: 6px;
+    left: 6px;
+    padding: 4px 8px;
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+    border-radius: 6px;
+  }
+
+  /* 타잉에서 꼭 봐야하는 콘텐츠 */
+  .recommend-taing .swiper-slide {
+    width: 130px;
+  }
+
+  /* quick VOD */
+  .quick-vod .swiper-slide {
+    width: 224px;
+  }
+
+  /* 실시간 인기 프로그램 */
+  .realtime-popular .swiper-slide {
+    width: 130px;
+  }
+
+  .realtime-popular .swiper-slide .rank-number {
+    font-size: var(--text-size-xxl);
+    line-height: var(--text-size-xxl);
+  }
+
+  .realtime-popular .swiper-slide p {
+    padding-right: 12px;
+    margin-top: 20px;
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+  }
+
+  .realtime-popular .swiper-slide p::after {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  /* 공통 swiper */
+  .swiper {
+    padding: 0 70px;
+    margin-bottom: 40px;
+  }
+
+  .swiper h2 {
+    margin-bottom: 12px;
+    font: var(--text-heading);
+    font-size: var(--text-size-xl);
+  }
+
+  /* 공통 뱃지 */
+  .swiper-slide.badge::before {
+    top: 8px;
+    left: 8px;
+    padding: 8px 10px;
+    font-size: var(--text-size-m);
+    line-height: var(--text-size-m);
+    border-radius: 8px;
+  }
+
+  /* 타잉에서 꼭 봐야하는 콘텐츠 */
+  .recommend-taing .swiper-slide {
+    width: 240px;
+  }
+
+  .recommend-taing .swiper-slide .item-info {
+    font-size: var(--text-size-l);
+  }
+
+  /* quick VOD */
+  .quick-vod .swiper-slide {
+    width: 345px;
+  }
+
+  .quick-vod .swiper-slide h3 {
+    margin-top: 10px;
+    font-size: var(--text-size-l);
+  }
+
+  .quick-vod .swiper-slide p {
+    margin-top: 4px;
+    font-size: var(--text-size-l);
+  }
+
+  /* 실시간 인기 프로그램 */
+  .realtime-popular .swiper-slide {
+    width: 240px;
+  }
+
+  .realtime-popular .swiper-slide a {
+    padding-bottom: 48px;
+  }
+
+  .realtime-popular .swiper-slide .item-info {
+    gap: 20px;
+  }
+
+  .realtime-popular .swiper-slide .rank-number {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .realtime-popular .swiper-slide p {
+    padding-right: 16px;
+    margin-top: 42px;
+    font-size: var(--text-size-l);
+    line-height: var(--text-size-l);
+    font-weight: 400;
+  }
+
+  .realtime-popular .swiper-slide p::after {
+    width: 8px;
+    height: 8px;
+    bottom: var(--text-size-l);
+  }
+}
