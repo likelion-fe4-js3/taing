@@ -267,6 +267,40 @@ ul {
     width: 6px;
     height: 6px;
   }
+
+  /* 인기 LIVE 채널 */
+
+  .live-popular .swiper-slide {
+    width: 225px;
+  }
+
+  .live-popular .swiper-slide .item-info {
+    gap: 20px;
+    margin-top: 4px;
+  }
+
+  .live-popular .item-info .rank-number {
+    font-size: var(--text-size-xxl);
+  }
+
+  .live-popular .item-info h3 {
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+  }
+
+  .live-popular .item-info h3 span {
+    font-size: var(--text-size-s);
+  }
+
+  .live-popular .item-info p {
+    font-size: var(--text-size-s);
+    line-height: var(--text-size-s);
+  }
+
+  /* 오직 타잉에만 있어요 */
+  .only-taing.swiper .swiper-slide {
+    width: 168px;
+  }
 }
 
 /* Desktop */
@@ -281,6 +315,10 @@ ul {
     margin-bottom: 12px;
     font: var(--text-heading);
     font-size: var(--text-size-xl);
+  }
+
+  .swiper-slide li {
+    margin-right: 16px;
   }
 
   /* 공통 뱃지 */
@@ -309,12 +347,12 @@ ul {
 
   .quick-vod .swiper-slide h3 {
     margin-top: 10px;
-    font-size: var(--text-size-l);
+    font-size: var(--text-size-m);
   }
 
   .quick-vod .swiper-slide p {
     margin-top: 4px;
-    font-size: var(--text-size-l);
+    font-size: var(--text-size-m);
   }
 
   /* 실시간 인기 프로그램 */
@@ -347,5 +385,39 @@ ul {
     width: 8px;
     height: 8px;
     bottom: var(--text-size-l);
+  }
+
+  /* 인기 LIVE 채널 */
+
+  .live-popular .swiper-slide {
+    width: 345px;
+  }
+
+  .live-popular .swiper-slide .item-info {
+    gap: 20px;
+    margin-top: 4px;
+  }
+
+  .live-popular .item-info .rank-number {
+    font-size: 72px;
+  }
+
+  .live-popular .item-info h3 {
+    font-size: var(--text-size-l);
+    line-height: var(--text-size-l);
+  }
+
+  .live-popular .item-info h3 span {
+    font-size: var(--text-size-m);
+  }
+
+  .live-popular .item-info p {
+    font-size: var(--text-size-m);
+    line-height: var(--text-size-m);
+  }
+
+  /* 오직 타잉에만 있어요 */
+  .only-taing.swiper .swiper-slide {
+    width: 282px;
   }
 }

@@ -11,6 +11,17 @@ const recommendTaing = new Swiper(
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      320: {
+        spaceBetween: 8,
+      },
+      768: {
+        spaceBetween: 8,
+      },
+      1200: {
+        spaceBetween: 16,
+      },
+    },
   }
 );
 
@@ -24,6 +35,17 @@ const quickVod = new Swiper(".quick-vod.swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 8,
+    },
+    768: {
+      spaceBetween: 8,
+    },
+    1200: {
+      spaceBetween: 16,
+    },
   },
 });
 
@@ -40,6 +62,17 @@ const realtimePopular = new Swiper(
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      320: {
+        spaceBetween: 8,
+      },
+      768: {
+        spaceBetween: 8,
+      },
+      1200: {
+        spaceBetween: 16,
+      },
+    },
   }
 );
 
@@ -54,6 +87,17 @@ const livePopular = new Swiper(".live-popular.swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    320: {
+      spaceBetween: 8,
+    },
+    768: {
+      spaceBetween: 8,
+    },
+    1200: {
+      spaceBetween: 16,
+    },
+  },
 });
 
 const onlyTaing = new Swiper(".only-taing.swiper", {
@@ -66,5 +110,16 @@ const onlyTaing = new Swiper(".only-taing.swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 8,
+    },
+    768: {
+      spaceBetween: 8,
+    },
+    1200: {
+      spaceBetween: 16,
+    },
   },
 });
