@@ -22,8 +22,8 @@
 
   /* 텍스트 스타일 */
   --text-heading: 700 1rem/1.4 "Pretendard Variable";
-  --text-paragraph: 600 1rem/1.5 "Pretendard Variable";
-  --text-label: 400 1rem/1.6 "Pretendard Variable";
+  --text-label: 600 1rem/1.5 "Pretendard Variable";
+  --text-paragraph: 400 1rem/1.6 "Pretendard Variable";
 
   /* 폰트 사이즈 */
   --text-size-s: 0.75rem; /* 12px */
