@@ -44,7 +44,7 @@
 .profile-image button {
   display: block;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0px;
   position: relative;
 }
@@ -52,6 +52,7 @@
 .profile-image img {
   filter: brightness(60%);
   width: 100%;
+  border-radius: 7px;
 }
 
 .lock-icon {
@@ -60,6 +61,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
+  top: 50%;
+  left: 50%;
 }
 
 .profile-image span {
@@ -115,11 +118,7 @@
   }
 
   .lock-icon {
-    background: url("../assets/profilePage/icon_lock.svg")
-      no-repeat;
-    top: 9vw;
-    left: 9vw;
-    transform: scale(83%, 83%);
+    transform: translate(-50%, -50%);
   }
 
   .profile-edit-button {
@@ -158,9 +157,7 @@
   }
 
   .lock-icon {
-    top: 30%;
-    left: 30%;
-    transform: scale(83%, 83%);
+    transform: translate(-50%, -50%) scale(0.83, 0.83);
   }
 
   .profile-image button {
@@ -210,9 +207,7 @@
   }
 
   .lock-icon {
-    top: 38%;
-    left: 38%;
-    transform: scale(120%, 120%);
+    transform: translate(-50%, -50%) scale(1.2, 1.2);
   }
 
   .profile-image span {
