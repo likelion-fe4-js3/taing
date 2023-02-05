@@ -22,6 +22,7 @@ ul {
 /* 공통 swiper */
 .swiper {
   overflow: visible;
+  transition: all 0.3s;
 }
 
 .swiper .swiper-slide {
@@ -53,6 +54,7 @@ ul {
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
+  display: none;
   width: 14px;
   height: calc(100% - 3px);
   top: 3px;
@@ -60,6 +62,12 @@ ul {
   margin-top: 0;
   outline: none;
   border: none;
+  transition: all 0.3s;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  display: block;
 }
 
 .swiper-button-prev:after,
