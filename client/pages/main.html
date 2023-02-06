@@ -24,23 +24,57 @@
   </head>
 
   <body>
-    <header>
+    <header class="header deactive">
       <h1 class="logo">
-        <a href="#"><img src="" alt="" />로고</a>
+        <a href="#">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="../assets/main/Icon/icon_logo@2x.png"
+            />
+            <img
+              src="../assets/main/Icon/icon_logo@3x.png"
+              alt="TAING
+                로고"
+            />
+          </picture>
+        </a>
       </h1>
-      <nav>
+      <nav class="navigation">
         <ul class="gnb">
-          <li class="gnb--item"><a href="#">실시간</a></li>
-          <li class="gnb--item">
+          <li class="gnb-live">
+            <a href="#">실시간</a>
+          </li>
+          <li>
             <a href="#">TV프로그램</a>
           </li>
-          <li class="gnb--item"><a href="#">영화</a></li>
-          <li class="gnb--item">
-            <a href="#"><img src="" alt="" /></a>
+          <li>
+            <a href="#">영화</a>
+          </li>
+          <li class="gnb-paramount">
+            <a href="#"
+              ><picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ../assets/main/Icon/icon_paramount@2x.png
+                  "
+                />
+                <img
+                  src="../assets/main/Icon/icon_paramount@3x.png"
+                  alt="찾기 아이콘"
+                />
+              </picture>
+            </a>
           </li>
         </ul>
       </nav>
-      <aside></aside>
+      <aside class="user-menu">
+        <button type="button" class="search">검색</button>
+        <button type="button" class="profile">
+          프로필
+        </button>
+      </aside>
     </header>
     <main>
       <section class="main-visual swiper-wrapper"></section>
