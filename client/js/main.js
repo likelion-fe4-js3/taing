@@ -194,12 +194,30 @@ const onlyTaing = new Swiper(".only-taing .swiper", {
   },
 });
 
-const eventSwiper = new Swiper(".event", {
+const eventSwiper = new Swiper(".event .swiper", {
   slidesPerView: "auto",
   simulateTouch: true,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 8,
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 8,
+      slidesPerView: 3,
+    },
+    1200: {
+      spaceBetween: 16,
+      slidesPerView: 5,
+    },
+    1920: {
+      spaceBetween: 16,
+      slidesPerView: 6,
+    },
   },
 });

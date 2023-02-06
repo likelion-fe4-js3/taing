@@ -22,6 +22,14 @@ ul {
   list-style-type: none;
 }
 
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
 /* 공통 swiper */
 main {
   overflow: hidden;
@@ -458,6 +466,23 @@ main {
   width: 139px;
 }
 
+/* 배너 */
+.banner {
+  width: 100%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* 이벤트 */
+.event .swiper-slide {
+  width: 145px;
+}
+
 /* 반응형 디자인 */
 /* Tablet, Desktop 공통*/
 @media (min-width: 768px) {
@@ -731,6 +756,17 @@ main {
   .only-taing .swiper-slide {
     width: 168px;
   }
+
+  /* 배너 */
+  .banner {
+    padding: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  /* 이벤트 */
+  .event .swiper-slide {
+    width: 222px;
+  }
 }
 
 /* Desktop */
@@ -983,5 +1019,16 @@ main {
   /* 오직 타잉에만 있어요 */
   .only-taing .swiper-slide {
     width: 282px;
+  }
+
+  /* 배너 */
+  .banner {
+    padding: 0 70px;
+    margin-bottom: 40px;
+  }
+
+  /* 이벤트 */
+  .event .swiper-slide {
+    width: 346px;
   }
 }
