@@ -1,4 +1,4 @@
-import { attr, getNode } from "../lib/index.js";
+import { getNode } from "../lib/index.js";
 
 // 헤더 스크롤 액션
 const header = document.querySelector(".header");
@@ -18,6 +18,7 @@ const mainVisual = new Swiper(".main-visual", {
   loop: true,
   speed: 1500,
   slidesPerView: 1,
+  simulateTouch: true,
   autoplay: {
     delay: 2000,
   },
@@ -33,10 +34,17 @@ const mainVisual = new Swiper(".main-visual", {
 
 // main-visual autoplay, pause
 const autoplayBtn = getNode(".swiper-button-autoplay");
-
+console.log(autoplayBtn.className);
 function handlerAutoplay() {
-  console.log(attr(autoplayBtn, "class"));
-  mainVisual.autoplay.stop();
+  if (autoplayBtn.className.includes("btn-pause")) {
+    mainVisual.autoplay.stop();
+    autoplayBtn.classList.remove("btn-pause");
+    autoplayBtn.classList.add("btn-play");
+  } else {
+    mainVisual.autoplay.start();
+    autoplayBtn.classList.remove("btn-play");
+    autoplayBtn.classList.add("btn-pause");
+  }
 }
 
 autoplayBtn.addEventListener("click", handlerAutoplay);
@@ -44,10 +52,7 @@ autoplayBtn.addEventListener("click", handlerAutoplay);
 const recommendTaing = new Swiper(
   ".recommend-taing .swiper",
   {
-    spaceBetween: 8,
-    keyboard: {
-      enabled: true,
-    },
+    simulateTouch: true,
     loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -76,10 +81,7 @@ const recommendTaing = new Swiper(
 
 const quickVod = new Swiper(".quick-vod .swiper", {
   slidesPerView: "auto",
-  spaceBetween: 8,
-  keyboard: {
-    enabled: true,
-  },
+  simulateTouch: true,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -109,10 +111,7 @@ const realtimePopular = new Swiper(
   ".realtime-popular .swiper",
   {
     slidesPerView: "auto",
-    spaceBetween: 8,
-    keyboard: {
-      enabled: true,
-    },
+    simulateTouch: true,
     loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -141,10 +140,7 @@ const realtimePopular = new Swiper(
 
 const livePopular = new Swiper(".live-popular .swiper", {
   slidesPerView: "auto",
-  spaceBetween: 8,
-  keyboard: {
-    enabled: true,
-  },
+  simulateTouch: true,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -172,10 +168,7 @@ const livePopular = new Swiper(".live-popular .swiper", {
 
 const onlyTaing = new Swiper(".only-taing .swiper", {
   slidesPerView: "auto",
-  spaceBetween: 8,
-  keyboard: {
-    enabled: true,
-  },
+  simulateTouch: true,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -201,15 +194,30 @@ const onlyTaing = new Swiper(".only-taing .swiper", {
   },
 });
 
-const eventSwiper = new Swiper(".event", {
+const eventSwiper = new Swiper(".event .swiper", {
   slidesPerView: "auto",
-  spaceBetween: 8,
-  keyboard: {
-    enabled: true,
-  },
+  simulateTouch: true,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 8,
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 8,
+      slidesPerView: 3,
+    },
+    1200: {
+      spaceBetween: 16,
+      slidesPerView: 5,
+    },
+    1920: {
+      spaceBetween: 16,
+      slidesPerView: 6,
+    },
   },
 });
