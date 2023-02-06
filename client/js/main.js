@@ -1,7 +1,6 @@
 const recommendTaing = new Swiper(
-  ".recommend-taing.swiper",
+  ".recommend-taing .swiper",
   {
-    slidesPerView: "auto",
     spaceBetween: 8,
     keyboard: {
       enabled: true,
@@ -14,18 +13,25 @@ const recommendTaing = new Swiper(
     breakpoints: {
       320: {
         spaceBetween: 8,
+        slidesPerView: 3,
       },
       768: {
         spaceBetween: 8,
+        slidesPerView: 5,
       },
       1200: {
         spaceBetween: 16,
+        slidesPerView: 7,
+      },
+      1920: {
+        spaceBetween: 16,
+        slidesPerView: 8,
       },
     },
   }
 );
 
-const quickVod = new Swiper(".quick-vod.swiper", {
+const quickVod = new Swiper(".quick-vod .swiper", {
   slidesPerView: "auto",
   spaceBetween: 8,
   keyboard: {
@@ -39,18 +45,25 @@ const quickVod = new Swiper(".quick-vod.swiper", {
   breakpoints: {
     320: {
       spaceBetween: 8,
+      slidesPerView: 2,
     },
     768: {
       spaceBetween: 8,
+      slidesPerView: 3,
     },
     1200: {
       spaceBetween: 16,
+      slidesPerView: 5,
+    },
+    1920: {
+      spaceBetween: 16,
+      slidesPerView: 6,
     },
   },
 });
 
 const realtimePopular = new Swiper(
-  ".realtime-popular.swiper",
+  ".realtime-popular .swiper",
   {
     slidesPerView: "auto",
     spaceBetween: 8,
@@ -65,18 +78,25 @@ const realtimePopular = new Swiper(
     breakpoints: {
       320: {
         spaceBetween: 8,
+        slidesPerView: 3,
       },
       768: {
         spaceBetween: 8,
+        slidesPerView: 5,
       },
       1200: {
         spaceBetween: 16,
+        slidesPerView: 7,
+      },
+      1920: {
+        spaceBetween: 16,
+        slidesPerView: 8,
       },
     },
   }
 );
 
-const livePopular = new Swiper(".live-popular.swiper", {
+const livePopular = new Swiper(".live-popular .swiper", {
   slidesPerView: "auto",
   spaceBetween: 8,
   keyboard: {
@@ -90,17 +110,24 @@ const livePopular = new Swiper(".live-popular.swiper", {
   breakpoints: {
     320: {
       spaceBetween: 8,
+      slidesPerView: 2,
     },
     768: {
       spaceBetween: 8,
+      slidesPerView: 3,
     },
     1200: {
       spaceBetween: 16,
+      slidesPerView: 5,
+    },
+    1920: {
+      spaceBetween: 16,
+      slidesPerView: 6,
     },
   },
 });
 
-const onlyTaing = new Swiper(".only-taing.swiper", {
+const onlyTaing = new Swiper(".only-taing .swiper", {
   slidesPerView: "auto",
   spaceBetween: 8,
   keyboard: {
@@ -114,12 +141,19 @@ const onlyTaing = new Swiper(".only-taing.swiper", {
   breakpoints: {
     320: {
       spaceBetween: 8,
+      slidesPerView: 2,
     },
     768: {
       spaceBetween: 8,
+      slidesPerView: 4,
     },
     1200: {
       spaceBetween: 16,
+      slidesPerView: 6,
+    },
+    1920: {
+      spaceBetween: 16,
+      slidesPerView: 7,
     },
   },
 });
