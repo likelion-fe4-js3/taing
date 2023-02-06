@@ -16,7 +16,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="./js/landing.js" type="module"></script>
     <title>TAING</title>
   </head>
@@ -59,58 +67,66 @@
             <p>차별화된 웰메이드 오리지널 콘텐츠</p>
           </div>
         </div>
-        <div class="thumbnail-window">
-          <div class="movie-thumbnail-slide-wrapper">
-            <picture class="movie-thumbnail-slide">
-              <source
-                srcset="
-                  ./assets/landing/desktop_image/lovecatcher@2x.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                src="./assets/landing/tablet_mobile_image/lovecatcher.png"
-                alt="러브캐쳐 영상 섬네일"
-              />
-            </picture>
-
-            <picture class="movie-thumbnail-slide">
-              <source
-                srcset="
-                  ./assets/landing/desktop_image/findingtreasure@2x.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                src="./assets/landing/tablet_mobile_image/findingtreasure.png"
-                alt="보물찾기 영상 섬네일"
-              />
-            </picture>
-
-            <picture class="movie-thumbnail-slide">
-              <source
-                srcset="
-                  ./assets/landing/desktop_image/foodchronicle@2x.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                src="./assets/landing/tablet_mobile_image/alcholholiccitygirl2.png"
-                alt="술꾼도시여자들2 영상 섬네일"
-              />
-            </picture>
-            <picture class="movie-thumbnail-slide">
-              <source
-                srcset="
-                  ./assets/landing/desktop_image/bodyprice@2x.png
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                src="./assets/landing/tablet_mobile_image/island.png"
-                alt="아일랜드 영상 섬네일"
-              />
-            </picture>
+        <div class="swiper thumbnail-window">
+          <div
+            class="swiper-wrapper movie-thumbnail-slide-wrapper"
+          >
+            <div class="swiper-slide">
+              <picture class="movie-thumbnail-slide">
+                <source
+                  srcset="
+                    ./assets/landing/desktop_image/lovecatcher@2x.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./assets/landing/tablet_mobile_image/lovecatcher.png"
+                  alt="러브캐쳐 영상 섬네일"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="movie-thumbnail-slide">
+                <source
+                  srcset="
+                    ./assets/landing/desktop_image/findingtreasure@2x.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./assets/landing/tablet_mobile_image/findingtreasure.png"
+                  alt="보물찾기 영상 섬네일"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="movie-thumbnail-slide">
+                <source
+                  srcset="
+                    ./assets/landing/desktop_image/foodchronicle@2x.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./assets/landing/tablet_mobile_image/alcholholiccitygirl2.png"
+                  alt="술꾼도시여자들2 영상 섬네일"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="movie-thumbnail-slide">
+                <source
+                  srcset="
+                    ./assets/landing/desktop_image/bodyprice@2x.png
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./assets/landing/tablet_mobile_image/island.png"
+                  alt="아일랜드 영상 섬네일"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </div>
