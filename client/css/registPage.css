@@ -1,0 +1,351 @@
+@import url(./common/normalize.css);
+@import url(./common/reset.css);
+@import url(./common/theme.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 100%; */
+  /* height: 691px; */
+  /* height: 100%; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* width: 100%; */
+  /* height: 691px; */
+  margin: 0px 15.5px 0 15.5px;
+}
+
+/* gap이 안먹어서 height 100% 줬더니 얼추 맞는듯 */
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 0px 16px 0px;
+  /* gap: 16px; */
+  width: 100%;
+  /* height: 100%; */
+  font: var(--text-heading);
+  font-size: var(--text-size-m);
+  line-height: 22.4px;
+}
+
+h2 {
+  font: var(--text-heading);
+  font-size: var(--text-size-m);
+  color: var(--white);
+  line-height: 22.4px;
+}
+
+h3 {
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-400);
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.content-agree {
+  width: 100%;
+}
+
+.content-regist {
+  width: auto;
+}
+
+.user-id-input {
+  background-color: var(--brand-dark-bg-2);
+  padding-left: 16px;
+  width: 100%;
+  height: 46px;
+  border-radius: 4px;
+  border: none;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-600);
+}
+
+.user-pw-input {
+  margin-top: 16px;
+  background-color: var(--brand-dark-bg-2);
+  padding-left: 16px;
+  width: 100%;
+  height: 46px;
+  border-radius: 4px;
+  border: none;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-600);
+}
+
+.content-regist p {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-500);
+}
+
+.pw-check-input {
+  margin-top: 16px;
+  background-color: var(--brand-dark-bg-2);
+  border-radius: 4px;
+  border: none;
+  padding-left: 16px;
+  width: 100%;
+  height: 46px;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+}
+
+.e-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(-20px, -50%);
+  width: 20px;
+  height: 20px;
+  right: 0;
+  background: url("../assets/login/e-icon_close.svg");
+  background-position: center;
+  border: 0;
+}
+
+.e-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(-20px, -50%);
+  width: 20px;
+  height: 20px;
+  right: 0;
+  background: url("../assets/login/e-icon_close.svg");
+  background-position: center;
+  border: 0;
+}
+
+.user-email {
+  margin-top: 16px;
+  background-color: var(--brand-dark-bg-2);
+  border-radius: 4px;
+  border: none;
+  padding-left: 16px;
+  width: 100%;
+  height: 46px;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+}
+
+.btn-check-wrap {
+  align-items: center;
+  margin: 16px 0 16px 0;
+}
+
+.btn-check-wrap .agree-box {
+  display: none;
+}
+
+.btn-check-wrap .agree-box + label {
+  display: inline-block;
+  background: url("../assets/login/check_gray_filled.svg") 0
+    0 no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.btn-check-wrap .agree-box:checked + label {
+  background: url("../assets/login/check_red-filled.svg") 0
+    0 no-repeat;
+  background-size: cover;
+}
+
+.btn-check-wrap label {
+  color: var(--gray-500);
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+}
+
+/* .btn-check-wrap .agree-box .btn-check-wrap label {
+  color: var(--gray-500);
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  line-height: 18px;
+} */
+
+.btn-checks .agree-checkbox {
+  display: none;
+  display: inline;
+}
+
+.btn-checks .agree-checkbox + label {
+  background: url("../assets/login/check_gray.svg") 0 0
+    no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.btn-checks .agree-checkbox:checked + label {
+  background: url("../assets/login/check_red.svg") 0 0
+    no-repeat;
+  background-size: cover;
+}
+
+.btn-checks label {
+  color: var(--gray-500);
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+}
+
+.login-btn {
+  width: 100%;
+  height: 42px;
+  background-color: var(--gray-700);
+  border: none;
+  border-radius: 4px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-400);
+}
+
+/* 모바일 */
+@media (min-width: 320px) and (max-width: 767px) {
+}
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1919px) {
+  .content {
+    gap: 24px;
+    margin: 0px 176px 0 176px;
+  }
+  .header-title {
+    padding-left: 44px;
+    font-size: var(--text-size-xl);
+  }
+  .content-wrap {
+    gap: 21px;
+  }
+  .user-id-input {
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+  .user-pw-input {
+    margin-top: 18px;
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+  .content-regist p {
+    font-size: var(--text-size-s);
+  }
+  .pw-check-input {
+    margin-top: 18px;
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+
+  .user-email {
+    margin-top: 18px;
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+
+  .btn-check-wrap label {
+    font-size: var(--text-size-s);
+  }
+  .login-btn {
+    height: 50px;
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1920px) {
+  .content {
+    /* gap: 60px; */
+    margin: 0px 594px 0 594px;
+  }
+  .header-title {
+    padding: 70px 0px 0px;
+    /* gap: 28px; */
+    font: var(--text-heading);
+    font-size: var(--text-size-xxl);
+  }
+  h3 {
+    font: var(--text-label);
+    font-size: var(--text-size-xl);
+    text-align: center;
+    margin-top: 28px;
+  }
+  .content-wrap {
+    gap: 36px;
+  }
+  .user-id-input {
+    padding-left: 24px;
+    height: 96px;
+    font-size: var(--text-size-xl);
+  }
+  .user-pw-input {
+    margin-top: 34px;
+    padding-left: 24px;
+    height: 93px;
+    font-size: var(--text-size-xl);
+  }
+  .content-regist p {
+    font-size: var(--text-size-l);
+  }
+  .pw-check-input {
+    margin-top: 34px;
+    padding-left: 24px;
+    height: 96px;
+    font-size: var(--text-size-xl);
+  }
+
+  .user-email {
+    margin-top: 34px;
+    padding-left: 24px;
+    height: 96px;
+    font-size: var(--text-size-xl);
+  }
+  .btn-check-wrap .agree-box + label {
+    background: url("../assets/login/check-gray-filled@3x.svg")
+      0 0 no-repeat;
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+  }
+
+  .btn-check-wrap label {
+    font: var(--text-label);
+    font-size: var(--text-size-l);
+    line-height: 31.99px;
+  }
+
+  .login-btn {
+    height: 86px;
+    font-size: var(--text-size-xl);
+  }
+}
