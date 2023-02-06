@@ -23,6 +23,10 @@ ul {
 }
 
 /* 공통 swiper */
+main {
+  overflow: hidden;
+}
+
 .swiper {
   overflow: visible;
   transition: all 0.3s;
@@ -135,6 +139,22 @@ ul {
   z-index: 999;
 }
 
+/* 헤더 스크롤시 bgc 변경 */
+.deactive {
+  background-color: transparent;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+}
+.active {
+  background-color: var(--black);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+}
+
 .header .logo {
   margin: 0;
 }
@@ -165,12 +185,12 @@ ul {
 }
 
 .user-menu .search {
-  background: url(../assets/main/Icon/icon_search.png)
+  background: url(../assets/main/main-icon/icon_search.png)
     no-repeat center center;
 }
 
 .user-menu .profile {
-  background: url(../assets/main/Icon/icon_profile.png)
+  background: url(../assets/main/main-icon/icon_profile.png)
     no-repeat center center;
 }
 
@@ -267,13 +287,13 @@ ul {
   z-index: 20;
 }
 
-.swiper-button-autoplay-pause {
-  background: url(../assets/main/Icon/icon_pause.png)
+.btn-pause {
+  background: url(../assets/main/main-icon/icon_pause.png)
     no-repeat center center;
 }
 
-.swiper-button-autoplay-play {
-  background: url(../assets/main/Icon/icon_pause.png)
+.btn-play {
+  background: url(../assets/main/main-icon/icon_autoplay.png)
     no-repeat center center;
 }
 
@@ -317,6 +337,9 @@ ul {
   font: var(--text-paragraph);
   font-size: var(--text-size-s);
   color: var(--gray-200);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .quick-vod .swiper-slide p {
@@ -467,7 +490,7 @@ ul {
     width: 20px;
     height: 20px;
     padding-top: 2px;
-    background: url(../assets/main/Icon/icon_live.png)
+    background: url(../assets/main/main-icon/icon_live.png)
       no-repeat center center;
   }
 
@@ -547,7 +570,7 @@ ul {
     width: 20px;
     height: 20px;
     padding-top: 2px;
-    background: url(../assets/main/Icon/icon_live.png)
+    background: url(../assets/main/main-icon/icon_live.png)
       no-repeat center center;
   }
 
@@ -571,12 +594,12 @@ ul {
   }
 
   .user-menu .search {
-    background: url(../assets/main/Icon/icon_search@2x.png)
+    background: url(../assets/main/main-icon/icon_search@2x.png)
       no-repeat center center;
   }
 
   .user-menu .profile {
-    background: url(../assets/main/Icon/icon_profile@2x.png)
+    background: url(../assets/main/main-icon/icon_profile@2x.png)
       no-repeat center center;
   }
 
@@ -608,6 +631,38 @@ ul {
   .main-visual.swiper .swiper-button-next {
     background: url(../assets/common/icon_next-button@2x.png)
       no-repeat center center;
+  }
+
+  /* 메인비주얼 자동재생버튼 */
+  .swiper-button-autoplay {
+    bottom: 20%;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .btn-pause {
+    background: url(../assets/main/main-icon/icon_pause@2x.png)
+      no-repeat center center;
+  }
+
+  .btn-play {
+    background: url(../assets/main/main-icon/icon_autoplay@2x.png)
+      no-repeat center center;
+  }
+
+  /* 메인비주얼 페이지네이션 */
+  .main-visual.swiper .swiper-pagination {
+    bottom: 19%;
+    left: 40px;
+    margin-left: 16px;
+  }
+
+  .main-visual.swiper
+    .swiper-pagination
+    .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 
   /* 타잉에서 꼭 봐야하는 콘텐츠 */
@@ -740,7 +795,7 @@ ul {
     width: 34px;
     height: 34px;
     padding-top: 0;
-    background: url(../assets/main/Icon/icon_live@3x.png)
+    background: url(../assets/main/main-icon/icon_live@3x.png)
       no-repeat center center;
   }
 
@@ -764,12 +819,12 @@ ul {
   }
 
   .user-menu .search {
-    background: url(../assets/main/Icon/icon_search@3x.png)
+    background: url(../assets/main/main-icon/icon_search@3x.png)
       no-repeat center center;
   }
 
   .user-menu .profile {
-    background: url(../assets/main/Icon/icon_profile@3x.png)
+    background: url(../assets/main/main-icon/icon_profile@3x.png)
       no-repeat center center;
   }
 
@@ -801,6 +856,39 @@ ul {
   .main-visual.swiper .swiper-button-next {
     background: url(../assets/common/icon_next-button@3x.png)
       no-repeat center center;
+  }
+
+  /* 메인비주얼 자동재생버튼 */
+  .swiper-button-autoplay {
+    bottom: 20%;
+    left: 70px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn-pause {
+    background: url(../assets/main/main-icon/icon_pause@3x.png)
+      no-repeat center center;
+  }
+
+  .btn-play {
+    background: url(../assets/main/main-icon/icon_autoplay@3x.png)
+      no-repeat center center;
+  }
+
+  /* 메인비주얼 페이지네이션 */
+  .main-visual.swiper .swiper-pagination {
+    bottom: 20%;
+    left: 70px;
+    margin-left: 24px;
+  }
+
+  .main-visual.swiper
+    .swiper-pagination
+    .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
   }
 
   /* 타잉에서 꼭 봐야하는 콘텐츠 */
