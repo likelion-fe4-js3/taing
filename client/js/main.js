@@ -34,7 +34,6 @@ const mainVisual = new Swiper(".main-visual", {
 
 // main-visual autoplay, pause
 const autoplayBtn = getNode(".swiper-button-autoplay");
-console.log(autoplayBtn.className);
 function handlerAutoplay() {
   if (autoplayBtn.className.includes("btn-pause")) {
     mainVisual.autoplay.stop();
