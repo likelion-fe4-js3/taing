@@ -1,0 +1,384 @@
+@import url(./common/normalize.css);
+@import url(./common/reset.css);
+@import url(./common/theme.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--black);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.find-pw {
+  padding-top: 28px;
+  width: 100%;
+  width: 319px;
+}
+
+.find-pw-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--text-size-m);
+  padding: 0px;
+  color: var(--white);
+  padding-bottom: 28px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* width: 319px; */
+}
+
+.find-email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 100%;
+}
+
+h3 {
+  width: 100%;
+}
+
+.sign-in-email {
+  width: 100%;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-400);
+}
+
+.check-id {
+  width: 100%;
+}
+
+.form-find-id {
+  width: 100%;
+  height: 46px;
+  background-color: var(--brand-dark-bg-2);
+  border-radius: 4px;
+  border: none;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-600);
+  padding-left: 16px;
+}
+
+.login-button {
+  padding: 0px;
+  width: 100%;
+  height: 42px;
+  background-color: var(--gray-700);
+  border-radius: 4px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
+  color: var(--gray-400);
+  border: none;
+  margin-top: 20px;
+}
+
+.find-certification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 288px;
+  height: 116px;
+}
+
+/* footer 시작 */
+footer::before {
+  content: "";
+  display: block;
+  background-color: var(--gray-800);
+  width: 100%;
+  height: 1px;
+}
+
+.guide-list a {
+  color: var(--gray-200);
+  text-decoration: none;
+}
+
+.guide-list a:hover {
+  color: var(--gray-100);
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.guide-list li {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+}
+
+.footer-info-list li {
+  color: var(--gray-500);
+}
+
+.footer-info-list span:not(:first-of-type)::before,
+.footer-info-list a:not(:first-of-type)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  background-color: var(--gray-800);
+}
+
+.sns-wrapper a {
+  text-decoration: none;
+}
+
+.sns-wrapper img:hover {
+  filter: brightness(180%);
+  transition: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.copyright {
+  display: inline-block;
+  color: var(--gray-500);
+  font: var(--text-paragraph);
+}
+
+/* footer 끝 */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* footer 시작 */
+
+  footer {
+    padding: 3.25rem 1rem 5.125rem 1rem;
+  }
+
+  .guide-list {
+    margin-top: 0.5rem;
+  }
+
+  .guide-list li {
+    margin-bottom: 0.25rem;
+  }
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    display: none;
+  }
+
+  .sns-wrapper {
+    margin-top: 1rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 0.5rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: var(--text-size-s);
+  }
+
+  /* footer 끝 */
+}
+
+/* 모바일 끝 */
+
+/* 테블릿 시작 */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .find-pw-title {
+    font-size: var(--text-size-xl);
+  }
+
+  .sign-in-email {
+    font-size: var(--text-size-m);
+  }
+
+  .find-pw {
+    padding-top: 44px;
+    width: 416px;
+  }
+  .form-find-id {
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+  .login-button {
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+
+  /* footer 시작 */
+
+  footer {
+    padding: 4.375rem 2.5rem 6.25rem;
+  }
+
+  .guide-list {
+    margin-top: 1rem;
+  }
+
+  .guide-list li {
+    display: inline;
+    margin-right: 1.25rem;
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 0.75rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 0.625px;
+    margin: 0 4px 0 2px;
+  }
+
+  .sns-wrapper {
+    margin-top: 0.75rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 0.5rem;
+  }
+
+  .sns-wrapper img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .copyright {
+    margin-top: 0.75rem;
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  /* footer 끝 */
+}
+
+/* 테블릿 끝 */
+
+/* 데스크탑 시작 */
+
+@media (min-width: 1200px) {
+  .find-pw-title {
+    font-size: var(--text-size-xxl);
+  }
+
+  .sign-in-email {
+    font-size: var(--text-size-xl);
+  }
+
+  .find-pw {
+    padding-top: 70px;
+    width: 732px;
+  }
+  .form-find-id {
+    height: 96px;
+    font-size: var(--text-size-xl);
+  }
+  .login-button {
+    height: 96px;
+    font-size: var(--text-size-xl);
+  }
+
+  /* footer 시작 */
+
+  footer {
+    padding: 8.75rem 4.25rem 10.625rem;
+  }
+
+  .guide-list {
+    margin-top: 1.75rem;
+  }
+
+  .guide-list li {
+    display: inline;
+    margin-right: 2.25rem;
+    font-size: var(--text-size-l);
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 1.5rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font-size: var(--text-size-l);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 1rem;
+    margin: 0 8px 0 6px;
+  }
+
+  .sns-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 1.25rem;
+  }
+
+  .sns-wrapper img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+    font-size: var(--text-size-l);
+  }
+
+  /* footer 끝 */
+}
+/* 데스크탑 끝 */
