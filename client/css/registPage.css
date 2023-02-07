@@ -13,24 +13,23 @@ a {
   text-decoration: none;
 }
 
-main {
+body {
   background-color: var(--black);
+}
+
+main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  /* width: 100%; */
-  /* height: 691px; */
-  /* height: 100%; */
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  /* width: 100%; */
-  /* height: 691px; */
   margin: 0px 15.5px 0 15.5px;
+  width: 100%;
 }
 
 /* gap이 안먹어서 height 100% 줬더니 얼추 맞는듯 */
@@ -107,6 +106,13 @@ h3 {
   color: var(--gray-500);
 }
 
+.user-pw-div {
+  position: relative;
+}
+
+.pw-check-div {
+  position: relative;
+}
 .pw-check-input {
   margin-top: 16px;
   background-color: var(--brand-dark-bg-2);
@@ -132,17 +138,8 @@ h3 {
   border: 0;
 }
 
-.e-icon {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  transform: translate(-20px, -50%);
-  width: 20px;
-  height: 20px;
-  right: 0;
-  background: url("../assets/login/e-icon_close.svg");
-  background-position: center;
-  border: 0;
+.pw-check-div button {
+  transform: translate(-20px, -10%);
 }
 
 .user-email {
@@ -157,9 +154,24 @@ h3 {
   font-size: var(--text-size-s);
 }
 
+/* 여기서부터 */
+.btn-agree-wrap {
+  /* align-items: center;
+  margin: 16px 0 16px 0; */
+  cursor: pointer;
+}
+.btn-agree-wrap .x-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../assets/login/check_gray.svg") left
+    center no-repeat;
+  vertical-align: middle;
+}
+/*  */
+
 .btn-check-wrap {
-  align-items: center;
-  margin: 16px 0 16px 0;
+  padding-top: 16px;
 }
 
 .btn-check-wrap .agree-box {
@@ -189,16 +201,35 @@ h3 {
   font-size: var(--text-size-s);
 }
 
-/* .btn-check-wrap .agree-box .btn-check-wrap label {
-  color: var(--gray-500);
-  font: var(--text-label);
-  font-size: var(--text-size-s);
-  line-height: 18px;
-} */
-
 .btn-checks .agree-checkbox {
-  display: none;
+  appearance: none;
   display: inline;
+}
+.btn-checks input[type="checkbox"]:checked + .check-icon {
+  background-image: url("../assets/login/check_red.svg");
+}
+.btn-checks input[type="checkbox"] + .check-icon {
+  background-image: url("../assets/login/check_red.svg");
+}
+
+.agree-checkbox {
+  display: inline-block !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  background: url("../assets/login/check_gray.svg")
+    no-repeat;
+}
+
+/* 체크박스와 라벨 높이 */
+.agree-checkbox {
+  position: relative;
+  top: 21px;
 }
 
 .btn-checks .agree-checkbox + label {
@@ -234,11 +265,103 @@ h3 {
   color: var(--gray-400);
 }
 
+/* footer 시작 */
+footer::before {
+  content: "";
+  display: block;
+  background-color: var(--gray-800);
+  width: 100%;
+  height: 1px;
+}
+
+.guide-list a {
+  color: var(--gray-200);
+  text-decoration: none;
+}
+
+.guide-list a:hover {
+  color: var(--gray-100);
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.guide-list li {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+}
+
+.footer-info-list li {
+  color: var(--gray-500);
+}
+
+.footer-info-list span:not(:first-of-type)::before,
+.footer-info-list a:not(:first-of-type)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  background-color: var(--gray-800);
+}
+
+.sns-wrapper a {
+  text-decoration: none;
+}
+
+.sns-wrapper img:hover {
+  filter: brightness(180%);
+  transition: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.copyright {
+  display: inline-block;
+  color: var(--gray-500);
+  font: var(--text-paragraph);
+}
+
+/* footer 끝 */
+
 /* 모바일 */
 @media (min-width: 320px) and (max-width: 767px) {
+  /* footer 시작 */
+
+  footer {
+    padding: 3.25rem 1rem 5.125rem 1rem;
+  }
+
+  .guide-list {
+    margin-top: 0.5rem;
+  }
+
+  .guide-list li {
+    margin-bottom: 0.25rem;
+  }
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    display: none;
+  }
+
+  .sns-wrapper {
+    margin-top: 1rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 0.5rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: var(--text-size-s);
+  }
+
+  /* footer 끝 */
 }
 /* 태블릿 */
-@media (min-width: 768px) and (max-width: 1919px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .content {
     gap: 24px;
     margin: 0px 176px 0 176px;
@@ -280,13 +403,76 @@ h3 {
   .login-btn {
     height: 50px;
   }
+  /* footer 시작 */
+
+  footer {
+    padding: 4.375rem 2.5rem 6.25rem;
+  }
+
+  .guide-list {
+    margin-top: 1rem;
+  }
+
+  .guide-list li {
+    display: inline;
+    margin-right: 1.25rem;
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 0.75rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 0.625px;
+    margin: 0 4px 0 2px;
+  }
+
+  .sns-wrapper {
+    margin-top: 0.75rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 0.5rem;
+  }
+
+  .sns-wrapper img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .copyright {
+    margin-top: 0.75rem;
+    font: var(--text-paragraph);
+    font-size: var(--text-size-s);
+  }
+
+  /* footer 끝 */
 }
 
 /* 데스크탑 */
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   .content {
     /* gap: 60px; */
-    margin: 0px 594px 0 594px;
+    margin: 0px 320px 0 320px;
   }
   .header-title {
     padding: 70px 0px 0px;
@@ -348,4 +534,66 @@ h3 {
     height: 86px;
     font-size: var(--text-size-xl);
   }
+  /* footer 시작 */
+
+  footer {
+    padding: 8.75rem 4.25rem 10.625rem;
+  }
+
+  .guide-list {
+    margin-top: 1.75rem;
+  }
+
+  .guide-list li {
+    display: inline;
+    margin-right: 2.25rem;
+    font-size: var(--text-size-l);
+  }
+
+  .guide-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-info-list {
+    margin-top: 1.5rem;
+  }
+
+  .footer-info-list a {
+    color: var(--gray-500);
+  }
+  .footer-info-list a:hover {
+    color: var(--gray-400);
+    transition: color;
+    transition-duration: 200ms;
+  }
+
+  .footer-info-list li {
+    font-size: var(--text-size-l);
+  }
+
+  .footer-info-list span:not(:first-of-type)::before,
+  .footer-info-list a:not(:first-of-type)::before {
+    height: 1rem;
+    margin: 0 8px 0 6px;
+  }
+
+  .sns-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  .sns-wrapper a {
+    margin-right: 1.25rem;
+  }
+
+  .sns-wrapper img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+    font-size: var(--text-size-l);
+  }
+
+  /* footer 끝 */
 }

@@ -11,6 +11,8 @@
       name="description"
       content="티빙의 랜딩페이지입니다. 티빙 오리지널 콘텐츠, 방송, 영화, 해외시리즈까지! 재미를 플레이해보세요."
     />
+    <link rel="icon" href="./assets/common/favicon.ico" />
+
     <link rel="stylesheet" href="./css/landing.css" />
     <link
       rel="stylesheet"
@@ -30,8 +32,24 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="a11y-hidden">Taing</h1>
+    <header class="header deactive">
+      <h1 class="logo">
+        <a href="./index.html">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./assets/main/main-icon/icon_logo@2x.png
+              "
+            />
+            <img
+              src="./assets/main/main-icon/icon_logo@3x.png"
+              alt="TAING
+                로고"
+            />
+          </picture>
+        </a>
+      </h1>
     </header>
 
     <section class="scroll-section-0">
