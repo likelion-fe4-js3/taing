@@ -9,26 +9,28 @@
     />
     <link rel="icon" href="../assets/common/favicon.ico" />
     <title>타잉</title>
-    <link rel="stylesheet" href="../css/findId.css" />
+    <link rel="stylesheet" href="../css/findPw.css" />
   </head>
   <body>
     <main>
-      <div class="findId">
-        <h2 class="find-login-title">아이디 찾기</h2>
+      <div class="find-pw">
+        <h2 class="find-pw-title">비밀번호 찾기</h2>
         <section>
           <form class="find-email-form">
             <h3>
-              <p class="find-email-text">이메일로 찾기</p>
               <p class="sign-in-email">
-                가입 시 등록한 이메일을 입력해주세요.
+                아이디 확인 후 등록된 이메일 주소로 비밀번호
+                재설정을 위한 인증 메일이 발송됩니다.
+                이메일을 확인하여 12시간 이내에 비밀번호
+                재설정을 완료해주세요.
               </p>
             </h3>
-            <label for="findEmail" class="find-email">
+            <label for="findPw" class="check-id">
               <input
-                class="form-find-email"
+                class="form-find-id"
                 type="text"
-                id="findEmail"
-                placeholder="이메일"
+                id="findPw"
+                placeholder="아이디"
               />
             </label>
           </form>
@@ -36,21 +38,6 @@
             확인
           </button>
         </section>
-        <div class="line-border">
-          <p>또는</p>
-        </div>
-        <form class="find-certification">
-          <h3>
-            <p class="find-cer-text">본인인증으로 찾기</p>
-            <p class="id-search">
-              이미 본인인증이 완료된 계정에 한하여 아이디
-              찾기가 가능합니다.
-            </p>
-          </h3>
-          <button class="btn-find-id" type="submit">
-            본인인증하기
-          </button>
-        </form>
       </div>
     </main>
     <footer>
