@@ -198,13 +198,6 @@ h3 {
   font-size: var(--text-size-s);
 }
 
-/* .btn-check-wrap .agree-box .btn-check-wrap label {
-  color: var(--gray-500);
-  font: var(--text-label);
-  font-size: var(--text-size-s);
-  line-height: 18px;
-} */
-
 .btn-checks .agree-checkbox {
   appearance: none;
   display: inline;
