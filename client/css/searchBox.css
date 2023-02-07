@@ -13,6 +13,17 @@ legend {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+.search-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  z-index: 999;
+}
+
 .search {
   background-color: var(--brand-dark-bg-1);
   box-sizing: border-box;
@@ -32,10 +43,28 @@ legend {
   background: transparent;
   width: 100%;
   border-bottom: 3px solid var(--white);
+  color: var(--white);
+}
+
+.search-box input {
+  outline: none;
 }
 
 .search-box input::placeholder {
-  color: var(--gray-500);
+  color: var(--gray-400);
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .search-button {
@@ -121,7 +150,6 @@ legend {
     height: 41px;
     font: var(--text-label);
     font-size: var(--text-size-m);
-    color: var(--gray-700);
   }
 
   .search-button {
@@ -164,7 +192,10 @@ legend {
 
   .search-box input {
     height: 56px;
-    color: var(--gray-700);
+  }
+
+  .search-box input::placeholder {
+    content: "TV프로그램, 영화 제목 및 출연진으로 검색해보세요";
   }
 
   .search-button {
@@ -286,7 +317,6 @@ legend {
 
   .search-box input {
     height: 89px;
-    color: var(--gray-700);
   }
 
   .search-box input::placeholder {

@@ -8,6 +8,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="../css/profilePage.css" />
+    <script
+      src="../js/profilePage.js"
+      type="module"
+    ></script>
     <title>프로필선택</title>
   </head>
   <body>
@@ -23,40 +27,99 @@
       >
         <li>
           <button type="button">
-            <img
-              src="../assets/profilePage/image/profile001.png"
-              alt="슬비쌤의 프로필 사진"
-            />
+            <picture>
+              <source
+                media="(min-width:320px) and (max-width: 767px)"
+                srcset="
+                  ../assets/profilePage/image/profile001.png
+                "
+              />
+              <source
+                media="(min-width:768px) and (max-width: 1199px)"
+                srcset="
+                  ../assets/profilePage/image/profile001@2x.png
+                "
+              />
+              <img
+                src="../assets/profilePage/image/profile001@3x.png"
+                alt="슬비쌤의 프로필 사진"
+              />
+            </picture>
             <i class="lock-icon" aria-label="잠금 상태"></i>
           </button>
           <span> 슬비쌤 </span>
         </li>
         <li>
           <button type="button">
-            <img
-              src="../assets/profilePage/image/profile002.png"
-              alt="범쌤의 프로필 사진"
-            />
+            <picture>
+              <source
+                media="(min-width:320px) and (max-width: 767px)"
+                srcset="
+                  ../assets/profilePage/image/profile002.png
+                "
+              />
+              <source
+                media="(min-width:768px) and (max-width: 1199px)"
+                srcset="
+                  ../assets/profilePage/image/profile002@2x.png
+                "
+              />
+              <img
+                src="../assets/profilePage/image/profile002@3x.png"
+                alt="범쌤의 프로필 사진"
+              />
+            </picture>
             <i class="lock-icon" aria-label="잠금 상태"></i>
           </button>
           <span> 범쌤 </span>
         </li>
         <li>
           <button type="button">
-            <img
-              src="../assets/profilePage/image/profile003.png"
-              alt="야무쌤의 프로필 사진"
-            />
+            <picture>
+              <source
+                media="(min-width:320px) and (max-width: 767px)"
+                srcset="
+                  ../assets/profilePage/image/profile003.png
+                "
+              />
+              <source
+                media="(min-width:768px) and (max-width: 1199px)"
+                srcset="
+                  ../assets/profilePage/image/profile003@2x.png
+                "
+              />
+              <img
+                src="../assets/profilePage/image/profile003@3x.png"
+                alt="야무쌤의 프로필 사진"
+              />
+            </picture>
             <i class="lock-icon" aria-label="잠금 상태"></i>
           </button>
           <span> 야무쌤 </span>
         </li>
-        <li>
-          <button type="button">
-            <img
-              src="../assets/profilePage/image/profile004.png"
-              alt="이듬의 프로필 사진"
-            />
+        <li class="profile-active">
+          <button
+            type="button"
+            onclick="location.href='main.html'"
+          >
+            <picture>
+              <source
+                media="(min-width:320px) and (max-width: 767px)"
+                srcset="
+                  ../assets/profilePage/image/profile004.png
+                "
+              />
+              <source
+                media="(min-width:768px) and (max-width: 1199px)"
+                srcset="
+                  ../assets/profilePage/image/profile004@2x.png
+                "
+              />
+              <img
+                src="../assets/profilePage/image/profile004@3x.png"
+                alt="이듬의 프로필 사진"
+              />
+            </picture>
             <i class="lock-icon" aria-label="잠금 상태"></i>
           </button>
           <span> 이듬 </span>
