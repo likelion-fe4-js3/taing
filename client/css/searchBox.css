@@ -223,6 +223,11 @@ input::-webkit-search-results-decoration {
     margin-top: 48px;
   }
 
+  .search-box input {
+    font: var(--text-label);
+    font-size: var(--text-size-l);
+  }
+
   .search-box {
     color: var(--gray-700);
     font: var(--text-label);
@@ -323,6 +328,7 @@ input::-webkit-search-results-decoration {
     height: 89px;
     margin-top: 0px;
     margin-bottom: 48px;
+    font-size: var(--text-size-xxl);
   }
 
   .search-box input {
@@ -330,6 +336,11 @@ input::-webkit-search-results-decoration {
   }
 
   .search-box input::placeholder {
+    font: var(--text-label);
+    font-size: var(--text-size-xxl);
+  }
+
+  .search-box input {
     font: var(--text-label);
     font-size: var(--text-size-xxl);
   }
