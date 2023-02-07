@@ -1,4 +1,8 @@
 import { getNode } from "../lib/index.js";
+import {
+  rendingMV,
+  rendingRT,
+} from "../lib/mainPage001/rending.js";
 
 // 헤더 스크롤 액션
 const header = document.querySelector(".header");
@@ -15,7 +19,6 @@ window.addEventListener("scroll", () => {
 
 // main-visual swiper
 const mainVisual = new Swiper(".main-visual", {
-  loop: true,
   speed: 1500,
   slidesPerView: 1,
   simulateTouch: true,
@@ -220,3 +223,8 @@ const eventSwiper = new Swiper(".event .swiper", {
     },
   },
 });
+
+// 스와이퍼 프로그램 정보 비동기통신
+rendingMV();
+rendingRT();
+// rendingContents("quickVod");

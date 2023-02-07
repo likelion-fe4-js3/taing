@@ -1,84 +1,150 @@
 {
-  "products": [
+  "main-visual": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
+      "id": "1",
+      "story": "인생 2회차를 사는 판타지 드라마",
+      "turnInfo": 0,
+      "rating": 0,
       "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
-      },
-      "stock": 3
+        "mobile": "../assets/main/main-visual/main-visual-mobile.jpg",
+        "tablet": "../assets/main/main-visual/main-visual-tablet.jpg",
+        "desktop": "../assets/main/main-visual/main-visual-slide1.jpg",
+        "alt": "막내집 재벌아들"
+      }
     },
     {
-      "id": "product-ekfk",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
-      "saleRatio": 0,
-      "salePrice": 0,
+      "id": "2",
+      "story": "이혼 전문 변호사들의 인생 성장기",
+      "turnInfo": 0,
+      "rating": 0,
       "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
-        "alt": "풀무원 탱탱쫄면"
-      },
-      "stock": 10
+        "mobile": "../assets/main/main-visual/main-visual-mobile2.jpg",
+        "tablet": "../assets/main/main-visual/main-visual-tablet2.jpg",
+        "desktop": "../assets/main/main-visual/main-visual-slide2.jpg",
+        "alt": "남이뭐시기저시기"
+      }
     },
     {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
+      "id": "3",
+      "story": "전율을 느끼게 할 블록버스터",
+      "turnInfo": 0,
+      "rating": 0,
       "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
-      },
-      "stock": 8
+        "mobile": "../assets/main/main-visual/main-visual-mobile3.jpg",
+        "tablet": "../assets/main/main-visual/main-visual-tablet3.jpg",
+        "desktop": "../assets/main/main-visual/main-visual-slide3.jpg",
+        "alt": "톰 크루즈아저씨멋졍"
+      }
     },
     {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
-      "saleRatio": 0,
-      "salePrice": 0,
+      "id": "4",
+      "story": "촬영장에서 김남길이 혼난 사연은?🙊",
+      "turnInfo": 0,
+      "rating": 0,
       "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
-      },
-      "stock": 2
+        "mobile": "../assets/main/main-visual/main-visual-mobile4.jpg",
+        "tablet": "../assets/main/main-visual/main-visual-tablet4.jpg",
+        "desktop": "../assets/main/main-visual/main-visual-slide4.jpg",
+        "alt": "시선어쩌고저쩌고"
+      }
+    }
+  ],
+  "recommend-taing": [
+    {
+      "id": "1",
+      "story": "LOVE or MONEY? 이번엔 발리다",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing001.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing001@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing001@3x.jpg",
+        "alt": "러브 캐처 인 발리"
+      }
     },
     {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
+      "id": "2",
+      "story": "기간제 교사가 된 사회 초년생 고하늘(서현진 분)이 고군분투하는 이야기",
+      "turnInfo": 0,
+      "rating": 0,
       "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
-      },
-      "stock": 13
+        "mobile": "../assets/main/recommend-taing/recommend-taing002.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing002@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing002@3x.jpg",
+        "alt": "블랙독"
+      }
+    },
+    {
+      "id": "3",
+      "story": "하루 끝의 술 한잔이 인생의 신념인 세 여자의 일상을 그린 본격 기승전술 드라마 시즌2",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing003.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing003@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing003@3x.jpg",
+        "alt": "술꾼도시여자들2"
+      }
+    },
+    {
+      "id": "4",
+      "story": "20대의 어느날, 인생 파업을 선언한 미생들의 성장 드라마",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing004.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing004@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing004@3x.jpg",
+        "alt": "아무것도 하고 싶지 않아"
+      }
+    },
+    {
+      "id": "5",
+      "story": "삶의 끝자락, 절정 혹은 시작에 서 있는 모든 사람들의 달고도 쓴 인생을 응원하는 드라마",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing005.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing005@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing005@3x.jpg",
+        "alt": "우리들의 블루스"
+      }
+    },
+    {
+      "id": "6",
+      "story": "아마추어 등반인이 정복할 수 있는 최고봉 킬리만자로! 여기 4명의 청춘들이 도전장을 냈다!",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing006.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing006@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing006@3x.jpg",
+        "alt": "인생에 한 번쯤 킬리만자로"
+      }
+    },
+    {
+      "id": "7",
+      "story": "드와이트 맨프레디(실베스터 스탤론)는 패밀리의 보스에 의해 인정사정없이 추방되어 오클라호마에서 사업을 시작하게 된다.",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing007.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing007@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing007@3x.jpg",
+        "alt": "털사 킹"
+      }
+    },
+    {
+      "id": "8",
+      "story": "5억을 향해 24명의 플레이어가 펼치는 현실판 보물찾기가 시작된다!",
+      "turnInfo": 0,
+      "rating": 0,
+      "image": {
+        "mobile": "../assets/main/recommend-taing/recommend-taing008.jpg",
+        "tablet": "../assets/main/recommend-taing/recommend-taing008@2x.jpg",
+        "desktop": "../assets/main/recommend-taing/recommend-taing008@3x.jpg",
+        "alt": "보물찾기"
+      }
     }
   ]
 }
