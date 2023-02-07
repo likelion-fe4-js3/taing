@@ -20,8 +20,8 @@ legend {
   height: 100%;
   top: 0;
   left: 0;
-  /* display: none; */
   z-index: 999;
+  /* display: none; */
 }
 
 .search {
@@ -132,6 +132,16 @@ input::-webkit-search-results-decoration {
   margin-top: 16px;
 }
 
+.latest-word-title button {
+  display: none;
+}
+
+.latest-word p {
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
+  color: var(--gray-200);
+}
+
 /* -------------------------------- 모바일 디바이스 -------------------------------- */
 @media (min-width: 320px) and (max-width: 767px) {
   .search {
@@ -211,6 +221,11 @@ input::-webkit-search-results-decoration {
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-top: 48px;
+  }
+
+  .search-box input {
+    font: var(--text-label);
+    font-size: var(--text-size-l);
   }
 
   .search-box {
@@ -313,6 +328,7 @@ input::-webkit-search-results-decoration {
     height: 89px;
     margin-top: 0px;
     margin-bottom: 48px;
+    font-size: var(--text-size-xxl);
   }
 
   .search-box input {
@@ -320,6 +336,11 @@ input::-webkit-search-results-decoration {
   }
 
   .search-box input::placeholder {
+    font: var(--text-label);
+    font-size: var(--text-size-xxl);
+  }
+
+  .search-box input {
     font: var(--text-label);
     font-size: var(--text-size-xxl);
   }
@@ -374,6 +395,10 @@ input::-webkit-search-results-decoration {
   .latest-word-list li {
     position: relative;
     line-height: 3;
+  }
+
+  .latest-word p {
+    font-size: var(--text-size-l);
   }
 
   .latest-word-list a {
