@@ -13,14 +13,13 @@ a {
   text-decoration: none;
 }
 
-Main {
+main {
   background-color: var(--black);
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   align-self: stretch;
-  box-sizing: border-box;
   padding: 28px 0px 0px;
   flex-shrink: 0;
 }
@@ -30,20 +29,20 @@ Main {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  width: 319px;
+  width: 100%;
   height: 336px;
   box-sizing: border-box;
 }
 
 .login-content-wrap {
-  width: 319px;
+  width: 100%;
   height: 173px;
   margin: 0 15.5px 0 15.5px;
 }
 
 .login-title {
   text-align: center;
-  font-weight: bold;
+  font: var(--text-heading);
   font-size: var(--text-size-m);
   padding: 0px;
   color: var(--white);
@@ -54,13 +53,14 @@ Main {
 }
 
 .id-pw-form input {
-  font-family: var(--text-size-s);
-  font-weight: 400;
+  font: var(--text-paragraph);
+  font-size: var(--text-size-s);
   background-color: var(--gray-700);
   border: none;
   border-radius: 4px;
   padding: 0px 0px 0px 16px;
-  width: 288px;
+  /* width: 288px; */
+  width: 100%;
   height: 46px;
 }
 
@@ -81,7 +81,6 @@ Main {
   width: 20px;
   right: 0;
   background: url("../assets/login/idIcon@1x.svg");
-  /* background-position: center; */
   border: 0;
 }
 
@@ -93,13 +92,12 @@ Main {
   margin: 4px 0px 8px 0px;
 } */
 
-/* 비번폼 */
+/* 비번 */
 .user-pw label {
   position: relative;
 }
 
 .e-icon {
-  border-color: aliceblue;
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -114,7 +112,7 @@ Main {
 
 .checkbox-wrap {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .btn-checkbox-wrap {
@@ -134,7 +132,7 @@ Main {
   /* flex-flow: row nowrap; */
   align-items: center;
   flex-direction: row;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
 .btn-check .checkbox {
@@ -161,8 +159,8 @@ Main {
 .btn-check label {
   /* font-family: var(--text-paragraph); */
   color: var(--gray-500);
-  font-weight: 600;
-  font-size: 12px;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
   line-height: 18px;
 }
 
@@ -170,16 +168,13 @@ Main {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  width: 18rem;
-  height: 2.625rem;
+  width: 100%;
+  height: 42px;
   background-color: var(--brand-red-1);
   border: none;
   border-radius: 4px;
+  font: var(--text-label);
   font-size: var(--text-size-s);
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
   color: var(--white);
 }
 
@@ -191,12 +186,12 @@ Main {
   align-items: center;
   padding: 20px 0px 0px;
   gap: 8px;
-  width: 288px;
+  width: 100%;
   height: 39px;
 }
 
 .find-btn-wrap li {
-  font-weight: 400;
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
   line-height: 19.2px;
   color: var(--gray-300);
@@ -209,16 +204,171 @@ Main {
 /* 아직 계정이 없으신가요 */
 .accountYet {
   padding: 20px 0px 0px;
-  width: 288px;
+  width: 100%;
   line-height: 19.2px;
   color: var(--gray-500);
   text-align: center;
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
 }
 
 .btn-join {
-  font-weight: 400;
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
   line-height: 19.2px;
   color: var(--gray-300);
+}
+
+/* 
+.box{
+  background:red;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+
+@media screen and (max-width: 1920px) {
+  .box{
+    background:dodgerblue;
+    position:relative;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .box{
+    background:orange;
+    position:fixed;
+  }
+}
+ */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    padding: 28px 0px 0px;
+  }
+  .login-content-wrap {
+    margin: 0 15.5px 0 15.5px;
+  }
+  .id-pw-form {
+    padding: 28px 0 0 0;
+  }
+  .id-pw-form input {
+    padding: 0px 0px 0px 16px;
+  }
+  .user-id {
+    margin-bottom: 8px;
+  }
+  /* .checkbox-wrap {
+    margin-top: 16px;
+  } */
+
+  /* .btn-checkbox-wrap {
+    margin: 8px 0 16px 0;
+  } */
+  .btn-check {
+    margin: 8px 0 16px 0;
+  }
+  .btn-check .checkbox + label {
+    margin-right: 9px;
+  }
+  .login-button {
+    padding: 0px;
+  }
+  .find-btn-wrap {
+    padding: 20px 0px 0px;
+  }
+  .accountYet {
+    padding: 20px 0px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .login-content-wrap {
+    margin: 0 176px 0 176px;
+  }
+  .login-title {
+    font-size: var(--text-size-xl);
+  }
+  .id-pw-form {
+    padding: 24px 0 0 0;
+  }
+  /* .checkbox-wrap {
+    margin-top: 16px;
+  } */
+  /* .btn-checkbox-wrap {
+    margin: 8px 0 16px 0;
+  } */
+  .btn-check {
+    margin: 12px 0 16px 0;
+  }
+  .btn-check .checkbox + label {
+    margin-right: 9px;
+  }
+  /* .login-button {
+    padding: 0px;
+  } */
+  .find-btn-wrap {
+    padding: 24px 0px 0px;
+  }
+  .accountYet {
+    padding: 16px 0px 0px;
+  }
+}
+
+@media (min-width: 1920px) {
+  main {
+    padding: 70px 0px 0px;
+  }
+  .login-content-wrap {
+    margin: 0 594px 0 594px;
+  }
+  .login-title {
+    font-size: var(--text-size-xxl);
+  }
+  .id-pw-form {
+    padding: 60px 0 0 0;
+  }
+  /* 박스크기 어떻게ㅠㅠ */
+  .user-id {
+    margin-bottom: 15px;
+  }
+  .id-pw-form input {
+    padding: 0px 0px 0px 24px;
+  }
+  .x-icon {
+    /* background: url("../assets/login/idIcon@3x.svg"); */
+  }
+  /* 박스크기 */
+  .user-pw {
+  }
+  .user-pw label {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-xl);
+  }
+  .e-icon {
+  }
+  .btn-check {
+    margin: 16px 0 32px 0;
+  }
+  /* 이거뭐지.. */
+  /* .btn-check .checkbox + label {
+    margin-right: 9px;
+  } */
+
+  /* .login-button {
+    padding: 0px;
+  } */
+  .find-btn-wrap {
+    padding: 48px 0px 0px;
+  }
+  .find-btn-wrap a {
+    font: var(--text-paragraph);
+    font-size: var(--text-size-l);
+  }
+
+  .accountYet {
+    padding: 44px 0px 0px;
+  }
 }
