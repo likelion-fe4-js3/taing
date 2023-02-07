@@ -75,21 +75,24 @@ function visibleNode(node, display) {
   node.style.display = display;
 }
 
+function isNullList(value) {
+  if (value !== null) {
+    return false;
+  }
+}
+
 function isEmptySearchList() {
   const searchList = getSearchList();
   if (searchList === null || searchList === []) {
     return true;
   }
-  searchList.includes(!typeof null);
-  //for문 안에 if문 쓰면 당연 tab depth 4넘는거 아녀. . .
+
   for (let value of searchList) {
-    if (value !== null) {
-      return false;
-    }
+    isNullList(value);
   }
 }
 
-function renderLatestWords(list) {
+function setWhenAllClean() {
   //searchList에 null이 아닌 값이 존재하면
   //'검색 내역이 없습니다'안 보이기, '모두 지우기'버튼 보이기
   if (!isEmptySearchList()) {
@@ -99,6 +102,23 @@ function renderLatestWords(list) {
     visibleNode(noSearch, "inline");
     invisibleNode(allClearButton);
   }
+}
+
+function addList(value) {
+  if (value !== null && value !== undefined) {
+    insertLast(
+      latestWordList,
+      /*html*/ `
+      <li>
+      <a href="#">${value}</a>
+      <button aria-label="삭제"></button>
+      </li>`
+    );
+  }
+}
+
+function renderLatestWords(list) {
+  setWhenAllClean();
 
   if (!list) {
     return;
@@ -106,16 +126,7 @@ function renderLatestWords(list) {
 
   //최근 검색어 목록 추가
   for (let value of list) {
-    if (value !== null && value !== undefined) {
-      insertLast(
-        latestWordList,
-        /*html*/ `
-        <li>
-        <a href="#">${value}</a>
-        <button aria-label="삭제"></button>
-        </li>`
-      );
-    }
+    addList(value);
   }
 }
 
@@ -171,9 +182,7 @@ function deleteHandler(event) {
   const presentKeywords = getSearchList();
   presentKeywords.forEach((item, index) => {
     if (item === searchValue) {
-      console.log(index);
       presentKeywords[index] = null;
-      console.log(presentKeywords);
       localStorage.setItem(
         "searchKeywords",
         JSON.stringify(presentKeywords)
@@ -185,6 +194,7 @@ function deleteHandler(event) {
 
   //화면에서 삭제
   deleteTarget.remove();
+  setWhenAllClean();
 
   renderLatestWords();
 }
