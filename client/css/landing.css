@@ -17,6 +17,29 @@ body {
   height: 1px;
   margin: -1px;
 }
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
 
 /* 스크롤 섹션 0 시작 */
 
@@ -199,7 +222,6 @@ footer::before {
 /* 모바일  */
 @media (min-width: 320px) and (max-width: 767px) {
   /* 모바일 공통 시작 */
-
   .login-button {
     width: 11.75rem;
     height: 2.125rem;
@@ -383,6 +405,18 @@ footer::before {
   }
 
   /* 태블릿 공통 끝 */
+
+  /* 헤더 시작 */
+
+  .header {
+    padding: 20px 40px;
+  }
+
+  /* 헤더 끝 */
+
+  .logo {
+    width: 77px;
+  }
 
   /* 스크롤 섹션 0 시작 */
 
@@ -583,6 +617,12 @@ footer::before {
   }
 
   /* 데스크탑 공통 끝 */
+
+  /* 헤더 시작 */
+  .header {
+    padding: 20px 70px;
+  }
+  /* 헤더 끝 */
 
   /* 스크롤 섹션 0 시작 */
 

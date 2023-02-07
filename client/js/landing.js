@@ -13,10 +13,11 @@ var thumbnailSwiper = new Swiper(".thumbnail-window", {
 
 const upperSwiper = new Swiper(".upper-wrapper", {
   loop: true,
-  loopedSlides: 1,
+  loopedSlidesLimit: false,
+
   autoplay: {
     delay: 1,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   spaceBetween: 10,
   speed: 3000,
@@ -42,10 +43,10 @@ const lowerSwiper = new Swiper(".lower-wrapper", {
 
   autoplay: {
     delay: 1,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   spaceBetween: 10,
-  speed: 2000,
+  speed: 2300,
   grabCursor: false,
   mousewheelControl: false,
   keyboardControl: true,
