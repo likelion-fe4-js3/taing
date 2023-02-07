@@ -8,7 +8,7 @@ var thumbnailSwiper = new Swiper(".thumbnail-window", {
   slidesPerView: 2,
   spaceBetween: 30,
   centeredSlides: true,
-  //allowTouchMove: false,
+  allowTouchMove: false,
 });
 
 const upperSwiper = new Swiper(".upper-wrapper", {
