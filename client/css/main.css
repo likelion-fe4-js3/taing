@@ -192,7 +192,7 @@ main {
   line-height: 24px;
 }
 
-.user-menu .search {
+.user-menu .main-search {
   background: url(../assets/main/main-icon/icon_search.png)
     no-repeat center center;
 }
@@ -695,7 +695,7 @@ footer::before {
     line-height: 24px;
   }
 
-  .user-menu .search {
+  .user-menu .main-search {
     background: url(../assets/main/main-icon/icon_search@2x.png)
       no-repeat center center;
   }
@@ -979,6 +979,14 @@ footer::before {
     background: url(../assets/main/main-icon/icon_live@3x.png)
       no-repeat center center;
     background-size: contain;
+
+  }
+
+  .gnb-live:hover a::before {
+    background: url(../assets/main/main-icon/icon_live-hover@3x.png)
+      no-repeat center center;
+    background-size: contain;
+
   }
 
   .gnb-live a {
@@ -1009,7 +1017,7 @@ footer::before {
     line-height: 24px;
   }
 
-  .user-menu .search {
+  .user-menu .main-search {
     background: url(../assets/main/main-icon/icon_search@3x.png)
       no-repeat center center;
   }
