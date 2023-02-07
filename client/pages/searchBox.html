@@ -8,62 +8,70 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="../css/searchBox.css" />
+    <script src="../js/searchBox.js" type="module"></script>
     <title>TAING</title>
   </head>
   <body>
-    <section class="search">
-      <h2 class="a11y-hidden">검색창</h2>
-      <form method="POST" action="#" class="search-box">
-        <fieldset>
-          <legend>검색창</legend>
-          <input type="search" placeholder="검색" />
-          <button type="submit" class="search-button">
-            검색
-          </button>
-        </fieldset>
-      </form>
-      <section class="search-word">
-        <section class="latest-word">
-          <h2 class="latest-word-title">
-            최근 검색어
-            <button type="button is-active">
-              모두 지우기
+    <section class="search-background">
+      <section class="search">
+        <h2 class="a11y-hidden">검색창</h2>
+        <form
+          method="POST"
+          action="#"
+          class="search-box"
+          onsubmit="return false"
+        >
+          <fieldset>
+            <legend>검색창</legend>
+            <input type="text" placeholder="검색" />
+            <button type="button" class="search-button">
+              검색
             </button>
-          </h2>
-          <ul class="latest-word-list is-active">
-            <li>
-              <a href="#">재벌집</a>
-              <button aria-label="삭제"></button>
-            </li>
-            <li>
-              <a href="#">재벌집</a>
-              <button aria-label="삭제"></button>
-            </li>
-          </ul>
-        </section>
-        <section class="popular-word">
-          <h2 class="popular-word-title">
-            실시간 인기 검색어
-          </h2>
-          <ol class="popular-word-list">
-            <li><a href="#">재벌집 막내아들</a></li>
-            <li><a href="#">미스터트롯2</a></li>
-            <li><a href="#">유 퀴즈 온 더 블럭</a></li>
-            <li><a href="#">대행사</a></li>
-            <li>
-              <a href="#">SHOW ME THE MONEY 11</a>
-            </li>
-            <li><a href="#">미씽: 그들이 있었다2</a></li>
-            <li><a href="#">술꾼도시여자들2</a></li>
-            <li><a href="#">캐나다 체크인</a></li>
-            <li><a href="#">미씽: 그들이 있었다</a></li>
-            <li><a href="#">술꾼도시여자들</a></li>
-          </ol>
-          <p>
-            <time datetime="2022-12-24T03:04:00"
-              >2022.12.24 오전 03:04</time
-            >기준
-          </p>
+          </fieldset>
+        </form>
+        <section class="search-word">
+          <section class="latest-word">
+            <h2 class="latest-word-title">
+              최근 검색어
+              <button type="button is-active">
+                모두 지우기
+              </button>
+            </h2>
+            <ul class="latest-word-list is-active">
+              <li>
+                <a href="#">재벌집</a>
+                <button aria-label="삭제"></button>
+              </li>
+              <li>
+                <a href="#">재벌집</a>
+                <button aria-label="삭제"></button>
+              </li>
+            </ul>
+          </section>
+          <section class="popular-word">
+            <h2 class="popular-word-title">
+              실시간 인기 검색어
+            </h2>
+            <ol class="popular-word-list">
+              <li><a href="#">재벌집 막내아들</a></li>
+              <li><a href="#">미스터트롯2</a></li>
+              <li><a href="#">유 퀴즈 온 더 블럭</a></li>
+              <li><a href="#">대행사</a></li>
+              <li>
+                <a href="#">SHOW ME THE MONEY 11</a>
+              </li>
+              <li><a href="#">미씽: 그들이 있었다2</a></li>
+              <li><a href="#">술꾼도시여자들2</a></li>
+              <li><a href="#">캐나다 체크인</a></li>
+              <li><a href="#">미씽: 그들이 있었다</a></li>
+              <li><a href="#">술꾼도시여자들</a></li>
+            </ol>
+            <p>
+              <time datetime="2022-12-24T03:04:00"
+                >2022.12.24 오전 03:04</time
+              >기준
+            </p>
+          </section>
         </section>
       </section>
     </section>
