@@ -152,10 +152,6 @@
     padding: 28px 0 44px 0;
   }
 
-  .profile-image img {
-    content: url(../assets/profilePage/image/profile001@2x.png);
-  }
-
   .lock-icon {
     transform: translate(-50%, -50%) scale(0.83, 0.83);
   }
@@ -195,10 +191,6 @@
     justify-content: center;
     margin: auto;
     padding: 44px 0 66px 0;
-  }
-
-  .profile-image img {
-    content: url(../assets/profilePage/image/profile001@3x.png);
   }
 
   .profile-image button {
