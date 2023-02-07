@@ -211,6 +211,7 @@ footer::before {
 }
 
 .copyright {
+  display: inline-block;
   color: var(--gray-500);
   font: var(--text-paragraph);
 }
