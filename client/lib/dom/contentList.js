@@ -1,15 +1,7 @@
 import { insertLast } from "./insert.js";
 
-// data-index="mainVisual${id}"
-// ${image["mobile"]}
-// ${image["tablet"]}
-// src="${image["desktop"]}"
-// alt="${image["alt"]}"
-// ${story}
-
-// 메인비주얼컨텐츠 => 이름수정?
-
-export const createMV = ({
+// 메인비주얼
+export const createMainVisual = ({
   id = "",
   story = "",
   image = "",
@@ -43,29 +35,216 @@ export const createMV = ({
     </div>`;
 };
 
-export const renderMV = (target, data) => {
-  insertLast(target, createMV(data));
-  console.log("랜더링성공");
+export const renderMainVisual = (target, data) => {
+  insertLast(target, createMainVisual(data));
 };
 
-// data-index="mainVisual${id}"
-// ${image["mobile"]}
-// ${image["tablet"]}
-// src="${image["desktop"]}"
-// alt="${image["alt"]}"
-// ${story}
-
 //타잉에서 꼭봐야하는 컨텐츠
-export const createRT = ({ id = "", image = "" } = {}) => {
+export const createRecommendTaing = ({
+  id = "",
+  image = "",
+} = {}) => {
   return /* html */ `
   <div class="swiper-slide" data-index="${id}"
   >
-  <a href="#">
+    <a href="#" aria-label="${image["alt"]}">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ${image["mobile"]}
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+          ${image["tablet"]}
+          "
+        />
+        <img
+        src="${image["desktop"]}"
+        alt="${image["alt"]}"
+        />
+      </picture>
+      <p class="item-info">
+      ${image["alt"]}
+      </p>
+    </a>
+  </div>`;
+};
+
+export const renderRecommendTaing = (target, data) => {
+  insertLast(target, createRecommendTaing(data));
+};
+
+//Quick-vod
+export const createQuickVod = ({
+  id = "",
+  turnInfo = "",
+  image = "",
+} = {}) => {
+  return /* html */ `
+  <div class="swiper-slide badge badge-quick-vod" data-index="quick-vod${id}">
+    <a href="#" aria-label="${image["alt"]}">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ${image["mobile"]}
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+          ${image["tablet"]}
+          "
+        />
+        <img
+        src="${image["desktop"]}"
+        alt="${image["alt"]}"
+        />
+      </picture>
+      <h3>${image["alt"]}</h3>
+      <p>${`${turnInfo}화`}</p>
+    </a>
+  </div>`;
+};
+
+export const renderQuickVod = (target, data) => {
+  insertLast(target, createQuickVod(data));
+};
+
+//realtime-popular
+export const createRealtimePopular = ({
+  id = "",
+  rank = "",
+  image = "",
+} = {}) => {
+  return /* html */ `
+  <li class="swiper-slide" data-index="realtime-popular${id}"
+  >
+    <a href="#" aria-label="${image["alt"]}">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ${image["mobile"]}
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+          ${image["tablet"]}
+          "
+        />
+        <img
+        src="${image["desktop"]}"
+        alt="${image["alt"]}"
+        />
+      </picture>
+      <div class="item-info">
+        <span class="rank-number">${rank}</span>
+        <p>${image["alt"]}</p>
+      </div>
+    </a>
+  </li>`;
+};
+
+export const renderRealtimePopular = (target, data) => {
+  insertLast(target, createRealtimePopular(data));
+};
+
+//live-popular
+export const createLivePopular = ({
+  id = "",
+  rank = "",
+  rating = "",
+  channel = "",
+  image = "",
+} = {}) => {
+  return /* html */ `
+    <li class="swiper-slide" data-index="live-popular${id}"
+    >
+    <a href="#" aria-label="${image["alt"]}">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ${image["mobile"]}
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+          ${image["tablet"]}
+          "
+        />
+        <img
+        src="${image["desktop"]}"
+        alt="${image["alt"]}"
+        />
+      </picture>
+      <div class="item-info">
+        <span class="rank-number">${rank}</span>
+        <div class="program-info">
+          <h3>${channel}<span>${image["alt"]}</span></h3>
+          <p class="viewer-rating">${`${rating}%`}</p>
+        </div>
+      </div>
+    </a>
+  </li>`;
+};
+
+export const renderLivePopular = (target, data) => {
+  insertLast(target, createLivePopular(data));
+};
+
+//only-taing
+export const createOnlyTaing = ({
+  id = "",
+  image = "",
+} = {}) => {
+  return /* html */ `
+  <div class="swiper-slide" data-index="only-taing${id}"
+  >
+    <a href="#" aria-label="${image["alt"]}">
+    <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ${image["mobile"]}
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+          ${image["tablet"]}
+          "
+        />
+        <img
+        src="${image["desktop"]}"
+        alt="${image["alt"]}"
+        />
+      </picture>
+    </a>
+  </div>`;
+};
+
+export const renderOnlyTaing = (target, data) => {
+  insertLast(target, createOnlyTaing(data));
+};
+
+//event
+export const createEvent = ({
+  id = "",
+  image = "",
+} = {}) => {
+  return /* html */ `
+  <div class="swiper-slide" data-index="event${id}">
     <picture>
       <source
         media="(max-width: 767px)"
-        srcset="
-        ${image["mobile"]}
+        srcset="${image["mobile"]}
         "
       />
       <source
@@ -77,17 +256,13 @@ export const createRT = ({ id = "", image = "" } = {}) => {
       <img
       src="${image["desktop"]}"
       alt="${image["alt"]}"
+      
       />
     </picture>
-    <p class="item-info">
-    ${image["alt"]}
-    </p>
-  </a>
-  </div>
-  `;
+  </div>`;
 };
 
-export const renderRT = (target, data) => {
-  insertLast(target, createRT(data));
-  console.log("랜더링성공");
+//
+export const renderEvent = (target, data) => {
+  insertLast(target, createEvent(data));
 };

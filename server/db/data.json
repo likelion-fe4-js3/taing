@@ -3,8 +3,6 @@
     {
       "id": "1",
       "story": "인생 2회차를 사는 판타지 드라마",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/main-visual/main-visual-mobile.jpg",
         "tablet": "../assets/main/main-visual/main-visual-tablet.jpg",
@@ -15,58 +13,46 @@
     {
       "id": "2",
       "story": "이혼 전문 변호사들의 인생 성장기",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/main-visual/main-visual-mobile2.jpg",
         "tablet": "../assets/main/main-visual/main-visual-tablet2.jpg",
         "desktop": "../assets/main/main-visual/main-visual-slide2.jpg",
-        "alt": "남이뭐시기저시기"
+        "alt": "남이 될 수 있을까"
       }
     },
     {
       "id": "3",
       "story": "전율을 느끼게 할 블록버스터",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/main-visual/main-visual-mobile3.jpg",
         "tablet": "../assets/main/main-visual/main-visual-tablet3.jpg",
         "desktop": "../assets/main/main-visual/main-visual-slide3.jpg",
-        "alt": "톰 크루즈아저씨멋졍"
+        "alt": "톰 크루즈 탑건 매버릭"
       }
     },
     {
       "id": "4",
       "story": "촬영장에서 김남길이 혼난 사연은?🙊",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/main-visual/main-visual-mobile4.jpg",
         "tablet": "../assets/main/main-visual/main-visual-tablet4.jpg",
         "desktop": "../assets/main/main-visual/main-visual-slide4.jpg",
-        "alt": "시선어쩌고저쩌고"
+        "alt": "시선ZIP"
       }
     }
   ],
   "recommend-taing": [
     {
       "id": "1",
-      "story": "LOVE or MONEY? 이번엔 발리다",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing001.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing001@2x.jpg",
         "desktop": "../assets/main/recommend-taing/recommend-taing001@3x.jpg",
-        "alt": "러브 캐처 인 발리"
+        "alt": "러브캐처 인 발리"
       }
     },
     {
       "id": "2",
-      "story": "기간제 교사가 된 사회 초년생 고하늘(서현진 분)이 고군분투하는 이야기",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing002.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing002@2x.jpg",
@@ -76,9 +62,6 @@
     },
     {
       "id": "3",
-      "story": "하루 끝의 술 한잔이 인생의 신념인 세 여자의 일상을 그린 본격 기승전술 드라마 시즌2",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing003.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing003@2x.jpg",
@@ -88,9 +71,6 @@
     },
     {
       "id": "4",
-      "story": "20대의 어느날, 인생 파업을 선언한 미생들의 성장 드라마",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing004.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing004@2x.jpg",
@@ -100,9 +80,6 @@
     },
     {
       "id": "5",
-      "story": "삶의 끝자락, 절정 혹은 시작에 서 있는 모든 사람들의 달고도 쓴 인생을 응원하는 드라마",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing005.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing005@2x.jpg",
@@ -112,9 +89,6 @@
     },
     {
       "id": "6",
-      "story": "아마추어 등반인이 정복할 수 있는 최고봉 킬리만자로! 여기 4명의 청춘들이 도전장을 냈다!",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing006.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing006@2x.jpg",
@@ -124,9 +98,6 @@
     },
     {
       "id": "7",
-      "story": "드와이트 맨프레디(실베스터 스탤론)는 패밀리의 보스에 의해 인정사정없이 추방되어 오클라호마에서 사업을 시작하게 된다.",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing007.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing007@2x.jpg",
@@ -136,14 +107,350 @@
     },
     {
       "id": "8",
-      "story": "5억을 향해 24명의 플레이어가 펼치는 현실판 보물찾기가 시작된다!",
-      "turnInfo": 0,
-      "rating": 0,
       "image": {
         "mobile": "../assets/main/recommend-taing/recommend-taing008.jpg",
         "tablet": "../assets/main/recommend-taing/recommend-taing008@2x.jpg",
         "desktop": "../assets/main/recommend-taing/recommend-taing008@3x.jpg",
         "alt": "보물찾기"
+      }
+    }
+  ],
+  "quick-vod": [
+    {
+      "id": "1",
+      "turnInfo": 130,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod001.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod001@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod001@3x.jpg",
+        "alt": "건강면세점"
+      }
+    },
+    {
+      "id": "2",
+      "turnInfo": 10,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod002.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod002@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod002@3x.jpg",
+        "alt": "나는 살기로 했다"
+      }
+    },
+    {
+      "id": "3",
+      "turnInfo": 208,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod003.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod003@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod003@3x.jpg",
+        "alt": "알맹이"
+      }
+    },
+    {
+      "id": "4",
+      "turnInfo": 380,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod004.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod004@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod004@3x.jpg",
+        "alt": "엄마의 봄날"
+      }
+    },
+    {
+      "id": "5",
+      "turnInfo": 210,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod005.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod005@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod005@3x.jpg",
+        "alt": "차이나는 클라스"
+      }
+    },
+    {
+      "id": "6",
+      "turnInfo": 0,
+      "image": {
+        "mobile": "../assets/main/quick-vod/quick-vod006.jpg",
+        "tablet": "../assets/main/quick-vod/quick-vod006@2x.jpg",
+        "desktop": "../assets/main/quick-vod/quick-vod006@3x.jpg",
+        "alt": "JTBC 뉴스룸"
+      }
+    }
+  ],
+  "realtime-popular": [
+    {
+      "id": "1",
+      "rank": "1",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular001.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular001@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular001@3x.jpg",
+        "alt": "놀라운 토요일"
+      }
+    },
+    {
+      "id": "2",
+      "rank": "2",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular002.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular002@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular002@3x.jpg",
+        "alt": "러브캐처 인 발리"
+      }
+    },
+    {
+      "id": "3",
+      "rank": "3",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular003.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular003@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular003@3x.jpg",
+        "alt": "쇼미더머니 11"
+      }
+    },
+    {
+      "id": "4",
+      "rank": "4",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular004.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular004@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular004@3x.jpg",
+        "alt": "술꾼도시여자들2"
+      }
+    },
+    {
+      "id": "5",
+      "rank": "5",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular005.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular005@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular005@3x.jpg",
+        "alt": "알쓸인잡"
+      }
+    },
+    {
+      "id": "6",
+      "rank": "6",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular006.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular006@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular006@3x.jpg",
+        "alt": "캐나다 체크인"
+      }
+    },
+    {
+      "id": "7",
+      "rank": "7",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular007.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular007@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular007@3x.jpg",
+        "alt": "환혼"
+      }
+    },
+    {
+      "id": "8",
+      "rank": "8",
+      "image": {
+        "mobile": "../assets/main/realtime-popular/realtime-popular008.jpg",
+        "tablet": "../assets/main/realtime-popular/realtime-popular008@2x.jpg",
+        "desktop": "../assets/main/realtime-popular/realtime-popular008@3x.jpg",
+        "alt": "재벌집 막내아들"
+      }
+    }
+  ],
+  "live-popular": [
+    {
+      "id": "1",
+      "rank": "1",
+      "channel": "JTBC",
+      "rating": "27.9",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular001.jpg",
+        "tablet": "../assets/main/live-popular/live-popular001@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular001@3x.jpg",
+        "alt": "JTBC 뉴스룸"
+      }
+    },
+    {
+      "id": "2",
+      "rank": "2",
+      "channel": "tvN",
+      "rating": "26.3",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular002.jpg",
+        "tablet": "../assets/main/live-popular/live-popular002@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular002@3x.jpg",
+        "alt": "줄 서는 식당 43회"
+      }
+    },
+    {
+      "id": "3",
+      "rank": "3",
+      "channel": "YTN",
+      "rating": "9",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular003.jpg",
+        "tablet": "../assets/main/live-popular/live-popular003@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular003@3x.jpg",
+        "alt": "뉴스가 있는 저녁"
+      }
+    },
+    {
+      "id": "4",
+      "rank": "4",
+      "channel": "JTBC2",
+      "rating": "6.2",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular004.jpg",
+        "tablet": "../assets/main/live-popular/live-popular004@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular004@3x.jpg",
+        "alt": "재벌집 막내아들 5화"
+      }
+    },
+    {
+      "id": "5",
+      "rank": "5",
+      "channel": "연합뉴스 TV",
+      "rating": "4.6",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular005.jpg",
+        "tablet": "../assets/main/live-popular/live-popular005@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular005@3x.jpg",
+        "alt": "뉴스프라임"
+      }
+    },
+    {
+      "id": "6",
+      "rank": "6",
+      "channel": "애니맥스",
+      "rating": "4.3",
+      "image": {
+        "mobile": "../assets/main/live-popular/live-popular006.jpg",
+        "tablet": "../assets/main/live-popular/live-popular006@2x.jpg",
+        "desktop": "../assets/main/live-popular/live-popular006@3x.jpg",
+        "alt": "명탐정코난9(자막) 33화"
+      }
+    }
+  ],
+  "only-taing": [
+    {
+      "id": "1",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing001.jpg",
+        "tablet": "../assets/main/only-taing/only-taing001@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing001@3x.jpg",
+        "alt": "괴이"
+      }
+    },
+    {
+      "id": "2",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing002.jpg",
+        "tablet": "../assets/main/only-taing/only-taing002@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing002@3x.jpg",
+        "alt": "러브캐처 인 발리"
+      }
+    },
+    {
+      "id": "3",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing003.jpg",
+        "tablet": "../assets/main/only-taing/only-taing003@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing003@3x.jpg",
+        "alt": "몸값"
+      }
+    },
+    {
+      "id": "4",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing004.jpg",
+        "tablet": "../assets/main/only-taing/only-taing004@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing004@3x.jpg",
+        "alt": "술꾼도시여자들2"
+      }
+    },
+    {
+      "id": "5",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing005.jpg",
+        "tablet": "../assets/main/only-taing/only-taing005@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing005@3x.jpg",
+        "alt": "전체관람가:숏버스터"
+      }
+    },
+    {
+      "id": "6",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing006.jpg",
+        "tablet": "../assets/main/only-taing/only-taing006@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing006@3x.jpg",
+        "alt": "푸드 크로니클"
+      }
+    },
+    {
+      "id": "7",
+      "image": {
+        "mobile": "../assets/main/only-taing/only-taing007.jpg",
+        "tablet": "../assets/main/only-taing/only-taing007@2x.jpg",
+        "desktop": "../assets/main/only-taing/only-taing007@3x.jpg",
+        "alt": "환승연애 2"
+      }
+    }
+  ],
+  "event": [
+    {
+      "id": "1",
+      "image": {
+        "mobile": "../assets/main/event/event01.png",
+        "tablet": " ../assets/main/event/event01@2x.png",
+        "desktop": "../assets/main/event/event01@3x.png",
+        "alt": "신비아파트 극장판 개봉 기념 예매권 증정 이벤트"
+      }
+    },
+    {
+      "id": "2",
+      "image": {
+        "mobile": "../assets/main/event/event02.png",
+        "tablet": " ../assets/main/event/event02@2x.png",
+        "desktop": "../assets/main/event/event02@3x.png",
+        "alt": "재벌집 막내아들 1일 재벌 체험 이벤트"
+      }
+    },
+    {
+      "id": "3",
+      "image": {
+        "mobile": "../assets/main/event/event03.png",
+        "tablet": " ../assets/main/event/event03@2x.png",
+        "desktop": "../assets/main/event/event03@3x.png",
+        "alt": "환승연애 2 과몰입 도파민 충전 이벤트"
+      }
+    },
+    {
+      "id": "4",
+      "image": {
+        "mobile": "../assets/main/event/event04.png",
+        "tablet": " ../assets/main/event/event04@2x.png",
+        "desktop": "../assets/main/event/event04@3x.png",
+        "alt": "슈룹 시청 공식 우산 굿즈 증정 이벤트"
+      }
+    },
+    {
+      "id": "5",
+      "image": {
+        "mobile": "../assets/main/event/event05.png",
+        "tablet": " ../assets/main/event/event05@2x.png",
+        "desktop": "../assets/main/event/event05@3x.png",
+        "alt": "대한민국 대표 디저트 메이커를 찾습니다"
+      }
+    },
+    {
+      "id": "6",
+      "image": {
+        "mobile": "../assets/main/event/event06.png",
+        "tablet": " ../assets/main/event/event06@2x.png",
+        "desktop": "../assets/main/event/event06@3x.png",
+        "alt": "렛미인 감상 원작 도서 증정 이벤트"
       }
     }
   ]

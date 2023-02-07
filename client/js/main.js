@@ -1,19 +1,29 @@
-import { getNode } from "../lib/index.js";
 import {
-  rendingMV,
-  rendingRT,
-} from "../lib/mainPage001/rending.js";
+  attr,
+  addClass,
+  getNode,
+  removeClass,
+} from "../lib/index.js";
+import {
+  rendingEvent,
+  rendingLivePopular,
+  rendingMainVisual,
+  rendingOnlyTaing,
+  rendingQuickVod,
+  rendingRealtimePopular,
+  rendingRecommendTaing,
+} from "../lib/dom/rending.js";
 
 // 헤더 스크롤 액션
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 100) {
-    header.classList.remove("deactive");
-    header.classList.add("active");
+    removeClass(header, "deactive");
+    addClass(header, "active");
   } else {
-    header.classList.remove("active");
-    header.classList.add("deactive");
+    removeClass(header, "active");
+    addClass(header, "deactive");
   }
 });
 
@@ -40,12 +50,14 @@ const autoplayBtn = getNode(".swiper-button-autoplay");
 function handlerAutoplay() {
   if (autoplayBtn.className.includes("btn-pause")) {
     mainVisual.autoplay.stop();
-    autoplayBtn.classList.remove("btn-pause");
-    autoplayBtn.classList.add("btn-play");
+    removeClass(autoplayBtn, "btn-pause");
+    addClass(autoplayBtn, "btn-play");
+    attr(autoplayBtn, "aria-label", "재생");
   } else {
     mainVisual.autoplay.start();
-    autoplayBtn.classList.remove("btn-play");
-    autoplayBtn.classList.add("btn-pause");
+    removeClass(autoplayBtn, "btn-play");
+    addClass(autoplayBtn, "btn-pause");
+    attr(autoplayBtn, "aria-label", "일시정지");
   }
 }
 
@@ -225,6 +237,10 @@ const eventSwiper = new Swiper(".event .swiper", {
 });
 
 // 스와이퍼 프로그램 정보 비동기통신
-rendingMV();
-rendingRT();
-// rendingContents("quickVod");
+rendingMainVisual();
+rendingRecommendTaing();
+rendingQuickVod();
+rendingRealtimePopular();
+rendingLivePopular();
+rendingOnlyTaing();
+rendingEvent();
