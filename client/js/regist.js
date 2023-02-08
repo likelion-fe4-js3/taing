@@ -1,4 +1,9 @@
-import { getNode, getNodes, attr } from "../lib/index.js";
+import {
+  getNode,
+  getNodes,
+  attr,
+  tiger,
+} from "../lib/index.js";
 
 // pw와 pw확인 input 영역에 비밀번호 가리고 보이기
 const upperPwShow = getNode(".show-pw-upper");
@@ -105,6 +110,7 @@ userIdInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.id = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -115,6 +121,7 @@ userIdInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.id = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -132,6 +139,7 @@ userIdInput.addEventListener("input", () => {
       "영문 소문자 또는 영문 소문자, 숫자 조합 6~12 자리로 입력해주세요.",
       "red"
     );
+    chkVaidFlags(totalValidFlags);
     totalValidFlags.id = false;
   }
 });
@@ -149,6 +157,7 @@ userPwInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.pw = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -159,6 +168,7 @@ userPwInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.pw = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -176,7 +186,9 @@ userPwInput.addEventListener("input", () => {
       "영문, 숫자, 특수문자 (~!@#$%^&*) 조합 8~15 자리 로 입력해주세요.",
       "red"
     );
+
     totalValidFlags.pw = false;
+    chkVaidFlags(totalValidFlags);
   }
 });
 
@@ -193,6 +205,7 @@ userPwCheckInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.pwCheck = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -207,6 +220,7 @@ userPwCheckInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.pwCheck = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 });
@@ -224,6 +238,7 @@ userEmailInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.email = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 
@@ -238,6 +253,7 @@ userEmailInput.addEventListener("input", () => {
       "red"
     );
     totalValidFlags.email = false;
+    chkVaidFlags(totalValidFlags);
     return;
   }
 });
@@ -314,6 +330,36 @@ privacyCheckEmail.addEventListener("input", (e) => {
   }
 });
 
-getNode("body").addEventListener("click", () => {
-  console.log(totalValidFlags);
+function randomString() {
+  const chars =
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+  const stringLength = 10;
+  let randomstring = "";
+  for (let idx = 0; idx < stringLength; idx++) {
+    const rnum = Math.floor(Math.random() * chars.length);
+    randomstring += chars.substring(rnum, rnum + 1);
+  }
+  return randomstring;
+}
+
+const joinBtn = getNode(".join-btn");
+
+const userData = {
+  id: "",
+  "user-id": "",
+  "user-pw": "",
+  uniqueId: "",
+};
+
+joinBtn.addEventListener("click", async () => {
+  userData["user-id"] = userIdInput.value;
+  userData["user-pw"] = userPwCheckInput.value;
+  userData.uniqueId = randomString();
+
+  const response1 = await tiger.post(
+    "http://localhost:3000/users",
+    userData
+  );
+
+  window.location.href = "./loginPage.html";
 });
