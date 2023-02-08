@@ -17,6 +17,29 @@ body {
   height: 1px;
   margin: -1px;
 }
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
 
 /* 스크롤 섹션 0 시작 */
 
@@ -72,26 +95,61 @@ body {
 /* 스크롤 섹션 0 끝 */
 
 /* 스크롤 섹션 1 시작 */
+/* 
+.thumbnail-window {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+}
 
 .movie-thumbnail-slide-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  overflow: hidden;
-}
+  position: absolute;
+  top: 0;
+  left: 50%;
+} */
 
 .movie-thumbnail-slide img {
   border-radius: 0.25rem;
 }
 
+.scroll-section-1 .swiper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail-window .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail-window .swiper-slide-prev,
+.thumbnail-window .swiper-slide-next {
+  filter: brightness(30%);
+  transition: filter;
+  transition-duration: 400ms;
+}
 /* 스크롤 섹션 1 끝 */
 
 /* 스크롤 섹션 2 시작 */
 
-.rolling-banner-thumnail {
+.swiper-container {
+  overflow: hidden;
+}
+
+.upper-wrapper > .swiper-wrapper,
+.lower-wrapper > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+/* .rolling-banner-thumnail {
   display: flex;
   flex-flow: row nowrap;
   overflow: hidden;
-}
+} */
 
 .rolling-banner-thumnail img {
   border-radius: 0.25rem;
@@ -153,6 +211,7 @@ footer::before {
 }
 
 .copyright {
+  display: inline-block;
   color: var(--gray-500);
   font: var(--text-paragraph);
 }
@@ -164,7 +223,6 @@ footer::before {
 /* 모바일  */
 @media (min-width: 320px) and (max-width: 767px) {
   /* 모바일 공통 시작 */
-
   .login-button {
     width: 11.75rem;
     height: 2.125rem;
@@ -205,6 +263,10 @@ footer::before {
 
   /* 스크롤 섹션 1 시작 */
 
+  .scroll-section-1 {
+    padding-top: 3rem;
+  }
+
   .scroll-section-1 .message-title {
     font: var(--text-heading);
     font-size: var(--text-size-l);
@@ -216,13 +278,12 @@ footer::before {
   }
 
   .scroll-section-1 .message-wrapper {
-    margin-top: 3rem;
     margin-bottom: 1.625rem;
   }
 
-  .movie-thumbnail-slide-wrapper {
-    gap: 0.75rem;
-    padding-left: 1.25rem;
+  .movie-thumbnail-slide img {
+    width: 17.375rem;
+    height: 25rem;
   }
 
   /* 스크롤 섹션 1 끝 */
@@ -346,6 +407,18 @@ footer::before {
 
   /* 태블릿 공통 끝 */
 
+  /* 헤더 시작 */
+
+  .header {
+    padding: 20px 40px;
+  }
+
+  /* 헤더 끝 */
+
+  .logo {
+    width: 77px;
+  }
+
   /* 스크롤 섹션 0 시작 */
 
   .scroll-section-0 {
@@ -369,7 +442,7 @@ footer::before {
   /* 스크롤 섹션 1 시작 */
 
   .scroll-section-1 {
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
   }
 
   .scroll-section-1 .message-title {
@@ -391,10 +464,9 @@ footer::before {
   .scroll-section-1 .message-wrapper {
     margin-bottom: 2rem;
   }
-
-  .movie-thumbnail-slide-wrapper {
-    gap: 0.75rem;
-    padding-left: 7rem;
+  .movie-thumbnail-slide img {
+    width: 17.375rem;
+    height: 25rem;
   }
 
   /* 스크롤 섹션 1 끝 */
@@ -402,7 +474,7 @@ footer::before {
   /* 스크롤 섹션 2 시작 */
 
   .scroll-section-2 {
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
 
   .scroll-section-2 .message-title {
@@ -547,6 +619,12 @@ footer::before {
 
   /* 데스크탑 공통 끝 */
 
+  /* 헤더 시작 */
+  .header {
+    padding: 20px 70px;
+  }
+  /* 헤더 끝 */
+
   /* 스크롤 섹션 0 시작 */
 
   .scroll-section-0 {
@@ -571,7 +649,10 @@ footer::before {
   /* 스크롤 섹션 1 시작 */
 
   .scroll-section-1 {
-    margin-top: 10rem;
+    padding-top: 10rem;
+  }
+  .message-wrapper {
+    margin-bottom: 3.25rem;
   }
 
   .scroll-section-1 .message-title {
@@ -591,17 +672,16 @@ footer::before {
     margin-top: 0.5rem;
   }
 
-  .movie-thumbnail-slide-wrapper {
-    gap: 1.5rem;
-    margin: 3.25rem 0 1.375rem;
-    padding-left: 31.625rem;
+  .movie-thumbnail-slide img {
+    width: 56.875rem;
+    height: 31.875rem;
   }
 
   /* 스크롤 섹션 1 끝 */
 
   /* 스크롤 섹션 2 시작 */
   .scroll-section-2 {
-    margin-top: 10rem;
+    padding-top: 3rem;
   }
 
   .scroll-section-2 .message-title {

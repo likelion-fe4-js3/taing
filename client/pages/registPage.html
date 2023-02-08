@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="icon" href="../assets/common/favicon.ico" />
+    <title>타잉 회원가입</title>
+    <link rel="stylesheet" href="../css/registPage.css" />
+    <script src="../js/regist.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header deactive">
+      <h1 class="logo">
+        <a href="./index.html">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ../assets/main/main-icon/icon_logo@2x.png
+              "
+            />
+            <img
+              src="../assets/main/main-icon/icon_logo@3x.png"
+              alt="TAING
+                로고"
+            />
+          </picture>
+        </a>
+      </h1>
+    </header>
+    <main>
+      <div class="content">
+        <section class="header-title-wrap">
+          <h2 class="header-title">타잉 회원가입</h2>
+          <h3>
+            아이디와 이메일로 간편하게 타잉을 시작하세요!
+          </h3>
+        </section>
+        <section class="content-wrap">
+          <div class="content-agree">
+            <form class="content-regist">
+              <label for="userId" class="user-id"
+                ><input
+                  type="text"
+                  class="user-id-input"
+                  placeholder="아이디"
+                  required
+              /></label>
+              <p class="user-id-info">
+                영문 또는 영문, 숫자 조합 6~12자리
+              </p>
+              <div class="user-pw-div">
+                <div>
+                  <label for="userPw" class="user-pw">
+                  </label>
+                  <input
+                    type="password"
+                    class="user-pw-input"
+                    placeholder="비밀번호"
+                    autocomplete="off"
+                    maxlength="15"
+                    title="영문, 숫자, 특수문자(~!@#$%^&*)를 이용해주세요."
+                    required
+                  />
+                </div>
+                <input
+                  type="checkbox"
+                  class="e-icon show-pw-upper"
+                />
+                <p class="user-pw-info">
+                  영문, 숫자, 특수문자(~!@#$%^&*) 조합
+                  8~15자리
+                </p>
+              </div>
+              <div class="pw-check-div">
+                <div>
+                  <label
+                    for="pwCheck"
+                    class="pw-check"
+                  ></label>
+                  <input
+                    type="password"
+                    class="pw-check-input"
+                    placeholder="비밀번호 확인"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <input
+                  type="checkbox"
+                  class="e-icon show-pw-lower"
+                />
+              </div>
+              <p class="user-pw-check-info"></p>
+              <label for="userEmail"
+                ><input
+                  type="text"
+                  class="user-email"
+                  placeholder="이메일"
+                  required
+                />
+                <p class="user-email-info"></p>
+              </label>
+
+              <div class="btn-check-wrap">
+                <input
+                  for="allAgree"
+                  type="checkbox"
+                  class="agree-box"
+                />
+                <label for="allAgree">
+                  모두 동의합니다.
+                </label>
+              </div>
+
+              <ul class="btn-agree-wrap">
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox"
+                  />
+                  <label for="agree-checkbox">
+                    만 14세 이상입니다.
+                  </label>
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox essential"
+                  />
+                  <label for="agree-checkbox"
+                    >[필수] 서비스 이용약관 동의</label
+                  >
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox essential"
+                  />
+                  <label for="agree-checkbox"
+                    >[필수] 개인정보 수집 및 서비스 활용
+                    동의</label
+                  >
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox essential"
+                  />
+                  <label for="agree-checkbox"
+                    >[필수] 채널 홈페이지 개인정보 제 3자
+                    제공동의</label
+                  >
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox"
+                  />
+                  <label for="agree-checkbox"
+                    >[선택] 개인정보 제 3자 제공동의</label
+                  >
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox privacy-check-total"
+                  />
+                  <label for="agree-checkbox"
+                    >[선택] 개인정보 수집 및 서비스 활용
+                    동의</label
+                  >
+                </li>
+
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox privacy-check-sms"
+                  />
+                  <label for="agree-checkbox"
+                    >[선택] 마케팅 정보 SMS 수신동의</label
+                  >
+                </li>
+                <li class="btn-checks">
+                  <input
+                    type="checkbox"
+                    class="agree-checkbox privacy-check-email"
+                  />
+                  <label for="agree-checkbox"
+                    >[선택] 마케팅 정보 이메일
+                    수신동의</label
+                  >
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                class="login-btn join-btn"
+                disabled
+              >
+                가입하기
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul class="guide-list">
+        <li>
+          <a href="../index.html">고객센터</a>
+        </li>
+        <li>
+          <a href="../index.html">이용약관</a>
+        </li>
+        <li>
+          <a href="../index.html">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="../index.html">청소년 보호정책</a>
+        </li>
+        <li>
+          <a href="../index.html">법적고지</a>
+        </li>
+        <li>
+          <a href="../index.html">이벤트</a>
+        </li>
+        <li>
+          <a href="../index.html">인재채용</a>
+        </li>
+      </ul>
+
+      <ul class="footer-info-list">
+        <li>
+          <span>대표이사 : YANG JIEUL</span>
+          <span
+            ><a href="../index.html"
+              >사업자정보확인</a
+            ></span
+          >
+          <span>사업자등록번호 : 188-88-01893</span>
+          <span
+            >통신판매신고번호 : 2020-서울마포-3641호</span
+          >
+        </li>
+
+        <li>
+          <span
+            >사업장 : 서울특별시 마포구 상암산로 34,
+            DMC디지털큐브 15층(상암동)</span
+          >
+          <span
+            >호스팅사업자 : 씨제이올리브네트웍스(주)</span
+          >
+        </li>
+
+        <li>
+          <a href="../index.html">고객문의 바로가기</a>
+
+          <a href="../index.html"
+            >대표메일 : tving@cj.net</a
+          >
+          <a href="../index.html"
+            >고객센터 : 1670-1525 (평일/주말 09시~18시,
+            공휴일 휴무)
+          </a>
+        </li>
+
+        <li>
+          <span
+            >ENM 시청자 상담실 (편성 문의 및 시청자 의견) :
+            080-080-0780</span
+          >
+          <span
+            >Mnet 고객센터(반송편성문의) : 1855-1631</span
+          >
+        </li>
+      </ul>
+
+      <div class="sns-wrapper">
+        <a
+          href="../index.html"
+          class="youtube"
+          aria-label="타잉 유튜브로 이동하기"
+          role="button"
+        >
+          <img
+            src="../assets/landing/youtube-icon.svg"
+            alt="유튜브 아이콘"
+          />
+        </a>
+        <a
+          href="../index.html"
+          class="instagram"
+          aria-label="타잉 인스타그램으로 이동하기"
+          role="button"
+        >
+          <img
+            src="../assets/landing/instagram-icon.svg"
+            alt="인스타그램 아이콘"
+          />
+        </a>
+        <a
+          href="../index.html"
+          class="twitter"
+          aria-label="타잉 트위터로 이동하기"
+          role="button"
+        >
+          <img
+            src="../assets/landing/twitter-icon.svg"
+            alt="트위터 아이콘"
+          />
+        </a>
+        <a
+          href="../index.html"
+          class="facebook"
+          aria-label="타잉 페이스북으로 이동하기"
+          role="button"
+        >
+          <img
+            src="../assets/landing/facebook-icon.svg"
+            alt="페이스북 아이콘"
+          />
+        </a>
+      </div>
+
+      <small class="copyright">
+        Copyright © 주식회사 티빙 All right reserved.
+      </small>
+    </footer>
+  </body>
+</html>
