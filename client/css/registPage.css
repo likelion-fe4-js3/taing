@@ -17,6 +17,14 @@ body {
   background-color: var(--black);
 }
 
+.label-bright {
+  filter: brightness(150%);
+}
+
+.agree-checkbox:checked + label {
+  filter: brightness(150%);
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -110,22 +118,20 @@ h3 {
   position: relative;
 }
 
-.pw-check-div {
-  position: relative;
-}
 .pw-check-input {
-  margin-top: 16px;
   background-color: var(--brand-dark-bg-2);
   border-radius: 4px;
   border: none;
   padding-left: 16px;
   width: 100%;
   height: 46px;
+  color: var(--gray-600);
   font: var(--text-paragraph);
   font-size: var(--text-size-s);
 }
 
 .e-icon {
+  appearance: none;
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -137,9 +143,19 @@ h3 {
   background-position: center;
   border: 0;
 }
+.e-icon:checked {
+  background: url("../assets/login/id-Icon.svg");
+}
+
+.pw-check-div {
+  margin-top: 16px;
+  position: relative;
+}
 
 .pw-check-div button {
-  transform: translate(-20px, -10%);
+  position: absolute;
+  top: 50%;
+  transform: translate(-20px, -50%);
 }
 
 .user-email {
@@ -152,14 +168,15 @@ h3 {
   height: 46px;
   font: var(--text-paragraph);
   font-size: var(--text-size-s);
+  color: var(--gray-600);
 }
 
 /* 여기서부터 */
 .btn-agree-wrap {
   /* align-items: center;
   margin: 16px 0 16px 0; */
-  cursor: pointer;
 }
+
 .btn-agree-wrap .x-icon {
   display: inline-block;
   width: 16px;
@@ -171,84 +188,75 @@ h3 {
 /*  */
 
 .btn-check-wrap {
-  padding-top: 16px;
+  position: relative;
+  height: 30px;
+  padding: 16px 0;
 }
 
-.btn-check-wrap .agree-box {
-  display: none;
-}
-
-.btn-check-wrap .agree-box + label {
-  display: inline-block;
+.btn-check-wrap input {
+  appearance: none;
   background: url("../assets/login/check_gray_filled.svg") 0
     0 no-repeat;
-  background-size: cover;
   width: 16px;
   height: 16px;
-  cursor: pointer;
-  margin-right: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.btn-check-wrap .agree-box:checked + label {
+.btn-check-wrap input:checked {
+  appearance: none;
   background: url("../assets/login/check_red-filled.svg") 0
     0 no-repeat;
-  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn-check-wrap label {
   color: var(--gray-500);
   font: var(--text-label);
   font-size: var(--text-size-s);
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translate(20px, -50%);
 }
 
-.btn-checks .agree-checkbox {
-  appearance: none;
-  display: inline;
-}
-.btn-checks input[type="checkbox"]:checked + .check-icon {
-  background-image: url("../assets/login/check_red.svg");
-}
-.btn-checks input[type="checkbox"] + .check-icon {
-  background-image: url("../assets/login/check_red.svg");
+.btn-checks {
+  position: relative;
+  height: 18px;
+  margin-top: 8px;
 }
 
-.agree-checkbox {
-  display: inline-block !important;
-  width: 2rem !important;
-  height: 2rem !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
+.btn-agree-wrap .btn-checks:nth-last-child(-n + 2) {
+  margin-left: 16px;
+}
+
+.btn-agree-wrap .agree-checkbox:checked {
   appearance: none;
-  outline: none;
-  box-shadow: none;
+  background: url("../assets/login/check_red.svg") no-repeat;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
+}
+
+.btn-agree-wrap .agree-checkbox {
+  appearance: none;
   background: url("../assets/login/check_gray.svg")
     no-repeat;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
 }
 
 /* 체크박스와 라벨 높이 */
-.agree-checkbox {
-  position: relative;
-  top: 21px;
-}
 
-.btn-checks .agree-checkbox + label {
-  background: url("../assets/login/check_gray.svg") 0 0
-    no-repeat;
-  background-size: cover;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  margin-right: 4px;
-}
-
-.btn-checks .agree-checkbox:checked + label {
-  background: url("../assets/login/check_red.svg") 0 0
-    no-repeat;
-  background-size: cover;
-}
-
-.btn-checks label {
+.btn-agree-wrap label {
+  position: absolute;
+  left: 30px;
   color: var(--gray-500);
   font: var(--text-label);
   font-size: var(--text-size-s);
@@ -257,12 +265,23 @@ h3 {
 .login-btn {
   width: 100%;
   height: 42px;
-  background-color: var(--gray-700);
+  margin-top: 16px;
   border: none;
   border-radius: 4px;
   font: var(--text-label);
   font-size: var(--text-size-s);
-  color: var(--gray-400);
+  background-color: var(--gray-100);
+}
+.login-btn:hover {
+  background-color: var(--white);
+}
+
+.login-btn:disabled {
+  background-color: var(--gray-700);
+}
+
+.login-btn.active {
+  background-color: red;
 }
 
 /* footer 시작 */
@@ -324,6 +343,10 @@ footer::before {
 
 /* 모바일 */
 @media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    width: 288px;
+  }
+
   /* footer 시작 */
 
   footer {
@@ -365,6 +388,7 @@ footer::before {
   .content {
     gap: 24px;
     margin: 0px 176px 0 176px;
+    width: 416px;
   }
   .header-title {
     padding-left: 44px;
@@ -386,7 +410,6 @@ footer::before {
     font-size: var(--text-size-s);
   }
   .pw-check-input {
-    margin-top: 18px;
     height: 54px;
     font-size: var(--text-size-m);
   }
@@ -399,6 +422,7 @@ footer::before {
 
   .btn-check-wrap label {
     font-size: var(--text-size-s);
+    vertical-align: middle;
   }
   .login-btn {
     height: 50px;
@@ -473,6 +497,7 @@ footer::before {
   .content {
     /* gap: 60px; */
     margin: 0px 320px 0 320px;
+    width: 732px;
   }
   .header-title {
     padding: 70px 0px 0px;
@@ -503,8 +528,11 @@ footer::before {
   .content-regist p {
     font-size: var(--text-size-l);
   }
-  .pw-check-input {
+
+  .pw-check-div {
     margin-top: 34px;
+  }
+  .pw-check-input {
     padding-left: 24px;
     height: 96px;
     font-size: var(--text-size-xl);
@@ -516,18 +544,30 @@ footer::before {
     height: 96px;
     font-size: var(--text-size-xl);
   }
-  .btn-check-wrap .agree-box + label {
-    background: url("../assets/login/check-gray-filled@3x.svg")
-      0 0 no-repeat;
-    width: 26px;
-    height: 26px;
-    margin-right: 12px;
-  }
 
   .btn-check-wrap label {
     font: var(--text-label);
     font-size: var(--text-size-l);
-    line-height: 31.99px;
+    /* text-align: middle; */
+  }
+
+  .btn-agree-wrap .agree-checkbox:checked {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn-agree-wrap .agree-checkbox {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn-agree-wrap li {
+    margin-top: 12px;
+    font-size: var(--text-size-l);
+  }
+
+  .btn-agree-wrap .btn-checks:nth-last-child(-n + 2) {
+    margin-left: 36px;
   }
 
   .login-btn {
