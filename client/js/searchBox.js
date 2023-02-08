@@ -43,6 +43,16 @@ const deviceChange = window.matchMedia(
   "(min-width: 768px)"
 );
 
+if (deviceChange.matches) {
+  setAttr(
+    ".search-box input",
+    "placeholder",
+    "TV프로그램, 영화 제목 및 출연진으로 검색해보세요"
+  );
+} else {
+  setAttr(".search-box input", "placeholder", "검색");
+}
+
 deviceChange.addEventListener("change", (target) => {
   if (target.matches) {
     setAttr(
