@@ -1,4 +1,2 @@
-
-
-export * from './sum.js'
-export * from './getRandom.js'
+export * from "./sum.js";
+export * from "./getRandom.js";
