@@ -218,6 +218,7 @@ main {
 /* 메인 비주얼 swiper */
 .main-visual.swiper {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   margin-bottom: 16px;
@@ -979,14 +980,12 @@ footer::before {
     background: url(../assets/main/main-icon/icon_live@3x.png)
       no-repeat center center;
     background-size: contain;
-
   }
 
   .gnb-live:hover a::before {
     background: url(../assets/main/main-icon/icon_live-hover@3x.png)
       no-repeat center center;
     background-size: contain;
-
   }
 
   .gnb-live a {

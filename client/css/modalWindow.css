@@ -4,13 +4,13 @@
 
 /* --------------------------------- 모든 디바이스 -------------------------------- */
 
-a {
+.modal-background a {
   display: block;
   width: fit-content;
   height: fit-content;
 }
 
-a img {
+.modal-background a img {
   display: block;
   width: 50vw;
   min-width: 252px;
@@ -28,7 +28,7 @@ a img {
   height: 100%;
   top: 0;
   left: 0;
-  display: none;
+  /* display: none; */
   z-index: 999;
 }
 

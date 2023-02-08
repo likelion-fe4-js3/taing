@@ -30,6 +30,7 @@ window.addEventListener("scroll", () => {
 // main-visual swiper
 const mainVisual = new Swiper(".main-visual", {
   speed: 1500,
+  // loopAdditionalSlides: 1,
   slidesPerView: 1,
   simulateTouch: true,
   autoplay: {
@@ -42,6 +43,10 @@ const mainVisual = new Swiper(".main-visual", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
   },
 });
 

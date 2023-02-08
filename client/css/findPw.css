@@ -163,7 +163,7 @@ footer::before {
 
 /* footer 끝 */
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
   /* footer 시작 */
 
   footer {

@@ -30,7 +30,7 @@ function onOffSearch() {
   else offSearch();
 }
 
-// mainSearch.addEventListener("click", onOffSearch);
+mainSearch.addEventListener("click", onOffSearch);
 searchBackground.addEventListener("click", (event) => {
   const target = event.target;
   if (target.classList.contains("search-background")) {

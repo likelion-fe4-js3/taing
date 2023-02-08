@@ -16,12 +16,13 @@ legend {
 .search-background {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
-  /* display: none; */
+  display: none;
 }
 
 .search {
@@ -145,8 +146,7 @@ input::-webkit-search-results-decoration {
 /* -------------------------------- 모바일 디바이스 -------------------------------- */
 @media (min-width: 320px) and (max-width: 767px) {
   .search {
-    padding: 20px 47px 20px 47px;
-    height: 461px;
+    padding: 50px 47px 20px 47px;
   }
 
   .search-box {
@@ -189,8 +189,7 @@ input::-webkit-search-results-decoration {
 /* -------------------------------- 태블릿 디바이스 -------------------------------- */
 @media (min-width: 768px) and (max-width: 1199px) {
   .search {
-    padding: 28px 122px 52px 122px;
-    height: 535px;
+    padding: 60px 122px 52px 122px;
   }
 
   .search-box {
@@ -319,7 +318,7 @@ input::-webkit-search-results-decoration {
 /* -------------------------------- 데스크탑 디바이스 ------------------------------- */
 @media (min-width: 1200px) {
   .search {
-    padding: 52px 220px 93px 220px;
+    padding: 100px 220px 93px 220px;
     height: 945px;
   }
 
