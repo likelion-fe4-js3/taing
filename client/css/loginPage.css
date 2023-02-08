@@ -334,6 +334,15 @@ footer::before {
     height: 54px;
     font-size: var(--text-size-m);
   }
+  input[class="visible-pw-button"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[class="visible-pw-button"]:checked {
+    width: 20px;
+    height: 20px;
+  }
   /* .checkbox-wrap {
     margin-top: 16px;
   } */
@@ -441,6 +450,19 @@ footer::before {
     padding-right: 24px;
     height: 96px;
     font-size: var(--text-size-l);
+  }
+  input[class="visible-pw-button"] {
+    width: 26px;
+    height: 35px;
+    background: url("../assets/login/e-icon_close@3x.svg")
+      no-repeat;
+  }
+
+  input[class="visible-pw-button"]:checked {
+    width: 26px;
+    height: 35px;
+    background: url("../assets/login/check_gray_filled@3x.svg")
+      no-repeat;
   }
 
   .user-pw label {
