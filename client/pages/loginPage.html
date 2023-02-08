@@ -12,66 +12,64 @@
     <title>타잉</title>
 
     <link rel="stylesheet" href="../css/loginPage.css" />
-    <script></script>
+    <script
+      defer
+      type="module"
+      src="../js/login.js"
+    ></script>
   </head>
   <body>
     <main class="login">
       <div class="content-wrap">
         <section class="login-content-wrap">
           <h2 class="login-title">TAING ID 로그인</h2>
-          <form class="id-pw-form">
+          <form class="login-form">
             <fieldset>
-              <div class="user-id">
-                <label for="userId">
-                  <input
-                    class="form-user-id"
-                    type="text"
-                    id="userId"
-                    name="Id"
-                    placeholder="아이디"
-                  />
-                  <!-- <button
-                    id="idClose"
-                    type="button"
-                    class="x-icon"
-                  ></button> -->
-                </label>
-                <!-- <div class="hint-place">
-                  <p>Hint Place</p>
-                </div> -->
+              <legend>회원 로그인 폼</legend>
+              <div class="user-email">
+                <label for="userEmail"> </label>
+                <input
+                  class="form-user-email"
+                  type="email"
+                  id="userEmail"
+                  name="userEmail"
+                  placeholder="아이디"
+                />
               </div>
               <div class="user-pw">
-                <label for="userPw">
-                  <input
-                    class="form-user-pw"
-                    type="text"
-                    id="userPw"
-                    name="pw"
-                    placeholder="비밀번호"
-                  />
-                  <button
-                    id="pwClose"
-                    type="button"
-                    class="e-icon"
-                  ></button>
+                <label for="userPw"> </label>
+                <input
+                  class="form-user-pw"
+                  type="password"
+                  id="userPw"
+                  name="pw"
+                  placeholder="비밀번호"
+                  minlength="8"
+                />
+                <input
+                  id="pwClose"
+                  type="checkbox"
+                  class="visible-pw-button"
+                />
+              </div>
+              <div class="btn-check">
+                <input
+                  type="checkbox"
+                  id="checkboxLoginAuto"
+                  class="checkbox"
+                />
+                <label for="checkboxLoginAuto"
+                  >&nbsp;</label
+                >
+                <label for="checkboxLoginAuto">
+                  자동로그인
                 </label>
               </div>
+              <button type="button" class="login-button">
+                로그인하기
+              </button>
             </fieldset>
           </form>
-          <div class="btn-check">
-            <input
-              type="checkbox"
-              id="checkboxLoginAuto"
-              class="checkbox"
-            />
-            <label for="checkboxLoginAuto">&nbsp;</label>
-            <label for="checkboxLoginAuto">
-              자동로그인
-            </label>
-          </div>
-          <button type="submit" class="login-button">
-            로그인하기
-          </button>
           <ul class="find-btn-wrap">
             <li>
               <a href="/">아이디 찾기</a>
