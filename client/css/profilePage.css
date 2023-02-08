@@ -3,6 +3,30 @@
 @import url(../css/common/theme.css);
 
 /* --------------------------------- 모든 디바이스 -------------------------------- */
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
+
 .img {
   max-width: 100%;
   height: auto;

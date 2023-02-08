@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/common/theme.css" />
     <link rel="stylesheet" href="../css/searchBox.css" />
     <link rel="stylesheet" href="../css/modalWindow.css" />
+    <link rel="stylesheet" href="../css/logoutModal.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -31,25 +32,15 @@
       type="module"
     ></script>
     <script src="../js/searchBox.js" type="module"></script>
+    <script
+      src="../js/logoutModal.js"
+      type="module"
+    ></script>
     <script src="../js/main.js" type="module"></script>
     <title>TAING</title>
   </head>
 
   <body>
-    <div class="modal-background">
-      <div class="modal">
-        <a href="#">
-          <img
-            src="../assets/modalWindow/modal-image.png"
-            alt="최애 콘텐츠 뽑고 커피 받기"
-          />
-        </a>
-        <div class="button-wrapper">
-          <button type="button">오늘 하루 보지 않기</button>
-          <button type="button">닫기</button>
-        </div>
-      </div>
-    </div>
     <section class="search-background">
       <section class="search">
         <h2 class="a11y-hidden">검색창</h2>
@@ -103,6 +94,20 @@
         </section>
       </section>
     </section>
+    <div class="modal-background">
+      <div class="modal">
+        <a href="#">
+          <img
+            src="../assets/modalWindow/modal-image.png"
+            alt="최애 콘텐츠 뽑고 커피 받기"
+          />
+        </a>
+        <div class="button-wrapper">
+          <button type="button">오늘 하루 보지 않기</button>
+          <button type="button">닫기</button>
+        </div>
+      </div>
+    </div>
     <header class="header deactive">
       <h1 class="logo">
         <a href="#">
@@ -271,6 +276,22 @@
           ></button>
         </div>
       </section>
+      <div class="logout-background">
+        <section class="logout">
+          <div class="logout-content">
+            로그아웃 하시겠습니까?
+          </div>
+          <div class="button-wrapper">
+            <button
+              type="button"
+              onclick="location.href='/'"
+            >
+              확인
+            </button>
+            <button type="button">취소</button>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <ul class="guide-list">

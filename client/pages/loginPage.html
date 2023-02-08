@@ -19,6 +19,26 @@
     ></script>
   </head>
   <body>
+    <header class="header deactive">
+      <h1 class="logo">
+        <a href="./index.html">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ../assets/main/main-icon/icon_logo@2x.png
+              "
+            />
+            <img
+              src="../assets/main/main-icon/icon_logo@3x.png"
+              alt="TAING
+                로고"
+            />
+          </picture>
+        </a>
+      </h1>
+    </header>
+
     <main class="login">
       <div class="content-wrap">
         <section class="login-content-wrap">
@@ -44,7 +64,6 @@
                   id="userPw"
                   name="pw"
                   placeholder="비밀번호"
-                  minlength="8"
                 />
                 <input
                   id="pwClose"

@@ -17,6 +17,30 @@ body {
   background-color: var(--black);
 }
 
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
+
 .label-bright {
   filter: brightness(150%);
 }
@@ -345,6 +369,7 @@ footer::before {
 @media (min-width: 320px) and (max-width: 767px) {
   .content {
     width: 288px;
+    padding-top: 16px;
   }
 
   /* footer 시작 */
@@ -387,7 +412,7 @@ footer::before {
 @media (min-width: 768px) and (max-width: 1199px) {
   .content {
     gap: 24px;
-    margin: 0px 176px 0 176px;
+    margin: 24px 176px 0 176px;
     width: 416px;
   }
   .header-title {
@@ -500,7 +525,7 @@ footer::before {
     width: 732px;
   }
   .header-title {
-    padding: 70px 0px 0px;
+    padding: 60px 0px 0px;
     /* gap: 28px; */
     font: var(--text-heading);
     font-size: var(--text-size-xxl);

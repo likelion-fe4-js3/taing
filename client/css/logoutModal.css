@@ -4,21 +4,18 @@
 
 /* --------------------------------- 모든 디바이스 -------------------------------- */
 
-logout-content {
+.logout {
+  background-color: var(--gray-800);
+}
+
+.logout-content {
   display: block;
   width: fit-content;
   height: fit-content;
 }
 
-a img {
-  display: block;
-  width: 50vw;
-  min-width: 252px;
-  max-width: 492px;
-}
-
-.modal-background {
-  display: flex;
+.logout-background {
+  display: none;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
@@ -28,11 +25,7 @@ a img {
   height: 100%;
   top: 0;
   left: 0;
-}
-
-.modal {
-  border-radius: 4px;
-  background-color: var(--brand-dark-bg-2);
+  z-index: 100;
 }
 
 .logout-content {
@@ -43,7 +36,7 @@ a img {
   padding: 20px 0 12px 0;
 }
 
-.modal .button-wrapper {
+.logout .button-wrapper {
   color: var(--white);
   display: flex;
   justify-content: space-around;
@@ -52,17 +45,17 @@ a img {
   position: relative;
 }
 
-.modal button {
+.logout button {
   border: none;
   background-color: transparent;
   color: var(--white);
 }
 
-.modal button:first-child {
+.logout button:first-child {
   margin-right: 20px;
 }
 
-.modal button:first-child::after {
+.logout button:first-child::after {
   content: "";
   width: 1px;
   height: 30%;
@@ -90,11 +83,7 @@ a img {
 
 /* -------------------------------- 태블릿 디바이스 -------------------------------- */
 @media (min-width: 768px) and (max-width: 1199px) {
-  .modal .button-wrapper {
-    /* padding: 8px 0; */
-  }
-
-  .modal button {
+  .logout button {
     font: var(--text-paragraph);
     font-size: var(--text-size-s);
   }
@@ -108,15 +97,11 @@ a img {
 
 /* -------------------------------- 데스크탑 디바이스 ------------------------------- */
 @media (min-width: 1200px) {
-  .modal img {
-    content: url(../assets/modalWindow/modalImage@3x.png);
-  }
-
-  .modal .button-wrapper {
+  .logout .button-wrapper {
     padding: 16px 0;
   }
 
-  .modal button {
+  .logout button {
     font: var(--text-paragraph);
     font-size: var(--text-size-l);
   }

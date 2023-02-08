@@ -16,6 +16,30 @@ body {
   background-color: var(--black);
 }
 
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
+
 main {
   display: flex;
   justify-content: center;
@@ -25,7 +49,7 @@ main {
 }
 
 .find-pw {
-  padding-top: 28px;
+  padding: 42px 15px 0 15px;
   width: 100%;
   width: 319px;
 }
@@ -306,7 +330,7 @@ footer::before {
   }
 
   .find-pw {
-    padding-top: 70px;
+    padding-top: 60px;
     width: 732px;
   }
   .form-find-id {

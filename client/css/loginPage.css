@@ -17,11 +17,36 @@ body {
   background-color: var(--black);
 }
 
+/* 헤더 시작 */
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 999;
+}
+
+.header .logo {
+  margin: 0;
+}
+
+/* 헤더 끝 */
+
 .login {
-  padding-top: 28px;
+  padding-top: 42px;
 }
 
 .content-wrap {
+  /* margin-top: 10px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -430,8 +455,8 @@ footer::before {
 }
 
 @media (min-width: 1200px) {
-  main {
-    padding: 70px 0px 0px;
+  .login {
+    padding-top: 54px;
   }
   .login-content-wrap {
     width: 882px;
