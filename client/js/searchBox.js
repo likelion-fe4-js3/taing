@@ -83,7 +83,10 @@ function isNullList(value) {
 
 function isEmptySearchList() {
   const searchList = getSearchList();
-  if (searchList === null || searchList === []) {
+  if (
+    searchList === null ||
+    (Array.isArray(searchList) && searchList.length === 0)
+  ) {
     return true;
   }
 
@@ -140,9 +143,10 @@ function searchHandler() {
   }
 
   const searchWords = getSearchList() || [];
-  searchWords.length = 9;
-  searchWords.pop();
   searchWords.unshift(inputValue);
+  if (searchWords.length > 9) {
+    searchWords.pop();
+  }
   localStorage.setItem(
     "searchKeywords",
     JSON.stringify(searchWords)
@@ -172,29 +176,37 @@ searchButton.addEventListener("click", searchHandler);
 searchInput.addEventListener("keydown", searchInputHandler);
 allClearButton.addEventListener("click", allClearHandler);
 
+function isDeleteTarget(index, target, present) {
+  if (latestWordList.children[index] === target) {
+    present.splice(index, 1);
+    localStorage.setItem(
+      "searchKeywords",
+      JSON.stringify(present)
+    );
+  }
+}
+
 function deleteHandler(event) {
   const buttonTarget = event.target.closest("li > button");
   const deleteTarget = event.target.closest("li");
+
   const searchValue =
     event.target.previousElementSibling.textContent;
 
-  //localStorage의 value(배열)에서 삭제(null로 지정)
+  //localStorage에서 삭제
   const presentKeywords = getSearchList();
-  presentKeywords.forEach((item, index) => {
-    if (item === searchValue) {
-      presentKeywords[index] = null;
-      localStorage.setItem(
-        "searchKeywords",
-        JSON.stringify(presentKeywords)
-      );
-    }
-  });
+  for (
+    let index = 0;
+    index < latestWordList.children.length;
+    index++
+  ) {
+    isDeleteTarget(index, deleteTarget, presentKeywords);
+  }
 
   if (!buttonTarget) return;
 
   //화면에서 삭제
   deleteTarget.remove();
-  setWhenAllClean();
 
   renderLatestWords();
 }
