@@ -16,32 +16,23 @@ body {
   background-color: var(--black);
 }
 
-Main {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-start;
-  align-self: stretch;
-  box-sizing: border-box;
-  padding: 28px 0px 0px;
-  flex-shrink: 0;
+main {
+  padding-top: 28px;
 }
 
-.findId {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 28px 0px 0px;
-  gap: 28px;
-  width: 319px;
-  height: 438px;
+.find-email-form {
+  width: 100%;
+}
+
+.find-id {
+  width: 100%;
+  padding: 0 15px;
 }
 
 .find-login-title {
   text-align: center;
-  font-weight: bold;
+  font: var(--text-heading);
   font-size: var(--text-size-m);
-  padding: 0px;
   color: var(--white);
 }
 
@@ -49,46 +40,35 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   gap: 20px;
-  width: 319px;
-  height: 164px;
+  padding-top: 28px;
 }
 
-.find-email-form {
+/* .find-email-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+  width: 100%;
+} */
 
-  width: 288px;
-  height: 102px;
-}
-
-h3 {
+/* h3 {
   align-items: flex-start;
-  padding: 0px;
   gap: 4px;
-  width: 288px;
-  height: 40px;
-}
+  width: 100%;
+} */
 
 .find-email-text {
-  width: 66px;
-  height: 18px;
-  font-weight: 600;
-  font-size: 12.003px;
-  line-height: 150%;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
   color: var(--white);
 }
 
 .sign-in-email {
-  width: 181px;
-  height: 18px;
-  font-weight: 600;
-  font-size: 12.003px;
-  line-height: 150%;
+  width: 100%;
+  font: var(--text-label);
+  font-size: var(--text-size-s);
   color: var(--gray-400);
 }
 
@@ -96,36 +76,25 @@ h3 {
 }
 
 .form-find-email {
-  display: flex;
-  /* flex-direction: row; */
-  align-items: center;
-  /* padding: 0px 20px 0px 16px; */
-  /* isolation: isolate; */
-  width: 288px;
+  width: 100%;
   height: 46px;
   background-color: var(--brand-dark-bg-2);
   border-radius: 4px;
   border: none;
-  font-weight: 400;
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
-  line-height: 19.2px;
   color: var(--gray-600);
-  padding: 0 0 0 16px;
+  padding-left: 16px;
+  margin-top: 16px;
 }
 
 .login-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 288px;
+  width: 100%;
   height: 42px;
   background-color: var(--gray-700);
   border-radius: 4px;
-  font-weight: 600;
+  font: var(--text-label);
   font-size: var(--text-size-s);
-  line-height: 18px;
   color: var(--gray-400);
   border: none;
 }
@@ -133,8 +102,10 @@ h3 {
 .line-border {
   width: 100%;
   text-align: center;
+  font: var(--text-paragraph);
   font-size: var(--text-size-s);
   color: var(--gray-700);
+  padding: 30px;
 }
 
 .line-border p::after,
@@ -142,54 +113,50 @@ h3 {
   display: inline-block;
   height: 1px;
   content: " ";
-  width: 42%;
+  width: 46%;
   background-color: var(--gray-700);
   line-height: 10px;
   vertical-align: middle;
 }
 
 .find-certification {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  align-items: flex-start; */
   gap: 16px;
-  width: 288px;
-  height: 116px;
+  /* width: 100%; */
 }
 
 h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   gap: 4px;
-  width: 288px;
-  height: 58px;
+  width: 100%;
+  /* height: 58px; */
 }
 
 .find-cer-text {
-  font-weight: 600;
+  font: var(--text-label);
   font-size: var(--text-size-s);
-  line-height: 18px;
   color: var(--white);
 }
 
 .id-search {
-  font-weight: 600;
+  font: var(--text-label);
   font-size: var(--text-size-s);
-  line-height: 18px;
   color: var(--gray-400);
 }
 
 .btn-find-id {
-  width: 288px;
+  width: 100%;
   height: 42px;
   border-radius: 4px;
   border: none;
+  font: var(--text-label);
   font-size: var(--text-size-s);
-  line-height: 18px;
   color: var(--black);
+  margin-top: 16px;
 }
 
 /* footer 시작 */
@@ -292,6 +259,52 @@ footer::before {
 /* 테블릿 시작 */
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  main {
+    padding-top: 44px;
+  }
+  .find-id {
+    gap: 24px;
+    padding: 0 176px;
+  }
+  .find-login-title {
+    font-size: var(--text-size-xl);
+  }
+  section {
+    gap: 24px;
+  }
+  .find-email-text .sign-in-email {
+    font-size: var(--text-size-m);
+  }
+  .form-find-email {
+    height: 54px;
+    font-size: var(--text-size-m);
+  }
+  .login-button {
+    height: 50px;
+    font-size: var(--text-size-m);
+  }
+  .line-border p::after,
+  .line-border p::before {
+    width: 42%;
+    line-height: 10px;
+    vertical-align: middle;
+  }
+  .find-certification {
+    width: 100%;
+    height: 116px;
+  }
+  .find-cer-text {
+    font: var(--text-label);
+    font-size: var(--text-size-m);
+  }
+  .id-search {
+    font-size: var(--text-size-m);
+  }
+  .btn-find-id {
+    height: 50px;
+    font-size: var(--text-size-m);
+  }
+
   /* footer 시작 */
 
   footer {
@@ -362,6 +375,51 @@ footer::before {
 /* 데스크탑 시작 */
 
 @media (min-width: 1200px) {
+  main {
+    padding-top: 70px;
+  }
+  .find-id {
+    gap: 60px;
+    padding: 250px;
+  }
+  .find-login-title {
+    font-size: var(--text-size-xxl);
+  }
+  section {
+    gap: 36px;
+  }
+  .find-email-text {
+    font-size: var(--text-size-xl);
+  }
+  .sign-in-email {
+    font-size: var(--text-size-xl);
+  }
+  .form-find-email {
+    height: 96px;
+    font-size: var(--text-size-xl);
+    padding-left: 24px;
+  }
+  .login-button {
+    height: 86px;
+    font-size: var(--text-size-xl);
+  }
+  .line-border p::after,
+  .line-border p::before {
+    width: 42%;
+    line-height: 10px;
+    vertical-align: middle;
+  }
+  .find-cer-text {
+    font-size: var(--text-size-xl);
+  }
+  .id-search {
+    font-size: var(--text-size-l);
+  }
+  .btn-find-id {
+    height: 86px;
+    font-size: var(--text-size-xl);
+  }
+
   /* footer 시작 */
 
   footer {
