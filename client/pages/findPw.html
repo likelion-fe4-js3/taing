@@ -8,82 +8,35 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="icon" href="../assets/common/favicon.ico" />
-
     <title>타잉</title>
-
-    <link rel="stylesheet" href="../css/loginPage.css" />
-    <script
-      defer
-      type="module"
-      src="../js/login.js"
-    ></script>
+    <link rel="stylesheet" href="../css/findPw.css" />
   </head>
   <body>
-    <main class="login">
-      <div class="content-wrap">
-        <section class="login-content-wrap">
-          <h2 class="login-title">TAING ID 로그인</h2>
-          <form class="login-form">
-            <fieldset>
-              <legend>회원 로그인 폼</legend>
-              <div class="user-email">
-                <label for="userEmail"> </label>
-                <input
-                  class="form-user-email"
-                  type="email"
-                  id="userEmail"
-                  name="userEmail"
-                  placeholder="아이디"
-                />
-              </div>
-              <div class="user-pw">
-                <label for="userPw"> </label>
-                <input
-                  class="form-user-pw"
-                  type="password"
-                  id="userPw"
-                  name="pw"
-                  placeholder="비밀번호"
-                  minlength="8"
-                />
-                <input
-                  id="pwClose"
-                  type="checkbox"
-                  class="visible-pw-button"
-                />
-              </div>
-              <div class="btn-check">
-                <input
-                  type="checkbox"
-                  id="checkboxLoginAuto"
-                  class="checkbox"
-                />
-                <label for="checkboxLoginAuto"
-                  >&nbsp;</label
-                >
-                <label for="checkboxLoginAuto">
-                  자동로그인
-                </label>
-              </div>
-              <button type="button" class="login-button">
-                로그인하기
-              </button>
-            </fieldset>
+    <main>
+      <div class="find-pw">
+        <h2 class="find-pw-title">비밀번호 찾기</h2>
+        <section>
+          <form class="find-email-form">
+            <h3>
+              <p class="sign-in-email">
+                아이디 확인 후 등록된 이메일 주소로 비밀번호
+                재설정을 위한 인증 메일이 발송됩니다.
+                이메일을 확인하여 12시간 이내에 비밀번호
+                재설정을 완료해주세요.
+              </p>
+            </h3>
+            <label for="findPw" class="check-id">
+              <input
+                class="form-find-id"
+                type="text"
+                id="findPw"
+                placeholder="아이디"
+              />
+            </label>
           </form>
-          <ul class="find-btn-wrap">
-            <li>
-              <a href="/">아이디 찾기</a>
-            </li>
-            <li>
-              <span class="divider" aria-hidden="true"
-                >ㅣ</span
-              ><a href="/"> 비밀번호 찾기 </a>
-            </li>
-          </ul>
-          <p class="accountYet">
-            아직 계정이 없으신가요?
-            <a href="" class="btn-join">회원가입</a>
-          </p>
+          <button type="submit" class="login-button">
+            확인
+          </button>
         </section>
       </div>
     </main>
