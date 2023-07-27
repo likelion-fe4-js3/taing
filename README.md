@@ -13,11 +13,34 @@
 ## 🛠️사용 기술
 HTML5, CSS3, JavaScript, Swiper, GSAP
 ## 📌주요 기능
-- 랜딩 페이지 
-- 로그인 페이지
-  - 회원가입
-  - 아이디 찾기/비밀번호 찾기
-- 메인 페이지
-  - 모달창
-  - 검색창  
-- 프로필 전환/편집 페이지
+<details>
+<summary>:white_check_mark:렌딩 페이지 </summary>
+    <td width="500">
+  <img src="https://github.com/likelion-fe4-js3/taing/assets/119389577/f2253c82-c7f1-4606-b541-4d22a46a9720" />
+    </td>
+</details>
+
+<details>
+<summary>:white_check_mark:회원가입 </summary>
+    <td width="500">
+  <img src="https://github.com/likelion-fe4-js3/taing/assets/119389577/217fbd07-7286-427f-8e9c-d1a4200be9d0" />
+    </td>
+</details>
+
+<details>
+<summary>:white_check_mark:로그인 페이지 </summary>
+    <td width="500">
+  <img src="https://github.com/likelion-fe4-js3/taing/assets/119389577/cdfaacfd-9785-4b50-88ca-c465d838df3b" />
+    </td>
+</details>
+
+<details>
+<summary>:white_check_mark:메인 페이지 </summary>
+    <td width="500">
+  <img src="https://github.com/likelion-fe4-js3/taing/assets/119389577/4e9dbf46-1d1f-4128-a382-2d0ee1cac5e4" />
+    </td>
+</details>
+
+
+
+
